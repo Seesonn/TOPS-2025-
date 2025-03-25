@@ -7,43 +7,43 @@ const SpeakersSection = () => {
   const speakers = [
     {
       id: 1,
-      name: "Dr. Anita Sharma",
-      organization: "Tourism Board of Nepal",
-      role: "Chairperson",
-      image: "/placeholder.svg?height=300&width=300",
+      name: "Ashlesha Karki",
+      organization: " Hotel Mechi Crown",
+      role: "Deputy Managing Director",
+      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
     },
     {
       id: 2,
       name: "Rajesh Thapa",
       organization: "Koshi Tourism Development",
       role: "Director",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "https://tops.alison.com.np/uploads/speaker_1742805398.png",
     },
     {
       id: 3,
       name: "Sarah Johnson",
       organization: "International Tourism Council",
       role: "Advisor",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "https://tops.alison.com.np/uploads/speaker_1742805470.png",
     },
-    {
-      id: 4,
-      name: "Prakash Gurung",
-      organization: "Nepal Mountaineering Association",
-      role: "President",
-      image: "/placeholder.svg?height=300&width=300",
-    },
+    // {
+    //   id: 4,
+    //   name: "Prakash Gurung",
+    //   organization: "Nepal Mountaineering Association",
+    //   role: "President",
+    //   image: "/placeholder.svg?height=300&width=300",
+    // },
   ]
 
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="section-title">Key Speakers & Jury</h2>
+          <h2 className="section-title">Key Speakers </h2>
           <p className="section-subtitle">Industry experts and leaders who will evaluate projects and share insights</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {speakers.map((speaker) => (
             <SpeakerCard
               key={speaker.id}

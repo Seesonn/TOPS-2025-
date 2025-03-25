@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom"
 
 const variantStyles = {
-  primary: "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md",
-  secondary: "bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white shadow-md",
+ 
   accent: "bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-md",
   outline: "bg-transparent border-2 border-blue-600 text-blue-600 hover:bg-blue-50",
-  white: "bg-white text-blue-600 hover:bg-gray-100 shadow-md",
+
+  primary: "bg-gradient-to-r from-[#223F80] to-[#2783BC] hover:from-[#1A3366] hover:to-[#1F6BA5] text-white shadow-md",
+  secondary: "bg-gradient-to-r from-[#2783BC] to-[#2BA5E0] hover:from-[#1F6BA5] hover:to-[#2389C4] text-white shadow-md",
+  // accent: "bg-gradient-to-r from-[#F58432] to-[#FF9A4D] hover:from-[#E07328] hover:to-[#F58432] text-white shadow-md",
+  
+  white: "bg-white text-[#223F80] hover:bg-gray-100 shadow-md",
   ghost: "bg-transparent hover:bg-gray-100 text-gray-700",
-  link: "bg-transparent text-blue-600 hover:text-blue-700 hover:underline p-0",
+  link: "bg-transparent text-[#2783BC] hover:text-[#1F6BA5] hover:underline p-0"
 }
 
 const sizeStyles = {

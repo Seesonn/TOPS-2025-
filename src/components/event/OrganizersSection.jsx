@@ -2,13 +2,13 @@ import OrganizerCard from "./OrganizerCard"
 
 const OrganizersSection = () => {
   const organizers = [
-    {
+    { logo:"https://tops.alison.com.np/uploads/logo_1742355674.png",
       name: "Alison Hospitality",
       description:
         "A leading hospitality management company dedicated to promoting tourism in Nepal through innovative initiatives and events.",
       website: "https://alison.com.np",
     },
-    {
+    { logo: "https://tops.alison.com.np/uploads/logo_1742355674.png",
       name: "Kafals",
       description:
         "An organization focused on promoting local culture, food, and tourism through various events and initiatives across Nepal.",
@@ -25,6 +25,7 @@ const OrganizersSection = () => {
           {organizers.map((organizer, index) => (
             <OrganizerCard
               key={index}
+              logo={organizer.logo}
               name={organizer.name}
               description={organizer.description}
               website={organizer.website}

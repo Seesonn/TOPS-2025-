@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useState } from "react"
 
@@ -63,4 +63,3 @@ export const VideoPlayer = ({ src, poster, title }) => {
     </div>
   )
 }
-

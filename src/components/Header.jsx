@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
@@ -45,7 +45,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <Logo className="h-10" />
+            <Logo className="h-20" />
           </Link>
 
           {/* Desktop Navigation */}

@@ -3,7 +3,7 @@ import { Button } from "../../ui/Button"
 
 const CtaSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-[#223F80] to-[#2783BC] text-white relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-500 rounded-full mix-blend-overlay filter blur-3xl opacity-30"></div>
