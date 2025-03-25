@@ -8,7 +8,7 @@ const HeroSection = ({ eventDate }) => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/placeholder.svg?height=1080&width=1920"
+          src="https://annapurnaexpress.prixacdn.net/media/albums/Pokhara_BhyKJ31l4s.jpg"
           alt="Tourism in Nepal"
           className="w-full h-full object-cover"
         />
