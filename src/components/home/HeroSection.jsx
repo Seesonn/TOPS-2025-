@@ -12,7 +12,7 @@ const HeroSection = ({ eventDate }) => {
           alt="Tourism in Nepal"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-indigo-900/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#223F80]/70 to-[#2783BC]/60"></div>
 
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden">

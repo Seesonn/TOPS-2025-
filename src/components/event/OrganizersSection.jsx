@@ -6,13 +6,13 @@ const OrganizersSection = () => {
       name: "Alison Hospitality",
       description:
         "A leading hospitality management company dedicated to promoting tourism in Nepal through innovative initiatives and events.",
-      website: "https://alisonhospitality.com",
+      website: "https://alison.com.np",
     },
     {
       name: "Kafals",
       description:
         "An organization focused on promoting local culture, food, and tourism through various events and initiatives across Nepal.",
-      website: "https://kafals.com",
+      website: "https://kafals.com.np",
     },
   ]
 
