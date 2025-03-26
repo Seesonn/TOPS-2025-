@@ -27,7 +27,9 @@ import { Button } from "../ui/Button"
 const JuryMentors = () => {
   const [activeCategory, setActiveCategory] = useState("jury")
   const [selectedMentor, setSelectedMentor] = useState(null)
-
+  const handleEmailClick = () => {
+    window.location.href = "mailto:sisanbhattarai.dev@gmail.com";
+  };
   // Sample data for jury members and mentors
   const juryMembers = [
     {
@@ -209,9 +211,11 @@ const JuryMentors = () => {
             business development, or related fields and would like to contribute to the development of innovative
             tourism projects, we'd love to hear from you.
           </p>
-          <Button variant="primary" as="a" href="mailto:sisanbhattarai.dev@gmail.com">
-            Apply to Become a Mentor
-          </Button>
+  
+
+<Button variant="primary" onClick={handleEmailClick}>
+  Apply to Become a Mentor
+</Button>
         </div>
       </div>
     </div>
