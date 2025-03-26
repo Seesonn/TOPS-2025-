@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom"
 import { Logo } from "../ui/Logo"
 import { SocialIcon } from "../ui/SocialIcon"
@@ -38,10 +39,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2">Resources</h3>
             <ul className="space-y-3">
-              <FooterLink to="/sponsorship">Become a Sponsor</FooterLink>
               <FooterLink to="/media-gallery">Media Gallery</FooterLink>
               <FooterLink to="/awards">Awards & Prizes</FooterLink>
               <FooterLink to="/post-event">Post Event</FooterLink>
+              <FooterLink to="/sponsorship">Become a Sponsor</FooterLink>
               <FooterLink to="/contact">Contact Us</FooterLink>
             </ul>
           </div>
@@ -74,4 +75,6 @@ const Footer = () => {
 }
 
 export default Footer
+
+
 
