@@ -209,9 +209,9 @@ const JuryMentors = () => {
             business development, or related fields and would like to contribute to the development of innovative
             tourism projects, we'd love to hear from you.
           </p>
-          {/* <Button variant="primary" as="a" href="mailto:.com">
+          <Button variant="primary" as="a" href="mailto:sisanbhattarai.dev@gmail.com">
             Apply to Become a Mentor
-          </Button> */}
+          </Button>
         </div>
       </div>
     </div>
