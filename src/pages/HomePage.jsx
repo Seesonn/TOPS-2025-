@@ -4,6 +4,7 @@ import ThemesSection from "../components/home/ThemesSection"
 import SpeakersSection from "../components/home/SpeakersSection"
 import SponsorsSection from "../components/home/SponsorsSection"
 import CtaSection from "../components/home/CtaSection"
+import FloatingTicketButton from "../components/FloatingTicketButton"
 
 const HomePage = () => {
   // Event date: April 28, 2025
@@ -17,6 +18,7 @@ const HomePage = () => {
       <SpeakersSection />
       <SponsorsSection />
       <CtaSection />
+      <FloatingTicketButton />
     </div>
   )
 }
