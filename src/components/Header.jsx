@@ -231,10 +231,10 @@ const Header = () => {
                   location.pathname === "/media-gallery" ||
                   location.pathname === "/awards" ||
                   location.pathname === "/post-event"
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                    ? "text-[#223F80]"
+                     : "text-gray-700 hover:text-[#223F80]"
                 }`}
-              >
+              > 
                 <span>Resources</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -357,8 +357,8 @@ const Header = () => {
                   location.pathname === "/media-gallery" ||
                   location.pathname === "/awards" ||
                   location.pathname === "/post-event"
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                    ? "text-[#223F80]"
+                     : "text-gray-700 hover:text-[#223F80]"
                 }`}
                 onClick={() => setMobileResourcesOpen(!mobileResourcesOpen)}
               >
