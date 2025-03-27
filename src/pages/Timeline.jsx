@@ -95,7 +95,7 @@ const Timeline = () => {
       <PageHeader
         title="Event Timeline"
         description="Key dates and schedule for the Tourism Project Showcase – Koshi 2025"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://as2.ftcdn.net/v2/jpg/02/36/78/41/1000_F_236784110_X3osd8iJKS0Y8tFASZSGXmV2RkxNUmBr.jpg"
       />
 
       <div className="container mx-auto px-4 py-16">

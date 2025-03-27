@@ -170,7 +170,7 @@ const JuryMentors = () => {
       <PageHeader
         title="Jury & Mentors"
         description="Meet the experts who will evaluate projects and provide guidance"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://fis-api.luxuryholidaynepal.com/media/attachments/nepal.jpg"
       />
 
       <div className="container mx-auto px-4 py-16">

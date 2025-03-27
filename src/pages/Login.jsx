@@ -1,4 +1,4 @@
-// "use client"
+
 
 // import { useState } from "react"
 // import { Link, useLocation, useNavigate } from "react-router-dom"
@@ -213,7 +213,6 @@
 // export default Login
 
 
-"use client"
 
 import { useState } from "react"
 import { Link, useLocation, useNavigate } from "react-router-dom"
@@ -341,7 +340,7 @@ const Login = () => {
                   className={`w-full px-4 py-3 border rounded-md focus:ring-blue-500 focus:border-blue-500 ${
                     errors.email ? "border-red-500" : "border-gray-300"
                   }`}
-                  placeholder="your@email.com"
+                  placeholder="your@gmail.com"
                 />
                 {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
               </div>

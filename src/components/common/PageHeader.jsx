@@ -1,13 +1,18 @@
 const PageHeader = ({ title, description, backgroundImage = null }) => {
-  const bgStyle = backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}
+  const bgStyle = backgroundImage ? { 
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  } : {}
 
   return (
     <section
-      className="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-20 relative overflow-hidden"
+      className="bg-gradient-to-r from-[#223F80] to-[#2783BC] text-white py-20 relative overflow-hidden"
       style={bgStyle}
     >
       {/* Overlay for background image if present */}
-      {backgroundImage && <div className="absolute inset-0 bg-blue-900 opacity-70"></div>}
+      {backgroundImage && <div className="absolute inset-0 bg-gradient-to-r from-[#223F80] to-[#2783BC] opacity-70"></div>}
 
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -37,4 +42,3 @@ const PageHeader = ({ title, description, backgroundImage = null }) => {
 }
 
 export default PageHeader
-

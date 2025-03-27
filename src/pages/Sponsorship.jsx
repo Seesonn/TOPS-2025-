@@ -83,7 +83,7 @@ const Sponsorship = () => {
       <PageHeader
         title="Sponsorship Opportunities"
         description="Support innovation in tourism and gain visibility for your brand"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://t4.ftcdn.net/jpg/01/14/04/99/360_F_114049919_zeYAVl4gBtAhfbVm44YjNvgcAc9heQiT.jpg"
       />
 
       <div className="container mx-auto px-4 py-16">

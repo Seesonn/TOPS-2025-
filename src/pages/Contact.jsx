@@ -21,7 +21,7 @@ const Contact = () => {
       <PageHeader
         title="Contact Us"
         description="Get in touch with the Tourism Project Showcase team"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://t3.ftcdn.net/jpg/13/06/01/38/240_F_1306013815_W5xrWJiKD4xSlHbCEiUfAeHb08kxMBTR.jpg"
       />
 
       <div className="container mx-auto px-4 py-16">
