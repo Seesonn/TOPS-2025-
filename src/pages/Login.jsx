@@ -243,7 +243,7 @@ const Login = () => {
       [name]: type === "checkbox" ? checked : value,
     }))
 
-    // Clear error when field is edited
+ 
     if (errors[name]) {
       setErrors((prev) => ({
         ...prev,
