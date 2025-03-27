@@ -16,7 +16,7 @@ const SpeakerCard = ({ name, organization, role, image }) => {
           />
         </div>
         <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
-        <p className="text-blue-600 font-medium">{role}</p>
+        <p className="text-[#F58432] font-medium">{role}</p>
         <p className="text-gray-600 text-sm mt-1">{organization}</p>
       </div>
     </Card>
