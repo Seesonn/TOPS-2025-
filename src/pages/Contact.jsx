@@ -1,4 +1,3 @@
-"use client"
 
 import { useState } from "react"
 import PageHeader from "../components/common/PageHeader"
@@ -34,8 +33,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-20">
-          <div className="animate-slide-right">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-20">
+          <div className="animate-slide-right order-2 lg:order-1">
             {formSubmitted ? (
               <Card className="p-8 text-center h-full flex flex-col justify-center">
                 <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-green-100 flex items-center justify-center text-green-600">
@@ -62,7 +61,7 @@ const Contact = () => {
             )}
           </div>
 
-          <div className="animate-slide-left">
+          <div className="animate-slide-left order-1 lg:order-2">
             <ContactInfo />
           </div>
         </div>
