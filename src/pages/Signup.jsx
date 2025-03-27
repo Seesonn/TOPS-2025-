@@ -1,4 +1,3 @@
-
 import { useState } from "react"
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import { Card } from "../ui/Card"
@@ -104,13 +103,22 @@ const Signup = () => {
         <div className="max-w-md mx-auto">
           <Card className="p-8 shadow-lg">
             {fromTickets && (
-              <div className="mb-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-                <h3 className="font-semibold text-blue-800 mb-1">
+              <div className={`mb-6 p-4 rounded-lg border-l-4 ${
+                ticketId === "standard" ? "bg-gradient-to-r from-[#2783BC]/90 to-[#223F80]/80 border-[#223F80] text-white" :
+                ticketId === "gold" ? "bg-gradient-to-r from-[#F58432] to-amber-600 border-amber-600 text-white" :
+                ticketId === "premium" ? "bg-gradient-to-r from-[#223F80] to-[#2783BC] border-[#2783BC] text-white" :
+                "bg-blue-50 border-blue-500 text-blue-800"
+              }`}>
+                <h3 className={`font-semibold mb-1 ${
+                  ticketId === "standard" || ticketId === "gold" || ticketId === "premium" ? "text-white" : "text-blue-800"
+                }`}>
                   {ticketId === "standard" && "Standard Ticket"}
                   {ticketId === "gold" && "Gold Ticket"}
                   {ticketId === "premium" && "Premium Ticket"}
                 </h3>
-                <p className="text-blue-700 text-sm">Create an account to complete your ticket purchase.</p>
+                <p className={`text-sm ${
+                  ticketId === "standard" || ticketId === "gold" || ticketId === "premium" ? "text-white/90" : "text-blue-700"
+                }`}>Create an account to complete your ticket purchase.</p>
               </div>
             )}
 
@@ -269,4 +277,3 @@ const Signup = () => {
 }
 
 export default Signup
-
