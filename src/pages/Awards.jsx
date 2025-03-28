@@ -24,7 +24,7 @@ const Awards = () => {
       <PageHeader
         title="Awards & Prizes"
         description="Recognizing excellence and innovation in tourism projects"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://imgs.search.brave.com/Cfn9Z4fk2zUIbKFae0IKxRVemVafnAjyWCdFBVmaSD4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aG9saWRheXN0b25l/cGFsLmluL21lZGlh/L2ZpbGVzL0Jsb2dz/L05hdGlvbmFsU3lt/Ym9sc09mTmVwYWwv/bmVwYWwtbmF0aW9u/YWwtZmxvd2VyLnBu/Zw"
       />
 
       <div className="container mx-auto px-4 py-16">

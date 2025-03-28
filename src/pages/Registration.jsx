@@ -16,7 +16,7 @@ const Registration = () => {
       <PageHeader
         title="Registration"
         description="Register your team for the Tourism Project Showcase – Koshi 2025"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://imgs.search.brave.com/aDjry78MtXB6gAJm4Oo1cYyV-BchROmR_FS2Xg1PXAM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bmF0dXJlaW5mb2N1/cy5pbi9tZWRpYS8x/OTIwLXNoYXlhbi1i/b3NlLTIwMTkxMjA3/MTQ1MjQ4LTEtMTYz/NDAxNjY5Ny5qcGc"
       />
 
       <div className="container mx-auto px-4 py-16">

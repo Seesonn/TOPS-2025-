@@ -77,7 +77,7 @@ const Tickets = () => {
       <PageHeader
         title="Event Tickets"
         description="Secure your spot at the Tourism Project Showcase – Koshi 2025"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://imgs.search.brave.com/Cjvy9G5J_rVwmDoqOXz0Ie9kGNt5hM-36lqkMqEVK1Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9QWXd5NmdI/LmpwZw"
       />
 
       <div className="container mx-auto px-4 py-16">

@@ -12,7 +12,7 @@ const PageHeader = ({ title, description, backgroundImage = null }) => {
       style={bgStyle}
     >
       {/* Overlay for background image if present */}
-      {backgroundImage && <div className="absolute inset-0 bg-gradient-to-r from-[#223F80] to-[#2783BC] opacity-80"></div>}
+      {backgroundImage && <div className="absolute inset-0 bg-gradient-to-r from-[#223F80] to-[#2783BC] opacity-70"></div>}
 
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -23,7 +23,7 @@ const PageHeader = ({ title, description, backgroundImage = null }) => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl animate-slide-up">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">{title}</h1>
-          <p className="text-xl text-blue-100">{description}</p>
+          <p className="text-xl text-white">{description}</p>
         </div>
       </div>
 

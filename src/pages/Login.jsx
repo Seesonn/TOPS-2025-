@@ -296,7 +296,7 @@ const Login = () => {
       <PageHeader
         title="Login"
         description="Sign in to your Tourism Project Showcase account"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://exploreallaboutnepal.com/wp-content/uploads/2025/03/6fc3241a211c5b54e747d64387540927.jpg.webp"
       />
 
       <div className="container mx-auto px-4 py-16">

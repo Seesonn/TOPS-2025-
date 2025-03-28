@@ -96,7 +96,7 @@ const Signup = () => {
       <PageHeader
         title="Create Account"
         description="Sign up for the Tourism Project Showcase"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://imgs.search.brave.com/AIUBeg4J3UQTIAiViujT647RsQJfGvpcAzVtmW3LLKw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aGltYWxheWFuaGVy/by5jb20vbWVkaWEv/aW1hZ2VzL3JhamFu/LWRhaGFsLVNhYy1f/ZFRTTUNZLXVuc3Bs/YXNoLndpZHRoLTgw/MC5qcGc"
       />
 
       <div className="container mx-auto px-4 py-16">

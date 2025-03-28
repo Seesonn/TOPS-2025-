@@ -18,7 +18,7 @@ const PostEvent = () => {
       <PageHeader
         title="Post Event"
         description="Highlights and outcomes from the Tourism Project Showcase – Koshi"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://imgs.search.brave.com/I3Tsthq3H7asutkaCR7U2_k3DoXlc27UDsavLwCjuvg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5zYXZldGhlcmhp/bm8ub3JnL3Byb2Qv/dXBsb2Fkcy8yMDE4/LzA0L0dyZWF0ZXJf/T25lX0hvcm5lZF9S/aGlub19DcmVkaXRS/ZW5hdWRGdWxjb25p/cy5qcGc"
       />
 
       <div className="container mx-auto px-4 py-16">
