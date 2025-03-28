@@ -12,7 +12,7 @@ const PageHeader = ({ title, description, backgroundImage = null }) => {
       style={bgStyle}
     >
       {/* Overlay for background image if present */}
-      {backgroundImage && <div className="absolute inset-0 bg-gradient-to-r from-[#223F80] to-[#2783BC] opacity-70"></div>}
+      {backgroundImage && <div className="absolute inset-0 bg-gradient-to-r from-[#223F80] to-[#2783BC] opacity-80"></div>}
 
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">

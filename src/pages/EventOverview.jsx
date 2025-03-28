@@ -11,7 +11,7 @@ const EventOverview = () => {
       <PageHeader
         title="Event Overview"
         description="Tourism Project Showcase – Koshi 2025 is a platform for innovation, sustainability, and investment in the tourism sector."
-         backgroundImage="https://t3.ftcdn.net/jpg/00/56/41/54/240_F_56415498_h6VQKcn17zV9aGiKEO7Twmp0dbejXg54.jpg"
+         backgroundImage="https://t3.ftcdn.net/jpg/06/23/83/44/240_F_623834413_D7OL3FKZaMrvO8VHmlWF4t2ZIG6MXWcj.jpg"
       />
       <EventSummary />
       <OrganizersSection />
