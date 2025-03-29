@@ -18,6 +18,7 @@ const MediaVideoSection = ({ videos }) => {
               <div className="relative aspect-video overflow-hidden">
                 <img
                   src={video.thumbnail || "/placeholder.svg"}
+                 
                   alt={video.title}
                   className="w-full h-full object-cover"
                 />
@@ -76,7 +77,7 @@ const MediaVideoSection = ({ videos }) => {
               </svg>
             </button>
 
-            <VideoPlayer src="https://example.com/video.mp4" poster={activeVideo.thumbnail} title={activeVideo.title} />
+            <VideoPlayer src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" poster={activeVideo.thumbnail} title={activeVideo.title} />
 
             <div className="mt-4 text-white">
               <h3 className="text-xl font-semibold mb-1">{activeVideo.title}</h3>
