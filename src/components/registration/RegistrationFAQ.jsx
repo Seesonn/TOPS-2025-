@@ -7,11 +7,7 @@ const RegistrationFAQ = () => {
   const [openIndex, setOpenIndex] = useState(null)
 
   const faqs = [
-    {
-      question: "What is the registration fee?",
-      answer:
-        "The registration fee is NPR 2,000 per team. This covers event materials, refreshments during the event, and participation certificates for all team members.",
-    },
+   
     {
       question: "How many members can be in a team?",
       answer:

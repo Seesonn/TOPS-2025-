@@ -67,8 +67,8 @@ const RegistrationSteps = () => {
     },
     {
       number: "04",
-      title: "Pay Registration Fee",
-      description: "NPR 2,000 per team (includes event materials and refreshments).",
+      title: "Free Registration ",
+      description: "No any regestration charge.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"

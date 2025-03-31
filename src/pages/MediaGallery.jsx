@@ -141,7 +141,7 @@ const MediaGallery = () => {
   const videos = [
     {
       id: 1,
-      thumbnail: "/placeholder.svg?height=720&width=1280",
+      thumbnail: "https://tops.alison.com.np/uploads/logo_1742355674.png",
       title: "ToPS Koshi 2024 Highlights",
       description:
         "A comprehensive recap of the three-day Tourism Project Showcase event featuring key moments, presentations, and award ceremony",
@@ -149,7 +149,7 @@ const MediaGallery = () => {
     },
     {
       id: 2,
-      thumbnail: "/placeholder.svg?height=720&width=1280",
+      thumbnail: "https://tops.alison.com.np/uploads/logo_1742355674.png",
       title: "Keynote Speech: Future of Tourism in Nepal",
       description:
         "Dr. Rajesh Sharma discusses the challenges and opportunities for tourism development in Nepal post-pandemic",
@@ -157,7 +157,7 @@ const MediaGallery = () => {
     },
     {
       id: 3,
-      thumbnail: "/placeholder.svg?height=720&width=1280",
+      thumbnail: "https://tops.alison.com.np/uploads/logo_1742355674.png",
       title: "Winner Project Presentation: EcoTrek Nepal",
       description:
         "The winning team presents their innovative eco-tourism platform connecting local guides with environmentally conscious travelers",
