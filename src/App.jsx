@@ -57,6 +57,7 @@ import Tickets from "./pages/Tickets"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import AdminLogin from "./pages/AdminLogin"
+import Checkout from "./pages/Checkout"
 import "./index.css"
 
 function App() {
@@ -86,6 +87,7 @@ function App() {
                     <Route path="/tickets" element={<Tickets />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />
+                    <Route path="/checkout/:ticketType" element={<Checkout />} />
                   </Routes>
                 </main>
                 <Footer />
