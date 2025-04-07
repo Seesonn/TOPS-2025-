@@ -71,7 +71,7 @@ const Header = () => {
               Sponsorship
             </NavLink>
             <NavLink to="/admin/login" active={location.pathname === "/admin/login"}>
-              Admin login
+              Admin Login
             </NavLink>
 
 
@@ -197,6 +197,9 @@ const Header = () => {
             </MobileNavLink>
             <MobileNavLink to="/sponsorship" active={location.pathname === "/sponsorship"}>
               Sponsorship
+            </MobileNavLink>
+            <MobileNavLink to="/admin/login" active={location.pathname === "/admin/login"}>
+             Admin Login
             </MobileNavLink>
 
             {/* Mobile Resources Dropdown */}
