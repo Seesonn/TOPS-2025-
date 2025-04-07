@@ -70,6 +70,10 @@ const Header = () => {
             <NavLink to="/sponsorship" active={location.pathname === "/sponsorship"}>
               Sponsorship
             </NavLink>
+            <NavLink to="/admin/login" active={location.pathname === "/admin/login"}>
+              Admin login
+            </NavLink>
+
 
             {/* Resources Dropdown */}
             <div className="relative group">

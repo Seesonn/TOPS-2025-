@@ -186,7 +186,7 @@ const AdminLogin = () => {
           <p>
             For technical support, contact{" "}
             <a href="mailto:support@topskoshi2025.com" className="text-white hover:underline">
-              support@topskoshi2025.com
+              topskoshi2025@gmail.com
             </a>
           </p>
         </div>
