@@ -61,7 +61,7 @@ const MediaManagement = () => {
           id: "med-005",
           type: "video",
           url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-          thumbnail: "/placeholder.svg?height=720&width=1280",
+          thumbnail: "https://imgs.search.brave.com/t58Yq-aimOQqA_8Cjc1DIrO8hvoF2k1tB7q03wWEuVQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZXZlbnRuZXdzLmJl/L21lZGlhL2syL2l0/ZW1zL2NhY2hlLzFj/NzdlYTQ2YjNkNzcw/OWYyNzE0Mzg3OTg2/ZTdjODIwX00uanBn",
           title: "ToPS Koshi 2024 Highlights",
           description:
             "A comprehensive recap of the three-day Tourism Project Showcase event featuring key moments, presentations, and award ceremony",
@@ -74,7 +74,7 @@ const MediaManagement = () => {
           id: "med-006",
           type: "video",
           url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-          thumbnail: "/placeholder.svg?height=720&width=1280",
+          thumbnail: "https://imgs.search.brave.com/beIAllw29sWfc2387HM8j6k7REEmbIlFy3kcEh1AT-E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qll6Qm1OVGMz/TVRNdE9XWTRPQzAw/WWpJNExXRmpaVFl0/WlRZd056WTFZV1Zr/TURWa1hrRXlYa0Zx/Y0djQC5qcGc",
           title: "Keynote Speech: Future of Tourism in Nepal",
           description:
             "Dr. Rajesh Sharma discusses the challenges and opportunities for tourism development in Nepal post-pandemic",
@@ -86,7 +86,7 @@ const MediaManagement = () => {
         {
           id: "med-007",
           type: "document",
-          url: "https://example.com/documents/event-brochure.pdf",
+          url: "",
           title: "Event Brochure",
           description: "Official brochure with event details, schedule, and information",
           category: "materials",
@@ -98,7 +98,7 @@ const MediaManagement = () => {
         {
           id: "med-008",
           type: "document",
-          url: "https://example.com/documents/press-kit.zip",
+          url: "",
           title: "Press Kit",
           description: "Media resources including logos, press releases, and high-resolution images",
           category: "materials",

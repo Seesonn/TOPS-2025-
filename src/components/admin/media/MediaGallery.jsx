@@ -105,7 +105,7 @@ const MediaGallery = ({ mediaItems, loading, selectedMedia, setSelectedMedia, on
             ) : item.type === "video" ? (
               <div className="w-full h-full relative">
                 <img
-                  src={item.thumbnail || "/placeholder.svg"}
+                  src={item.thumbnail || "https://imgs.search.brave.com/beIAllw29sWfc2387HM8j6k7REEmbIlFy3kcEh1AT-E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qll6Qm1OVGMz/TVRNdE9XWTRPQzAw/WWpJNExXRmpaVFl0/WlRZd056WTFZV1Zr/TURWa1hrRXlYa0Zx/Y0djQC5qcGc"}
                   alt={item.title}
                   className="w-full h-full object-cover"
                 />
