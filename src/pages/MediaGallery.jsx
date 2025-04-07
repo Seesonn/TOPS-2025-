@@ -141,29 +141,67 @@ const MediaGallery = () => {
   const videos = [
     {
       id: 1,
-      thumbnail: "https://tops.alison.com.np/uploads/logo_1742355674.png",
+      thumbnail: "/placeholder.svg?height=720&width=1280",
+      videoUrl: "https://example.com/videos/tops-highlights.mp4",
       title: "ToPS Koshi 2024 Highlights",
       description:
         "A comprehensive recap of the three-day Tourism Project Showcase event featuring key moments, presentations, and award ceremony",
       duration: "5:24",
+      category: "events",
     },
     {
       id: 2,
-      thumbnail: "https://tops.alison.com.np/uploads/logo_1742355674.png",
+      thumbnail: "/placeholder.svg?height=720&width=1280",
+      videoUrl: "https://example.com/videos/keynote-speech.mp4",
       title: "Keynote Speech: Future of Tourism in Nepal",
       description:
         "Dr. Rajesh Sharma discusses the challenges and opportunities for tourism development in Nepal post-pandemic",
       duration: "18:36",
+      category: "presentations",
     },
     {
       id: 3,
-      thumbnail: "https://tops.alison.com.np/uploads/logo_1742355674.png",
+      thumbnail: "/placeholder.svg?height=720&width=1280",
+      videoUrl: "https://example.com/videos/winner-presentation.mp4",
       title: "Winner Project Presentation: EcoTrek Nepal",
       description:
         "The winning team presents their innovative eco-tourism platform connecting local guides with environmentally conscious travelers",
       duration: "12:45",
+      category: "presentations",
+    },
+    {
+      id: 4,
+      thumbnail: "/placeholder.svg?height=720&width=1280",
+      videoUrl: "https://example.com/videos/cultural-performance.mp4",
+      title: "Cultural Performance Highlights",
+      description:
+        "Traditional Nepali cultural performances showcasing the rich heritage and diversity of Koshi Province",
+      duration: "8:12",
+      category: "events",
+    },
+    {
+      id: 5,
+      thumbnail: "/placeholder.svg?height=720&width=1280",
+      videoUrl: "https://example.com/videos/panel-discussion.mp4",
+      title: "Panel Discussion: Sustainable Tourism",
+      description:
+        "Industry experts and government officials discuss strategies for sustainable tourism development in Nepal",
+      duration: "22:37",
+      category: "events",
+    },
+    {
+      id: 6,
+      thumbnail: "/placeholder.svg?height=720&width=1280",
+      videoUrl: "https://example.com/videos/award-ceremony.mp4",
+      title: "Award Ceremony Full Coverage",
+      description: "Complete coverage of the award ceremony recognizing the most innovative tourism projects",
+      duration: "15:50",
+      category: "awards",
     },
   ]
+
+  // Filter videos based on active filter
+  const filteredVideos = activeFilter === "all" ? videos : videos.filter((video) => video.category === activeFilter)
 
   // Simulate loading
   useEffect(() => {
@@ -179,7 +217,7 @@ const MediaGallery = () => {
       <PageHeader
         title="Media Gallery"
         description="Photos and videos from Tourism Project Showcase events"
-        backgroundImage="https://t4.ftcdn.net/jpg/06/28/18/95/240_F_628189561_KYAbX2sepq88kPtV87C5NvQrPtiHpHHn.jpg"
+        backgroundImage="/placeholder.svg?height=1080&width=1920"
       />
 
       <div className="container mx-auto px-4 py-16">
@@ -213,7 +251,7 @@ const MediaGallery = () => {
         </div>
 
         {/* Video Section */}
-        <MediaVideoSection videos={videos} />
+        <MediaVideoSection videos={filteredVideos} />
 
         {/* Downloads Section */}
         <MediaDownloads />
