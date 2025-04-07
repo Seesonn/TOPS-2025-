@@ -6,7 +6,7 @@ import { Button } from "../ui/Button"
 import PostEventHighlights from "../components/post-event/PostEventHighlights"
 import PostEventStats from "../components/post-event/PostEventStats"
 import PostEventWinners from "../components/post-event/PostEventWinners"
-import PostEventTestimonials from "../components/post-event/PostEventTestimonials"
+// import PostEventTestimonials from "../components/post-event/PostEventTestimonials"
 import PostEventGallery from "../components/post-event/PostEventGallery"
 
 const PostEvent = () => {
@@ -52,7 +52,7 @@ const PostEvent = () => {
         <PostEventWinners year={activeYear} />
 
         {/* Testimonials Section */}
-        <PostEventTestimonials year={activeYear} />
+        {/* <PostEventTestimonials year={activeYear} /> */}
 
         {/* Gallery Section */}
         <PostEventGallery year={activeYear} />
