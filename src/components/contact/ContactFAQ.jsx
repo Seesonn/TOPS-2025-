@@ -1,4 +1,3 @@
-"use client"
 
 import { useState } from "react"
 import { Card } from "../../ui/Card"
@@ -10,7 +9,7 @@ const ContactFAQ = () => {
     {
       question: "How can I register for the Tourism Project Showcase?",
       answer:
-        "You can register for the event through our online registration form on the Registration page. The registration fee is NPR 2,000 per team, which includes event materials, refreshments, and participation certificates.",
+        "You can register for the event through our online registration form on the Registration page. The registration fee is free",
     },
     {
       question: "What is the deadline for registration?",

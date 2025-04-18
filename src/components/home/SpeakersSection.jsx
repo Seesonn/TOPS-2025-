@@ -3,7 +3,7 @@ import { Button } from "../../ui/Button"
 import SpeakerCard from "./SpeakerCard"
 
 const SpeakersSection = () => {
-  // This would be populated with actual jury members
+
   const speakers = [
     {
       id: 1,

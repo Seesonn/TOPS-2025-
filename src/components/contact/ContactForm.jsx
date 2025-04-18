@@ -22,7 +22,7 @@ const ContactForm = ({ onSubmit }) => {
       [name]: value,
     }))
 
-    // Clear error when field is edited
+   
     if (errors[name]) {
       setErrors((prev) => ({
         ...prev,
