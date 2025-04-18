@@ -95,6 +95,7 @@ import AdminSettings from "./pages/admin/Settings"
 import AdminLayout from "./components/admin/layout/AdminLayout"
 import Checkout from "./pages/Checkout"
 import { Toaster } from "react-hot-toast"
+import NotFound from "./pages/NotFound"
 import "./index.css"
 
 function App() {
@@ -154,6 +155,7 @@ function App() {
             <Route path="tickets" element={<AdminTickets />} />
             <Route path="media" element={<AdminMedia />} />
             <Route path="settings" element={<AdminSettings />} />
+           
           </Route>
 
           {/* Regular routes with header/footer */}
@@ -178,6 +180,8 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />
                     <Route path="/checkout/:ticketType" element={<Checkout />} />
+                    <Route path="*" element={<  NotFound/>} />
+                   
                   </Routes>
                 </main>
                 <Footer />
