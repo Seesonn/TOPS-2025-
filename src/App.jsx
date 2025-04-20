@@ -17,6 +17,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
+import AttendancePage from "./pages/attendance/AttendancePage";
 
 // Admin components
 import AdminLogin from "./pages/AdminLogin";
@@ -41,7 +42,8 @@ function App() {
           style: {
             background: "#FFFFFF",
             color: "#1F2937",
-            boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+            boxShadow:
+              "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
             borderRadius: "0.5rem",
             padding: "0.75rem 1rem",
             border: "1px solid #E5E7EB",
@@ -79,121 +81,174 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Routes>
           {/* Public routes with header and footer */}
-          <Route path="/" element={
-            <>
-              <Header />
-              <HomePage />
-              <Footer />
-            </>
-          } />
-          
-          <Route path="/event-overview" element={
-            <>
-              <Header />
-              <EventOverview />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <HomePage />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/registration" element={
-            <>
-              <Header />
-              <Registration />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/event-overview"
+            element={
+              <>
+                <Header />
+                <EventOverview />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/timeline" element={
-            <>
-              <Header />
-              <Timeline />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/registration"
+            element={
+              <>
+                <Header />
+                <Registration />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/jury-mentors" element={
-            <>
-              <Header />
-              <JuryMentors />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/attendance"
+            element={
+              <>
+                <Header />
+                <AttendancePage/>
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/sponsorship" element={
-            <>
-              <Header />
-              <Sponsorship />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/timeline"
+            element={
+              <>
+                <Header />
+                <Timeline />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/awards" element={
-            <>
-              <Header />
-              <Awards />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/jury-mentors"
+            element={
+              <>
+                <Header />
+                <JuryMentors />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/media-gallery" element={
-            <>
-              <Header />
-              <MediaGallery />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/sponsorship"
+            element={
+              <>
+                <Header />
+                <Sponsorship />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/post-event" element={
-            <>
-              <Header />
-              <PostEvent />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/awards"
+            element={
+              <>
+                <Header />
+                <Awards />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/contact" element={
-            <>
-              <Header />
-              <Contact />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/media-gallery"
+            element={
+              <>
+                <Header />
+                <MediaGallery />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/tickets" element={
-            <>
-              <Header />
-              <Tickets />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/post-event"
+            element={
+              <>
+                <Header />
+                <PostEvent />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/login" element={
-            <>
-              <Header />
-              <Login />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/contact"
+            element={
+              <>
+                <Header />
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/signup" element={
-            <>
-              <Header />
-              <Signup />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/tickets"
+            element={
+              <>
+                <Header />
+                <Tickets />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/checkout/:ticketType" element={
-            <>
-              <Header />
-              <Checkout />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/login"
+            element={
+              <>
+                <Header />
+                <Login />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/signup"
+            element={
+              <>
+                <Header />
+                <Signup />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/checkout/:ticketType"
+            element={
+              <>
+                <Header />
+                <Checkout />
+                <Footer />
+              </>
+            }
+          />
 
           {/* Admin routes */}
           <Route path="/admin/login" element={<AdminLogin />} />
-          
+
           <Route path="/admin" element={<AdminLayout />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="registrations" element={<AdminRegistrations />} />
@@ -204,13 +259,16 @@ function App() {
           </Route>
 
           {/* 404 Not Found */}
-          <Route path="*" element={
-            <>
-              <Header />
-              <NotFound />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="*"
+            element={
+              <>
+                <Header />
+                <NotFound />
+                <Footer />
+              </>
+            }
+          />
         </Routes>
       </div>
     </Router>

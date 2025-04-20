@@ -65,13 +65,16 @@ const Header = () => {
               Timeline
             </NavLink>
             <NavLink to="/jury-mentors" active={location.pathname === "/jury-mentors"}>
-              Jury & Mentors
+             Mentors
             </NavLink>
             <NavLink to="/sponsorship" active={location.pathname === "/sponsorship"}>
               Sponsorship
             </NavLink>
+            <NavLink to="/attendance" active={location.pathname === "/attendance"}>
+              Attendance
+            </NavLink>
             <NavLink to="/admin/login" active={location.pathname === "/admin/login"}>
-              Admin Login
+              Admin 
             </NavLink>
 
 
