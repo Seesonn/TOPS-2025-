@@ -59,7 +59,7 @@
 
 //   export default AttendanceCard
 const AttendanceCard = ({ name, organization, ticketType = "standard" }) => {
-  // Color schemes only for curved accents
+  
   const getColorScheme = (type) => {
     const schemes = {
       standard: {
@@ -113,11 +113,11 @@ const AttendanceCard = ({ name, organization, ticketType = "standard" }) => {
       {/* Main Content */}
       <div className="relative z-10 p-6">
         {/* Badge  */}
-        <div
+        {/* <div
           className={`absolute top-4 right-4 px-3 py-1 rounded-full ${colors.badge} text-xs font-semibold uppercase tracking-wide`}
         >
           {ticketType}
-        </div>
+        </div> */}
 
         <div className="pt-8 flex flex-col items-center text-center">
           <h3 className={`text-2xl font-bold mb-2 ${colors.text}`}>{name}</h3>
@@ -128,22 +128,10 @@ const AttendanceCard = ({ name, organization, ticketType = "standard" }) => {
             </p>
           </div>
 
-          <div className="mt-6 flex space-x-1">
-            {[...Array(3)].map((_, i) => (
-              <div
-                key={i}
-                className={`w-8 h-1 rounded-full ${colors.curve} opacity-${
-                  30 + i * 10
-                } group-hover:opacity-${
-                  50 + i * 10
-                } transition-opacity duration-300`}
-              ></div>
-            ))}
-          </div>
+         
         </div>
       </div>
 
-      <div className={`h-1 w-full ${colors.curve} opacity-30 mt-2`}></div>
     </div>
   );
 };
