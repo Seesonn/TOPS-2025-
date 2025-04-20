@@ -4,6 +4,7 @@ import OrganizersSection from "../components/event/OrganizersSection"
 import ThemesDetailSection from "../components/event/ThemesDetailSection"
 import ObjectivesSection from "../components/event/ObjectivesSection"
 import EventCta from "../components/event/EventCta"
+import EventTeam from "../components/event/EventTeam"
 
 const EventOverview = () => {
   return (
@@ -15,6 +16,7 @@ const EventOverview = () => {
       />
       <EventSummary />
       <OrganizersSection />
+      <EventTeam/>
       <ThemesDetailSection />
       <ObjectivesSection />
       <EventCta />

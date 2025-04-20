@@ -1,106 +1,39 @@
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-// import Header from "./components/Header"
-// import Footer from "./components/Footer"
-// import HomePage from "./pages/HomePage"
-// import EventOverview from "./pages/EventOverview"
-// import Registration from "./pages/Registration"
-// import Timeline from "./pages/Timeline"
-// import JuryMentors from "./pages/JuryMentors"
-// import Sponsorship from "./pages/Sponsorship"
-// import Awards from "./pages/Awards"
-// import MediaGallery from "./pages/MediaGallery"
-// import PostEvent from "./pages/PostEvent"
-// import Contact from "./pages/Contact"
-// import Tickets from "./pages/Tickets"
-// import Login from "./pages/Login"
-// import Signup from "./pages/Signup"
-// import AdminLogin from "./pages/AdminLogin"
-// import Dashboard from "./pages/admin/Dashboard"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import EventOverview from "./pages/EventOverview";
+import Registration from "./pages/Registration";
+import Timeline from "./pages/Timeline";
+import JuryMentors from "./pages/JuryMentors";
+import Sponsorship from "./pages/Sponsorship";
+import Awards from "./pages/Awards";
+import MediaGallery from "./pages/MediaGallery";
+import PostEvent from "./pages/PostEvent";
+import Contact from "./pages/Contact";
+import Tickets from "./pages/Tickets";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Checkout from "./pages/Checkout";
+import NotFound from "./pages/NotFound";
 
-// // import AdminTickets from "./pages/admin/Tickets"
-// import Checkout from "./pages/Checkout"
-// import "./index.css"
+// Admin components
+import AdminLogin from "./pages/AdminLogin";
+import AdminLayout from "./components/admin/layout/AdminLayout";
+import Dashboard from "./pages/admin/Dashboard";
+import AdminRegistrations from "./pages/admin/Registrations";
+import AdminSponsorships from "./pages/admin/Sponsorships";
+import AdminTickets from "./pages/admin/Tickets";
+import AdminMedia from "./pages/admin/Media";
+import AdminSettings from "./pages/admin/Settings";
 
-// function App() {
-//   return (
-//     <Router>
-//       <div className="flex flex-col min-h-screen">
-//         <Routes>
-//           {/* Admin routes without header/footer */}
-//           <Route path="/admin/login" element={<AdminLogin />} />
-//           <Route path="/admin/dashboard" element={<Dashboard />} />
-         
-        
-
-//           {/* Regular routes with header/footer */}
-//           <Route
-//             path="*"
-//             element={
-//               <>
-//                 <Header />
-//                 <main className="flex-grow">
-//                   <Routes>
-//                     <Route path="/" element={<HomePage />} />
-//                     <Route path="/event-overview" element={<EventOverview />} />
-//                     <Route path="/registration" element={<Registration />} />
-//                     <Route path="/timeline" element={<Timeline />} />
-//                     <Route path="/jury-mentors" element={<JuryMentors />} />
-//                     <Route path="/sponsorship" element={<Sponsorship />} />
-//                     <Route path="/awards" element={<Awards />} />
-//                     <Route path="/media-gallery" element={<MediaGallery />} />
-//                     <Route path="/post-event" element={<PostEvent />} />
-//                     <Route path="/contact" element={<Contact />} />
-//                     <Route path="/tickets" element={<Tickets />} />
-//                     <Route path="/login" element={<Login />} />
-//                     <Route path="/signup" element={<Signup />} />
-//                     <Route path="/checkout/:ticketType" element={<Checkout />} />
-                    
-
-//                   </Routes>
-//                 </main>
-//                 <Footer />
-//               </>
-//             }
-//           />
-//         </Routes>
-//       </div>
-//     </Router>
-//   )
-// }
-
-// export default App
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import HomePage from "./pages/HomePage"
-import EventOverview from "./pages/EventOverview"
-import Registration from "./pages/Registration"
-import Timeline from "./pages/Timeline"
-import JuryMentors from "./pages/JuryMentors"
-import Sponsorship from "./pages/Sponsorship"
-import Awards from "./pages/Awards"
-import MediaGallery from "./pages/MediaGallery"
-import PostEvent from "./pages/PostEvent"
-import Contact from "./pages/Contact"
-import Tickets from "./pages/Tickets"
-import Login from "./pages/Login"
-import Signup from "./pages/Signup"
-import AdminLogin from "./pages/AdminLogin"
-import Dashboard from "./pages/admin/Dashboard"
-import AdminRegistrations from "./pages/admin/Registrations"
-import AdminSponsorships from "./pages/admin/Sponsorships"
-import AdminTickets from "./pages/admin/Tickets"
-import AdminMedia from "./pages/admin/Media"
-import AdminSettings from "./pages/admin/Settings"
-import AdminLayout from "./components/admin/layout/AdminLayout"
-import Checkout from "./pages/Checkout"
-import { Toaster } from "react-hot-toast"
-import NotFound from "./pages/NotFound"
-import "./index.css"
+import "./index.css";
 
 function App() {
   return (
     <Router>
+      {/* Toast notifications */}
       <Toaster
         position="top-right"
         toastOptions={{
@@ -142,12 +75,125 @@ function App() {
           },
         }}
       />
+
       <div className="flex flex-col min-h-screen">
         <Routes>
-          {/* Admin routes without header/footer */}
-          <Route path="/admin/login" element={<AdminLogin />} />
+          {/* Public routes with header and footer */}
+          <Route path="/" element={
+            <>
+              <Header />
+              <HomePage />
+              <Footer />
+            </>
+          } />
+          
+          <Route path="/event-overview" element={
+            <>
+              <Header />
+              <EventOverview />
+              <Footer />
+            </>
+          } />
 
-          {/* Admin routes with admin layout */}
+          <Route path="/registration" element={
+            <>
+              <Header />
+              <Registration />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/timeline" element={
+            <>
+              <Header />
+              <Timeline />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/jury-mentors" element={
+            <>
+              <Header />
+              <JuryMentors />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/sponsorship" element={
+            <>
+              <Header />
+              <Sponsorship />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/awards" element={
+            <>
+              <Header />
+              <Awards />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/media-gallery" element={
+            <>
+              <Header />
+              <MediaGallery />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/post-event" element={
+            <>
+              <Header />
+              <PostEvent />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/contact" element={
+            <>
+              <Header />
+              <Contact />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/tickets" element={
+            <>
+              <Header />
+              <Tickets />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/login" element={
+            <>
+              <Header />
+              <Login />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/signup" element={
+            <>
+              <Header />
+              <Signup />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/checkout/:ticketType" element={
+            <>
+              <Header />
+              <Checkout />
+              <Footer />
+            </>
+          } />
+
+          {/* Admin routes */}
+          <Route path="/admin/login" element={<AdminLogin />} />
+          
           <Route path="/admin" element={<AdminLayout />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="registrations" element={<AdminRegistrations />} />
@@ -155,45 +201,20 @@ function App() {
             <Route path="tickets" element={<AdminTickets />} />
             <Route path="media" element={<AdminMedia />} />
             <Route path="settings" element={<AdminSettings />} />
-           
           </Route>
 
-          {/* Regular routes with header/footer */}
-          <Route
-            path="*"
-            element={
-              <>
-                <Header />
-                <main className="flex-grow">
-                  <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/event-overview" element={<EventOverview />} />
-                    <Route path="/registration" element={<Registration />} />
-                    <Route path="/timeline" element={<Timeline />} />
-                    <Route path="/jury-mentors" element={<JuryMentors />} />
-                    <Route path="/sponsorship" element={<Sponsorship />} />
-                    <Route path="/awards" element={<Awards />} />
-                    <Route path="/media-gallery" element={<MediaGallery />} />
-                    <Route path="/post-event" element={<PostEvent />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/tickets" element={<Tickets />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/signup" element={<Signup />} />
-                    <Route path="/checkout/:ticketType" element={<Checkout />} />
-                    <Route path="*" element={<  NotFound/>} />
-                   
-                  </Routes>
-                </main>
-                <Footer />
-              </>
-            }
-          />
+          {/* 404 Not Found */}
+          <Route path="*" element={
+            <>
+              <Header />
+              <NotFound />
+              <Footer />
+            </>
+          } />
         </Routes>
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
-
-
+export default App;

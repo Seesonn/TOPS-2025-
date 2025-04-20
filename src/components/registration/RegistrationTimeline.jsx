@@ -33,7 +33,7 @@ const RegistrationTimeline = () => {
 
       <div className="relative max-w-3xl mx-auto">
         {/* Timeline line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#2783BC]/80"></div>
 
         {timelineEvents.map((event, index) => (
           <div
@@ -41,12 +41,12 @@ const RegistrationTimeline = () => {
             className={`relative z-10 mb-12 flex items-center ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
           >
             {/* Timeline dot */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-600"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#2783BC]"></div>
 
             {/* Content */}
             <div className={`w-5/12 ${index % 2 === 0 ? "text-right pr-8" : "pl-8"}`}>
               <div className="animate-slide-right" style={{ animationDelay: `${index * 0.1}s` }}>
-                <span className="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-2">
+                <span className="inline-block px-3 py-1 rounded-full bg-blue-100 text-[#2783BC] text-sm font-medium mb-2">
                   {event.date}
                 </span>
                 <h4 className="text-lg font-semibold mb-1">{event.title}</h4>

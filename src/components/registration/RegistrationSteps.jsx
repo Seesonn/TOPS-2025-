@@ -95,10 +95,10 @@ const RegistrationSteps = () => {
           <div key={index} className="animate-slide-right" style={{ animationDelay: `${index * 0.1}s` }}>
             <Card className="p-6 h-full flex flex-col">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-[#2783BC] mr-4">
                   {step.icon}
                 </div>
-                <span className="text-3xl font-bold text-blue-600">{step.number}</span>
+                <span className="text-3xl font-bold text-[#223F80]">{step.number}</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
               <p className="text-gray-600">{step.description}</p>

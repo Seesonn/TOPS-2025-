@@ -239,7 +239,7 @@ const RegistrationForm = ({ onComplete }) => {
           name="projectTitle"
           value={formData.projectTitle}
           onChange={handleChange}
-          className={`w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500 ${
+          className={`w-full px-4 py-2 border rounded-md focus:ring-[#2783BC] focus:border-[#2783BC] ${
             errors.projectTitle ? "border-red-500" : "border-gray-300"
           }`}
         />
@@ -508,7 +508,7 @@ const RegistrationForm = ({ onComplete }) => {
             <div key={item} className="flex items-center">
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                  step >= item ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-600"
+                  step >= item ? "bg-[#2783BC] text-white" : "bg-gray-200 text-gray-600"
                 }`}
               >
                 {item}
@@ -517,7 +517,7 @@ const RegistrationForm = ({ onComplete }) => {
                 {item === 1 ? "Project Details" : item === 2 ? "Team Leader" : "Team Members"}
               </span>
               {item < 3 && (
-                <div className={`w-12 sm:w-24 h-1 mx-2 ${step > item ? "bg-blue-600" : "bg-gray-200"}`}></div>
+                <div className={`w-12 sm:w-24 h-1 mx-2 ${step > item ? "bg-[#2783BC]" : "bg-gray-200"}`}></div>
               )}
             </div>
           ))}

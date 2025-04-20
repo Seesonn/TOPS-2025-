@@ -123,7 +123,7 @@ const Timeline = () => {
             <h3 className="text-2xl font-bold mb-2">
               Day {activeDay}: {days[activeDay - 1].title}
             </h3>
-            <p className="text-blue-800 font-medium">{days[activeDay - 1].date}</p>
+            <p className="text-[#2783BC] font-medium">{days[activeDay - 1].date}</p>
             <p className="text-gray-700 mt-2">{days[activeDay - 1].description}</p>
           </div>
         </div>
@@ -133,7 +133,7 @@ const Timeline = () => {
             <div key={index} className="animate-slide-right mb-6" style={{ animationDelay: `${index * 0.05}s` }}>
               <Card className="p-6 flex flex-col md:flex-row md:items-center hover:shadow-md transition-shadow">
                 <div className="md:w-1/4 mb-4 md:mb-0">
-                  <div className="font-bold text-blue-600">{item.time}</div>
+                  <div className="font-bold text-[#2783BC]">{item.time}</div>
                   <div className="text-sm text-gray-500">{item.location}</div>
                 </div>
                 <div className="md:w-3/4 md:pl-6 border-l-0 md:border-l-2 border-blue-100">
