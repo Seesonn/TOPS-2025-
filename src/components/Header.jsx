@@ -201,6 +201,9 @@ const Header = () => {
             <MobileNavLink to="/sponsorship" active={location.pathname === "/sponsorship"}>
               Sponsorship
             </MobileNavLink>
+            <MobileNavLink to="/attendance" active={location.pathname === "/attendace"}>
+             Attendace
+            </MobileNavLink>
             <MobileNavLink to="/admin/login" active={location.pathname === "/admin/login"}>
              Admin Login
             </MobileNavLink>
