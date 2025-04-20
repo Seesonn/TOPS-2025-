@@ -5,7 +5,7 @@ import PageHeader from "../components/common/PageHeader"
 import SponsorshipTier from "../components/sponsorship/SponsorshipTier"
 import SponsorshipBenefits from "../components/sponsorship/SponsorshipBenefits"
 import SponsorshipForm from "../components/sponsorship/SponsorshipForm"
-// import SponsorshipTestimonials from "../components/sponsorship/SponsorshipTestimonials"
+import SponsorshipTestimonials from "../components/sponsorship/SponsorshipTestimonials"
 import SponsorshipFAQ from "../components/sponsorship/SponsorshipFAQ"
 import { Button } from "../ui/Button"
 
@@ -215,7 +215,7 @@ const Sponsorship = () => {
           </div>
         )}
 
-        {/* <SponsorshipTestimonials /> */}
+        <SponsorshipTestimonials />
         <SponsorshipFAQ />
       </div>
     </div>

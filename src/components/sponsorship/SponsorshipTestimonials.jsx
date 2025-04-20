@@ -1,109 +1,130 @@
+import { Card } from "../../ui/Card"
 
+const SponsorshipTestimonials = () => {
+  const sponsorCategories = [
+    {
+      title: "Promoted By",
+      description: "Our primary sponsors who make this event possible",
+      sponsors: [
+        {
+          name: "Visit",
+          logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744967144.webp",
+          website: "https://bishowchauhan.com.np",
+        },
+        
+      ],
+    },
+    {
+      title: "Event Partner",
+      description: "Key partners supporting the event organization",
+      sponsors: [
+        {
+          name: "Kafals",
+          logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744967197.webp",
+          website: "https://kafals.com.np",
+        },
+       
+      ],
+    },
+    {
+      title: "Hospitality Partner",
+      description: "Partners providing exceptional hospitality services",
+      sponsors: [
+        {
+          name: "Hotel G Ramayana",
+          logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744968283.webp",
+          website: "https://bishowchauhan.com.np",
+        },
+       
+      ],
+    },
+    {
+      title: "Technical Supporter",
+      description: "Partners providing technical expertise and solutions",
+      sponsors: [
+        {
+            name: "NEA",
+            logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744968337.webp",
+            website: "https://member.neanepal.org.np",
+          },
+          {
+            name: "FCAN ",
+            logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744969638.webp",
+            website: "https://fcan.org.np",
+          },
+          {
+            name: "SCAEF",
+            logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744970103.webp",
+            website: "https://scaef.org.np",
+          },
+      ],
+    },
+    {
+      title: "Marketing Partner",
+      description: "Partners helping promote and market the event",
+      sponsors: [
+        {
+          name: "Whiteline Media PVT.LTD",
+          logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744969514.webp",
+          website: "https://sisanbhattarai.com.np",
+        },
 
-// import { useState, useEffect } from "react"
-// import { Card } from "../../ui/Card"
+      ],
+    },
+  ]
 
-// const SponsorshipTestimonials = () => {
-//   const [activeIndex, setActiveIndex] = useState(0)
+  return (
+    <section className="py-20  ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Main Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">Our Partners</h2>
+          
+          <p className="max-w-2xl mx-auto text-lg text-gray-600 leading-relaxed">
+            We are proud to collaborate with industry leaders who share our vision and help make this event exceptional
+          </p>
+        </div>
 
-//   const testimonials = [
-//     {
-//       quote:
-//         "Sponsoring ToPS Koshi 2024 provided us with exceptional brand visibility and valuable connections with tourism stakeholders. We've already secured three new partnerships as a direct result.",
-//       author: "Rajesh Sharma",
-//       position: "Marketing Director",
-//       company: "Nepal Airlines",
-//       image: "/placeholder.svg?height=100&width=100",
-//     },
-//     {
-//       quote:
-//         "The quality of participants and projects at ToPS was impressive. As a sponsor, we gained valuable insights into emerging tourism trends and connected with innovative startups in the sector.",
-//       author: "Sunita Thapa",
-//       position: "CEO",
-//       company: "Himalayan Expeditions",
-//       image: "/placeholder.svg?height=100&width=100",
-//     },
-//     {
-//       quote:
-//         "Our sponsorship of ToPS provided an excellent platform to showcase our commitment to sustainable tourism development in Nepal. The ROI exceeded our expectations.",
-//       author: "Michael Johnson",
-//       position: "Regional Director",
-//       company: "Global Tourism Partners",
-//       image: "/placeholder.svg?height=100&width=100",
-//     },
-//   ]
+        {/* Categories Container */}
+        <div className="space-y-20">
+          {sponsorCategories.map((category, index) => (
+            <div key={index} className="mb-8">
+              {/* Category Header */}
+              <div className="text-center mb-10">
+                <h3 className="text-2xl font-semibold text-slate-800 mb-3">{category.title}</h3>
+                <div className="h-0.5 w-16 bg-gray-200 mx-auto mb-4 rounded-full"></div>
+                <p className="max-w-2xl mx-auto text-gray-600 mb-8">{category.description}</p>
+              </div>
 
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setActiveIndex((prev) => (prev + 1) % testimonials.length)
-//     }, 5000)
+              {/* Sponsors Grid */}
+              <div className="flex flex-wrap justify-center gap-8">
+                {category.sponsors.map((sponsor, idx) => (
+                  <a
+                    key={idx}
+                    href={sponsor.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex flex-col items-center"
+                  >
+                    <Card className="w-64 h-40 flex items-center justify-center p-6 transition-all duration-300 group-hover:-translate-y-1">
+                      <img
+                        src={sponsor.logo || "/placeholder.svg"}
+                        alt={`${sponsor.name} logo`}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </Card>
+                    <p className="mt-3 text-sm font-medium text-gray-700 text-center transition-colors duration-300 group-hover:text-slate-900">
+                      {sponsor.name}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
 
-//     return () => clearInterval(interval)
-//   }, [testimonials.length])
-
-//   return (
-//     <div className="my-20">
-//       <h2 className="section-title text-center mb-16">What Previous Sponsors Say</h2>
-
-//       <div className="relative max-w-4xl mx-auto">
-//         <div className="overflow-hidden">
-//           <div
-//             className="flex transition-transform duration-500 ease-in-out"
-//             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-//           >
-//             {testimonials.map((testimonial, index) => (
-//               <div key={index} className="w-full flex-shrink-0 px-4">
-//                 <Card className="p-8 text-center">
-//                   <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden border-4 border-blue-100">
-//                     <img
-//                       src={testimonial.image || "/placeholder.svg"}
-//                       alt={testimonial.author}
-//                       className="w-full h-full object-cover"
-//                       onError={(e) => {
-//                         e.target.onerror = null
-//                         e.target.src = "/placeholder.svg?height=100&width=100"
-//                       }}
-//                     />
-//                   </div>
-
-//                   <svg
-//                     className="w-10 h-10 mx-auto mb-4 text-blue-200"
-//                     fill="currentColor"
-//                     viewBox="0 0 32 32"
-//                     aria-hidden="true"
-//                   >
-//                     <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-//                   </svg>
-
-//                   <p className="text-lg text-gray-700 mb-6 italic">"{testimonial.quote}"</p>
-
-//                   <div>
-//                     <p className="font-semibold text-gray-900">{testimonial.author}</p>
-//                     <p className="text-blue-600">{testimonial.position}</p>
-//                     <p className="text-gray-600 text-sm">{testimonial.company}</p>
-//                   </div>
-//                 </Card>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-
-//         <div className="flex justify-center mt-6 space-x-2">
-//           {testimonials.map((_, index) => (
-//             <button
-//               key={index}
-//               onClick={() => setActiveIndex(index)}
-//               className={`w-3 h-3 rounded-full transition-colors ${
-//                 index === activeIndex ? "bg-blue-600" : "bg-gray-300"
-//               }`}
-//               aria-label={`Go to testimonial ${index + 1}`}
-//             />
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default SponsorshipTestimonials
-
+export default SponsorshipTestimonials
