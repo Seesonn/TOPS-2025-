@@ -263,9 +263,9 @@ function App() {
             path="*"
             element={
               <>
-                <Header />
+                
                 <NotFound />
-                <Footer />
+               
               </>
             }
           />
