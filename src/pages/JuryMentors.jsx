@@ -23,6 +23,8 @@ import PageHeader from "../components/common/PageHeader"
 import JuryMentorsList from "../components/jury/JuryMentorsList"
 import JuryMentorModal from "../components/jury/JuryMentorModal"
 import { Button } from "../ui/Button"
+import Ashlesha from "../assests/AshleshaKarki.jpeg"
+import an from "../assests/an.png"
 
 const JuryMentors = () => {
   const [activeCategory, setActiveCategory] = useState("jury")
@@ -37,7 +39,7 @@ const JuryMentors = () => {
       name: "Dr. Anita Sharma",
       title: "Chairperson",
       organization: "Tourism Board of Nepal",
-      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
       expertise: ["Sustainable Tourism", "Policy Development", "Tourism Marketing"],
       bio: "Dr. Anita Sharma is a renowned expert in sustainable tourism with over 20 years of experience in the industry. As the Chairperson of the Tourism Board of Nepal, she has been instrumental in developing policies that promote responsible tourism practices across the country. She holds a Ph.D. in Tourism Management from Oxford University and has published numerous research papers on sustainable tourism development in the Himalayan region.",
       achievements: [
@@ -53,7 +55,7 @@ const JuryMentors = () => {
       name: "Rajesh Thapa",
       title: "Director",
       organization: "Koshi Tourism Development",
-      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
       expertise: ["Destination Development", "Tourism Infrastructure", "Public-Private Partnerships"],
       bio: "Rajesh Thapa brings extensive experience in tourism infrastructure development and destination management. As the Director of Koshi Tourism Development, he oversees strategic initiatives to position Koshi Province as a premier tourism destination in Nepal. With an MBA from Kathmandu University and specialized training in destination management from Singapore Tourism Board, Rajesh has successfully led multiple tourism development projects across Eastern Nepal.",
       achievements: [
@@ -69,7 +71,7 @@ const JuryMentors = () => {
       name: "Sarah Johnson",
       title: "Advisor",
       organization: "International Tourism Council",
-      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
       expertise: ["International Tourism Trends", "Tourism Investment", "Destination Branding"],
       bio: "Sarah Johnson is an international tourism expert with a focus on emerging destinations. As an Advisor at the International Tourism Council, she provides strategic guidance to destinations worldwide on tourism development, branding, and investment attraction. With previous experience at the World Tourism Organization and leading consulting firms, Sarah brings a global perspective to tourism development in Nepal.",
       achievements: [
@@ -85,7 +87,7 @@ const JuryMentors = () => {
       name: "Prakash Gurung",
       title: "President",
       organization: "Nepal Mountaineering Association",
-      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
       expertise: ["Adventure Tourism", "Mountain Expeditions", "Tourism Safety Standards"],
       bio: "Prakash Gurung is a veteran mountaineer and tourism professional with over 25 years of experience in adventure tourism. As the President of the Nepal Mountaineering Association, he works to promote sustainable mountaineering practices and safety standards. A certified mountain guide who has summited Mt. Everest three times, Prakash combines practical field experience with strategic leadership in adventure tourism development.",
       achievements: [
@@ -101,10 +103,10 @@ const JuryMentors = () => {
   const mentors = [
     {
       id: 5,
-      name: "Maya Sherpa",
-      title: "Founder & CEO",
-      organization: "EcoTrek Nepal",
-      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
+      name: "Animesh Bastola",
+      title: "Mentor Co-ordinator",
+      organization: " United National College, Dharan, Sunsari",
+      image: an,
       expertise: ["Eco-Tourism", "Sustainable Business Models", "Digital Marketing"],
       bio: "Maya Sherpa is a successful tourism entrepreneur who founded EcoTrek Nepal, a leading sustainable trekking company. Her business model focuses on environmental conservation, fair employment practices, and authentic cultural experiences. Maya holds an MBA from Tribhuvan University and has completed specialized training in sustainable tourism at Cornell University. Her company has been recognized internationally for its innovative approach to responsible tourism.",
       achievements: [
@@ -117,10 +119,10 @@ const JuryMentors = () => {
     },
     {
       id: 6,
-      name: "Dr. Ramesh Poudel",
-      title: "Professor",
-      organization: "Kathmandu School of Tourism",
-      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
+      name: "Ashlesha Karki",
+      title: "Deputy Managing Director",
+      organization: " Hotel Mechi Crown",
+      image: Ashlesha ,
       expertise: ["Tourism Education", "Research Methodology", "Cultural Tourism"],
       bio: "Dr. Ramesh Poudel is a leading academic in tourism studies with a focus on cultural tourism development. As a Professor at the Kathmandu School of Tourism, he mentors students and conducts research on sustainable tourism practices. With a Ph.D. in Cultural Anthropology and extensive fieldwork experience, Dr. Poudel brings academic rigor and research expertise to tourism project development.",
       achievements: [
@@ -128,15 +130,15 @@ const JuryMentors = () => {
         "Developed Nepal's first comprehensive tourism curriculum",
         "Research consultant for UNESCO World Heritage Sites in Nepal",
       ],
-      linkedin: "https://linkedin.com/in/ramesh-poudel",
+      linkedin: "https://www.linkedin.com/in/ashlesha-karki-75739a182",
       email: "r.poudel@kst.edu.np",
     },
     {
       id: 7,
-      name: "Jennifer Wong",
+      name: "Basudev Baral",
       title: "Digital Tourism Consultant",
       organization: "Tourism Tech Asia",
-      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
       expertise: ["Digital Transformation", "Online Marketing", "Tourism Technology"],
       bio: "Jennifer Wong specializes in digital transformation for tourism businesses across Asia. With experience working with major online travel platforms and technology companies, she helps traditional tourism businesses adapt to the digital landscape. Jennifer has an MSc in Digital Marketing from Singapore Management University and certification in Tourism Analytics from Cornell University.",
       achievements: [
@@ -149,10 +151,10 @@ const JuryMentors = () => {
     },
     {
       id: 8,
-      name: "Binod Magar",
-      title: "Investment Director",
+      name: "Bhabish Shrestha",
+      title: "Journalist and tourism researcher",
       organization: "Nepal Tourism Investment Fund",
-      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
       expertise: ["Tourism Finance", "Investment Analysis", "Business Planning"],
       bio: "Binod Magar is a financial expert specializing in tourism investment. As the Investment Director at Nepal Tourism Investment Fund, he evaluates tourism projects for funding and provides financial advisory services to tourism entrepreneurs. With a background in investment banking and an MBA in Finance from Harvard Business School, Binod brings strong financial expertise to tourism project development.",
       achievements: [
@@ -163,6 +165,55 @@ const JuryMentors = () => {
       linkedin: "https://linkedin.com/in/binod-magar",
       email: "binod@ntif.com.np",
     },
+    {
+      id: 9,
+      name: "Birat Anupam",
+      title: "Journalist and tourism researcher",
+      organization: "Nepal Tourism Investment Fund",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
+      expertise: ["Tourism Finance", "Investment Analysis", "Business Planning"],
+      bio: "Binod Magar is a financial expert specializing in tourism investment. As the Investment Director at Nepal Tourism Investment Fund, he evaluates tourism projects for funding and provides financial advisory services to tourism entrepreneurs. With a background in investment banking and an MBA in Finance from Harvard Business School, Binod brings strong financial expertise to tourism project development.",
+      achievements: [
+        "Facilitated over $10 million in investments for tourism startups in Nepal",
+        "Developed financial modeling templates specifically for tourism businesses",
+        "Former investment analyst at Goldman Sachs with focus on hospitality sector",
+      ],
+      linkedin: "https://linkedin.com/in/binod-magar",
+      email: "binod@ntif.com.np",
+    },
+    {
+      id: 10,
+      name: "Ramesh K Rai",
+      title: "Greater Mundum Trail Initiator and Promoter",
+      organization: "Nepal Tourism Investment Fund",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
+      expertise: ["Tourism Finance", "Investment Analysis", "Business Planning"],
+      bio: "Binod Magar is a financial expert specializing in tourism investment. As the Investment Director at Nepal Tourism Investment Fund, he evaluates tourism projects for funding and provides financial advisory services to tourism entrepreneurs. With a background in investment banking and an MBA in Finance from Harvard Business School, Binod brings strong financial expertise to tourism project development.",
+      achievements: [
+        "Facilitated over $10 million in investments for tourism startups in Nepal",
+        "Developed financial modeling templates specifically for tourism businesses",
+        "Former investment analyst at Goldman Sachs with focus on hospitality sector",
+      ],
+      linkedin: "https://linkedin.com/in/binod-magar",
+      email: "binod@ntif.com.np",
+    },
+    {
+      id: 11,
+      name: "Suman Ghimire",
+      title: "Senior Manager  ",
+      organization: "Tourism Marketing and Promotion Department : NTB",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
+      expertise: ["Tourism Finance", "Investment Analysis", "Business Planning"],
+      bio: "Binod Magar is a financial expert specializing in tourism investment. As the Investment Director at Nepal Tourism Investment Fund, he evaluates tourism projects for funding and provides financial advisory services to tourism entrepreneurs. With a background in investment banking and an MBA in Finance from Harvard Business School, Binod brings strong financial expertise to tourism project development.",
+      achievements: [
+        "Facilitated over $10 million in investments for tourism startups in Nepal",
+        "Developed financial modeling templates specifically for tourism businesses",
+        "Former investment analyst at Goldman Sachs with focus on hospitality sector",
+      ],
+      linkedin: "https://linkedin.com/in/binod-magar",
+      email: "binod@ntif.com.np",
+    },
+    
   ]
 
   return (

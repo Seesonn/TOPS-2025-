@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { Button } from "../../ui/Button"
 import SpeakerCard from "./SpeakerCard"
+import ak from "../../assests/AshleshaKarki.jpeg"
 
 const SpeakersSection = () => {
 
@@ -10,14 +11,14 @@ const SpeakersSection = () => {
       name: "Ashlesha Karki",
       organization: " Hotel Mechi Crown",
       role: "Deputy Managing Director",
-      image: "https://tops.alison.com.np/uploads/speaker_1742803607.png",
+      image: ak,
     },
     {
       id: 2,
       name: "Rajesh Thapa",
       organization: "Koshi Tourism Development",
       role: "Director",
-      image: "https://tops.alison.com.np/uploads/speaker_1742805398.png",
+      image: "https://imgs.search.brave.com/GVQhBlUR8C0YlnBG_cMBRa19Bq5lDtMgOG64_aRZlKs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0xHRF9HYW1p/bmdfYXRfdGhlXzIw/MTVfTFBMX1N1bW1l/cl9GaW5hbHMuanBn",
     },
     {
       id: 3,
