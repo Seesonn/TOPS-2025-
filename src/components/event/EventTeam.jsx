@@ -88,7 +88,8 @@ const EventTeam = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* flex flex-wrap justify-center */}
           {teamMembers.map((member) => (
             <EventOrganizerCard
               key={member.id}

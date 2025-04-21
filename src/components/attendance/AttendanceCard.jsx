@@ -120,7 +120,7 @@ const AttendanceCard = ({ name, organization, ticketType = "standard" }) => {
         </div> */}
 
         <div className="pt-8 flex flex-col items-center text-center">
-          <h3 className={`text-2xl font-bold mb-2 ${colors.text}`}>{name}</h3>
+          <h3 className={`text-xl font-bold mb-2 ${colors.text}`}>{name}</h3>
 
           <div className={`px-4 py-2 rounded-lg ${colors.highlight}`}>
             <p className={`text-sm font-medium ${colors.text} opacity-90`}>

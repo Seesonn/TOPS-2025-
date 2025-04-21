@@ -87,7 +87,7 @@ const EventOrganizerCard = ({
   
 }) => {
   return (
-    <Card className="group relative overflow-hidden rounded-xl transition-all duration-500 hover:shadow-2xl border border-gray-100 bg-white">
+    <Card className="group relative overflow-hidden  rounded-xl transition-all duration-500 hover:shadow-2xl border border-gray-100 bg-white">
       {/* Background pattern - subtle grid */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white opacity-50 z-0"></div>
 
