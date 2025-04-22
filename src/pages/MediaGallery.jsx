@@ -26,7 +26,7 @@ const MediaGallery = () => {
     {
       id: 1,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Opening Ceremony",
       description: "The grand opening of ToPS Koshi 2024 with the Minister of Tourism and local dignitaries",
       category: "events",
@@ -35,7 +35,7 @@ const MediaGallery = () => {
     {
       id: 2,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Keynote Speech",
       description: "Dr. Rajesh Sharma delivering the keynote address on 'Future of Sustainable Tourism in Nepal'",
       category: "events",
@@ -44,7 +44,7 @@ const MediaGallery = () => {
     {
       id: 3,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Project Presentation",
       description: "Team Everest presenting their innovative eco-tourism project to the panel of judges",
       category: "presentations",
@@ -53,7 +53,7 @@ const MediaGallery = () => {
     {
       id: 4,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Innovation Workshop",
       description: "Participants engaged in the 'Tourism Innovation Strategies' workshop led by industry experts",
       category: "workshops",
@@ -62,7 +62,7 @@ const MediaGallery = () => {
     {
       id: 5,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Networking Dinner",
       description: "Participants and sponsors networking during the gala dinner at the Rooftop Terrace",
       category: "networking",
@@ -71,7 +71,7 @@ const MediaGallery = () => {
     {
       id: 6,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Award Ceremony",
       description: "Team Everest receiving the first prize for their EcoTrek Nepal project",
       category: "awards",
@@ -80,7 +80,7 @@ const MediaGallery = () => {
     {
       id: 7,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Panel Discussion",
       description: "Industry experts discussing 'Sustainable Tourism Development in Post-Pandemic Era'",
       category: "events",
@@ -89,7 +89,7 @@ const MediaGallery = () => {
     {
       id: 8,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Cultural Performance",
       description: "Traditional Nepali cultural performance showcasing the rich heritage of Koshi Province",
       category: "events",
@@ -98,7 +98,7 @@ const MediaGallery = () => {
     {
       id: 9,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Mentoring Session",
       description: "One-on-one mentoring session between Team Digital Sherpas and tourism technology expert",
       category: "workshops",
@@ -107,7 +107,7 @@ const MediaGallery = () => {
     {
       id: 10,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Closing Ceremony",
       description: "The closing ceremony with all participants, sponsors, and organizers",
       category: "events",
@@ -116,7 +116,7 @@ const MediaGallery = () => {
     {
       id: 11,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Sponsor Exhibition",
       description: "Nepal Tourism Board and other sponsors showcasing their initiatives at the exhibition hall",
       category: "networking",
@@ -125,7 +125,7 @@ const MediaGallery = () => {
     {
       id: 12,
       type: "image",
-      url: "/placeholder.svg?height=600&width=800",
+      url: "https://imgs.search.brave.com/CTyUxu1V9ZDPBCux3ji2r-CpaGp2jbjWtTjG3G67D3g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0ctbG9vdF9H/cmFuZHNsYW1fMjAx/OS5qcGc",
       title: "Silver Award Winners",
       description: "Team Digital Sherpas receiving the silver award for their Virtual Himalaya project",
       category: "awards",
@@ -141,7 +141,7 @@ const MediaGallery = () => {
   const videos = [
     {
       id: 1,
-      thumbnail: "/placeholder.svg?height=720&width=1280",
+      thumbnail: "https://d16f573ilcot6q.cloudfront.net/wp-content/uploads/2025/04/unnamed-2025-04-12T083150.005.webp",
       videoUrl: "https://example.com/videos/tops-highlights.mp4",
       title: "ToPS Koshi 2024 Highlights",
       description:
@@ -151,7 +151,7 @@ const MediaGallery = () => {
     },
     {
       id: 2,
-      thumbnail: "/placeholder.svg?height=720&width=1280",
+      thumbnail: "https://d16f573ilcot6q.cloudfront.net/wp-content/uploads/2025/04/unnamed-2025-04-12T083150.005.webp",
       videoUrl: "https://example.com/videos/keynote-speech.mp4",
       title: "Keynote Speech: Future of Tourism in Nepal",
       description:
@@ -161,7 +161,7 @@ const MediaGallery = () => {
     },
     {
       id: 3,
-      thumbnail: "/placeholder.svg?height=720&width=1280",
+      thumbnail: "https://d16f573ilcot6q.cloudfront.net/wp-content/uploads/2025/04/unnamed-2025-04-12T083150.005.webp",
       videoUrl: "https://example.com/videos/winner-presentation.mp4",
       title: "Winner Project Presentation: EcoTrek Nepal",
       description:
@@ -171,7 +171,7 @@ const MediaGallery = () => {
     },
     {
       id: 4,
-      thumbnail: "/placeholder.svg?height=720&width=1280",
+      thumbnail: "https://d16f573ilcot6q.cloudfront.net/wp-content/uploads/2025/04/unnamed-2025-04-12T083150.005.webp",
       videoUrl: "https://example.com/videos/cultural-performance.mp4",
       title: "Cultural Performance Highlights",
       description:
@@ -181,7 +181,7 @@ const MediaGallery = () => {
     },
     {
       id: 5,
-      thumbnail: "/placeholder.svg?height=720&width=1280",
+      thumbnail: "https://d16f573ilcot6q.cloudfront.net/wp-content/uploads/2025/04/unnamed-2025-04-12T083150.005.webp",
       videoUrl: "https://example.com/videos/panel-discussion.mp4",
       title: "Panel Discussion: Sustainable Tourism",
       description:
@@ -191,7 +191,7 @@ const MediaGallery = () => {
     },
     {
       id: 6,
-      thumbnail: "/placeholder.svg?height=720&width=1280",
+      thumbnail: "https://d16f573ilcot6q.cloudfront.net/wp-content/uploads/2025/04/unnamed-2025-04-12T083150.005.webp",
       videoUrl: "https://example.com/videos/award-ceremony.mp4",
       title: "Award Ceremony Full Coverage",
       description: "Complete coverage of the award ceremony recognizing the most innovative tourism projects",
