@@ -9,7 +9,7 @@ const ContactInfo = () => {
       content: (
         <div>
           <p>G. Ramayana Hotel</p>
-          <p>Koshi Province, Nepal</p>
+          <p>Kathmandu, Nepal</p>
         </div>
       ),
     },
@@ -31,35 +31,35 @@ const ContactInfo = () => {
           <p>
             General Inquiries:{" "}
             <a href="mailto:info@topskoshi2025.com" className="text-[#223F80] hover:underline">
-              info@topskoshi2025.com
+              topskoshi2025@gmail.com
             </a>
           </p>
           <p>
             Registration:{" "}
             <a href="mailto:register@topskoshi2025.com" className="text-[#223F80] hover:underline">
-              register@topskoshi2025.com
+              registertopskoshi2025@gmail.com
             </a>
           </p>
           <p>
             Sponsorship:{" "}
             <a href="mailto:sponsors@topskoshi2025.com" className="text-[#223F80] hover:underline">
-              sponsors@topskoshi2025.com
+              sponsorstopskoshi2025@gmail.com
             </a>
           </p>
         </div>
       ),
     },
-    {
-      icon: "clock",
-      title: "Office Hours",
-      content: (
-        <div>
-          <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-          <p>Saturday: 10:00 AM - 2:00 PM</p>
-          <p>Sunday: Closed</p>
-        </div>
-      ),
-    },
+    // {
+    //   icon: "clock",
+    //   title: "Office Hours",
+    //   content: (
+    //     <div>
+    //       <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+    //       <p>Saturday: 10:00 AM - 2:00 PM</p>
+    //       <p>Sunday: Closed</p>
+    //     </div>
+    //   ),
+    // },
   ]
 
   const getIcon = (iconName) => {
@@ -145,7 +145,7 @@ const ContactInfo = () => {
       <div className="space-y-6">
         {contactDetails.map((detail, index) => (
           <div key={index} className="flex">
-            <div className="w-12 h-12 rounded-full bg-[#223F80]/10 flex items-center justify-center text-[#223F80] mr-4 flex-shrink-0">
+            <div className="w-12 h-12 rounded-full bg-blue-100/60 flex items-center justify-center text-[#223F80] mr-4 flex-shrink-0">
               {getIcon(detail.icon)}
             </div>
             <div>

@@ -19,7 +19,7 @@ const JuryMentorCard = ({ expert, onClick }) => {
         {/* Gradient overlay on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="absolute bottom-4 left-4 right-4">
-            <span className="inline-block px-3 py-1 bg-blue-600 text-white text-xs font-medium rounded-full mb-2">
+            <span className="inline-block px-3 py-1 bg-[#223F80] text-white text-xs font-medium rounded-full mb-2">
               View Profile
             </span>
           </div>
@@ -27,15 +27,15 @@ const JuryMentorCard = ({ expert, onClick }) => {
       </div>
 
       <div className="p-6 border-t border-gray-100">
-        <h3 className="text-xl font-bold mb-1 group-hover:text-blue-600 transition-colors">{expert.name}</h3>
-        <p className="text-blue-600 font-medium">{expert.title}</p>
+        <h3 className="text-xl font-bold mb-1 group-hover:text-[#2783BC] transition-colors">{expert.name}</h3>
+        <p className="text-[#F58432] font-medium">{expert.title}</p>
         <p className="text-gray-600 text-sm mb-4">{expert.organization}</p>
 
         <div className="flex flex-wrap gap-2 mt-3">
           {expert.expertise.slice(0, 2).map((skill, index) => (
             <span
               key={index}
-              className="inline-block px-2 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium"
+              className="inline-block px-2 py-1 bg-blue-50 text-[#2783BC] rounded-md text-xs font-medium"
             >
               {skill}
             </span>

@@ -51,7 +51,7 @@ const JuryMentorModal = ({ expert, onClose }) => {
                     href={expert.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                    className="flex items-center text-[#223F80] "
                   >
                     <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -61,11 +61,11 @@ const JuryMentorModal = ({ expert, onClose }) => {
 
                   <a
                     href={`mailto:${expert.email}`}
-                    className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                    className="flex items-center text-[#223F80]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 mr-2"
+                      className="h-5 w-5 mr-2 "
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -87,19 +87,19 @@ const JuryMentorModal = ({ expert, onClose }) => {
               <div className="flex items-center mb-4">
                 <h2 className="text-2xl font-bold">{expert.name}</h2>
                 <div className="ml-auto">
-                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-[#F58432] rounded-full text-sm font-medium">
                     {expert.title}
                   </span>
                 </div>
               </div>
 
-              <p className="text-blue-600 font-medium mb-6">{expert.organization}</p>
+              <p className="text-gray-600 font-medium mb-6">{expert.organization}</p>
 
               <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-3 flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 text-blue-600"
+                    className="h-5 w-5 mr-2 text-[#223F80]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -120,7 +120,7 @@ const JuryMentorModal = ({ expert, onClose }) => {
                 <h3 className="text-lg font-semibold mb-3 flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 text-blue-600"
+                    className="h-5 w-5 mr-2 text-[#223F80]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -138,7 +138,7 @@ const JuryMentorModal = ({ expert, onClose }) => {
                   {expert.expertise.map((skill, index) => (
                     <span
                       key={index}
-                      className="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                      className="inline-block px-3 py-1 bg-blue-50 text-[#2783BC] rounded-full text-sm font-medium"
                     >
                       {skill}
                     </span>
@@ -150,7 +150,7 @@ const JuryMentorModal = ({ expert, onClose }) => {
                 <h3 className="text-lg font-semibold mb-3 flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 text-blue-600"
+                    className="h-5 w-5 mr-2 text-[#223F80]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

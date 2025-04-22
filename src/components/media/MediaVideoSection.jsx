@@ -25,7 +25,7 @@ const MediaVideoSection = ({ videos }) => {
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                   <button
                     onClick={() => setActiveVideo(video)}
-                    className="w-16 h-16 rounded-full bg-blue-600 bg-opacity-90 flex items-center justify-center hover:bg-opacity-100 transition-all"
+                    className="w-16 h-16 rounded-full  bg-black bg-opacity-50  flex items-center justify-center hover:bg-opacity-70 transition-all"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

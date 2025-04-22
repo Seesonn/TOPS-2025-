@@ -39,7 +39,7 @@ export const VideoPlayer = ({ src, poster, title }) => {
             onClick={handlePlay}
             className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-50 transition-opacity"
           >
-            <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-black/50 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-white"
