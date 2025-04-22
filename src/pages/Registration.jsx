@@ -7,6 +7,8 @@ import RegistrationSteps from "../components/registration/RegistrationSteps"
 import RegistrationFAQ from "../components/registration/RegistrationFAQ"
 import RegistrationTimeline from "../components/registration/RegistrationTimeline"
 import { Card } from "../ui/Card"
+import EligibilitySection from "../components/registration/EligibilitySection"
+import ProjectDevelopmentPhase from "../components/registration/ProjectDevelopmentPhase"
 
 const Registration = () => {
   const [registrationComplete, setRegistrationComplete] = useState(false)
@@ -60,6 +62,8 @@ const Registration = () => {
             </div>
 
             <RegistrationSteps />
+            <EligibilitySection/>
+            <ProjectDevelopmentPhase/>
 
             <div className="my-16">
               <h3 className="text-2xl font-bold text-center mb-8">Registration Form</h3>
