@@ -32,7 +32,7 @@ const ProjectDevelopmentPhase = () => {
       {/* <p className="text-gray-600 text-center max-w-2xl mx-auto text-lg">Requirements for Top 10 Finalist Teams</p> */}
 
       <Card className="max-w-4xl mx-auto p-8 animate-slide-up">
-        {/* Header */}
+      
 
         {/* Content */}
         <div>
