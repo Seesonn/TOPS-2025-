@@ -159,7 +159,7 @@ const PostEventStats = ({ year }) => {
   }
 
   return (
-    <div className="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl mb-20 relative overflow-hidden">
+    <div className="py-16 bg-gradient-to-r from-[#223F80] to-[#2783BC] text-white rounded-xl mb-20 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>

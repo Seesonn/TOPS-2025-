@@ -148,7 +148,7 @@ const AwardCategory = () => {
         <div key={index} className="animate-slide-right" style={{ animationDelay: `${index * 0.1}s` }}>
           <Card className="p-6 h-full hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div className="flex items-start">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center text-blue-600 mr-4 flex-shrink-0">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center text-[#223F80] mr-4 flex-shrink-0">
                 {category.icon}
               </div>
               <div>
@@ -176,7 +176,7 @@ const AwardCategory = () => {
                   {category.criteria.map((criterion, i) => (
                     <span
                       key={i}
-                      className="inline-block px-2 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium"
+                      className="inline-block px-2 py-1 bg-blue-50 text-[#2783BC] rounded-md text-xs font-medium"
                     >
                       {criterion}
                     </span>

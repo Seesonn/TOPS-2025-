@@ -80,7 +80,7 @@ const MediaDownloads = () => {
         {downloadItems.map((item, index) => (
           <div key={index} className="animate-slide-right" style={{ animationDelay: `${index * 0.1}s` }}>
             <Card className="p-6 h-full flex flex-col">
-              <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+              <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-[#223F80] mb-4">
                 {item.icon}
               </div>
               <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
@@ -115,7 +115,7 @@ const MediaDownloads = () => {
           If you need specific photos, videos, or other media assets not available for download, please contact our
           media relations team.
         </p>
-        <a href="mailto:media@topskoshi2025.com" className="text-blue-600 hover:text-blue-800 font-medium">
+        <a href="mailto:media@topskoshi2025.com" className="text-[#223F80] hover:text-blue-800 font-medium">
           media@topskoshi2025.com
         </a>
       </div>

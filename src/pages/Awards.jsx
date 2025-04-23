@@ -41,8 +41,8 @@ const Awards = () => {
                 key={tab.id}
                 className={`px-6 py-3 font-medium text-sm transition-colors ${
                   activeTab === tab.id
-                    ? "text-blue-600 border-b-2 border-blue-600"
-                    : "text-gray-600 hover:text-blue-600"
+                    ? "text-[#223F80] border-b-2 border-[#223F80]"
+                    : "text-gray-600 hover:text-[#223F80]"
                 }`}
                 onClick={() => setActiveTab(tab.id)}
               >

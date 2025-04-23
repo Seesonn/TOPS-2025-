@@ -71,7 +71,7 @@ const AwardJudgingCriteria = () => {
             <div className="flex flex-col md:flex-row md:items-start">
               <div className="md:w-1/4 mb-4 md:mb-0">
                 <h4 className="text-xl font-semibold">{criterion.name}</h4>
-                <div className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mt-2">
+                <div className="inline-block px-3 py-1 bg-blue-100 text-[#2783BC] rounded-full text-sm font-medium mt-2">
                   Weight: {criterion.weight}
                 </div>
               </div>

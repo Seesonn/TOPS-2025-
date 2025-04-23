@@ -118,7 +118,7 @@ const AwardPrizes = () => {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8 text-blue-600"
+          className="h-8 w-8 text-[#223F80]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -226,7 +226,7 @@ const AwardPrizes = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-semibold">{award.name}</h4>
-                  <p className="text-blue-600 font-medium">{award.prize}</p>
+                  <p className="text-[#223F80] font-medium">{award.prize}</p>
                 </div>
               </div>
               <p className="text-gray-700">{award.description}</p>
@@ -244,7 +244,7 @@ const AwardPrizes = () => {
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                  className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -259,7 +259,7 @@ const AwardPrizes = () => {
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                  className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -274,7 +274,7 @@ const AwardPrizes = () => {
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                  className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -295,7 +295,7 @@ const AwardPrizes = () => {
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                  className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -310,7 +310,7 @@ const AwardPrizes = () => {
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                  className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -325,7 +325,7 @@ const AwardPrizes = () => {
               <li className="flex items-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                  className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >

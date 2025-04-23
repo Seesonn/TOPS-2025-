@@ -132,13 +132,13 @@ const AwardPastWinners = () => {
                         ? "bg-gray-400"
                         : winner.place.includes("3rd")
                           ? "bg-amber-700"
-                          : "bg-blue-600"
+                          : "bg-[#223F80]"
                   }`}
                 >
                   {winner.place}
                 </div>
                 <h4 className="text-xl font-semibold mb-1">{winner.project}</h4>
-                <p className="text-blue-600 font-medium mb-2">by {winner.team}</p>
+                <p className="text-[#F58432] font-medium mb-2">by {winner.team}</p>
                 <p className="text-gray-600">{winner.description}</p>
               </div>
             </Card>

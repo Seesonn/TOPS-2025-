@@ -141,23 +141,23 @@ const PostEventWinners = ({ year }) => {
             </div>
 
             <div className="md:w-1/2">
-              <h4 className="text-2xl font-bold mb-2 text-gradient bg-gradient-to-r from-blue-600 to-indigo-600">
+              <h4 className="text-2xl font-bold mb-2 text-gradient bg-gradient-to-r from-[#223F80] to-indigo-600">
                 {winner.project}
               </h4>
-              <p className="text-blue-600 font-medium mb-4">by {winner.team}</p>
+              <p className="text-[#F58432] font-medium mb-4">by {winner.team}</p>
 
               <p className="text-gray-700 mb-4">{winner.description}</p>
 
-              <div className="mb-4 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-                <h5 className="font-semibold text-blue-800">Post-Event Achievement:</h5>
-                <p className="text-blue-700">{winner.achievement}</p>
+              <div className="mb-4 p-3 bg-blue-50 rounded-lg border-l-4 border-[#2783BC]">
+                <h5 className="font-semibold text-[#2783BC]">Post-Event Achievement:</h5>
+                <p className="text-[#2783BC]">{winner.achievement}</p>
               </div>
 
               <div className="mb-4">
                 <h5 className="font-semibold mb-2">Team Members:</h5>
                 <div className="flex flex-wrap gap-2">
                   {winner.members.map((member, i) => (
-                    <span key={i} className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    <span key={i} className="inline-block px-3 py-1 bg-blue-100 text-[#2783BC] rounded-full text-sm">
                       {member}
                     </span>
                   ))}
