@@ -278,7 +278,7 @@ const SponsorshipBenefits = () => {
           <button
             key={tab.id}
             className={`px-6 py-3 font-medium text-sm transition-colors ${
-              activeTab === tab.id ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-600 hover:text-blue-600"
+            activeTab === tab.id ? "text-[#223F80] border-b-2 border-[#223F80]" : "text-gray-600 hover:text-[#223F80]"
             }`}
             onClick={() => setActiveTab(tab.id)}
           >
@@ -290,7 +290,7 @@ const SponsorshipBenefits = () => {
       <div className="grid md:grid-cols-3 gap-6 animate-slide-right">
         {benefits[activeTab].map((benefit, index) => (
           <Card key={index} className="p-6 h-full">
-            <div className="w-16 h-16 mb-4 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+            <div className="w-16 h-16 mb-4 rounded-full bg-blue-100 flex items-center justify-center text-[#223F80]">
               {benefit.icon}
             </div>
             <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>

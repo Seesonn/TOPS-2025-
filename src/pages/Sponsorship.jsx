@@ -97,7 +97,7 @@ const Sponsorship = () => {
 
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center text-[#223F80]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
@@ -127,7 +127,7 @@ const Sponsorship = () => {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center text-[#223F80]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
@@ -151,7 +151,7 @@ const Sponsorship = () => {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center text-[#223F80]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-8 w-8"
