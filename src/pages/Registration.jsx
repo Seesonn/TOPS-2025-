@@ -64,6 +64,8 @@ const Registration = () => {
             <RegistrationSteps />
             <EligibilitySection/>
             <ProjectDevelopmentPhase/>
+            
+            
 
             <div className="my-16">
               <h3 className="text-2xl font-bold text-center mb-8">Registration Form</h3>
