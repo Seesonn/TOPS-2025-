@@ -26,7 +26,7 @@ const ProjectDevelopmentPhase = () => {
   return (
     // <div className="  px-6 py-4 rounded-t-lg">
     <div className="my-16">
-      <h2 className="text-2xl font-bold text-center mb-12">
+      <h2 className="text-2xl font-bold text-center mb-8">
         Project Development Phase
       </h2>
       {/* <p className="text-gray-600 text-center max-w-2xl mx-auto text-lg">Requirements for Top 10 Finalist Teams</p> */}

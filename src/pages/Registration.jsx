@@ -47,7 +47,7 @@ const Registration = () => {
             <p className="text-gray-600">
               Please save this ID for future reference. If you have any questions, please contact us at{" "}
               <a href="mailto:info@topskoshi2025.com" className="text-blue-600 hover:underline">
-                info@topskoshi2025.com
+              topskoshi2025@gmail.com
               </a>
             </p>
           </Card>
