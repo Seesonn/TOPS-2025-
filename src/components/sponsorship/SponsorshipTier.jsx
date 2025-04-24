@@ -6,14 +6,11 @@ import { Button } from "../../ui/Button"
 const SponsorshipTier = ({ tier, onSelect }) => {
   return (
     <Card className="h-full flex flex-col overflow-visible relative">
-      {tier.remaining < tier.available && (
-        <div className="absolute -top-3 -right-3 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
-          Only {tier.remaining} left!
-        </div>
-      )}
+    
 
       <div className={`bg-gradient-to-r ${tier.color} text-white p-6 rounded-t-xl`}>
         <h3 className="text-xl font-bold mb-1">{tier.name}</h3>
+        <p>{tier.discription}</p>
         <p className="text-2xl font-bold">{tier.price}</p>
       </div>
 

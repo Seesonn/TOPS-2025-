@@ -1,8 +1,6 @@
-
-
-import { useState } from "react"
-import { Card } from "../../ui/Card"
-import { Button } from "../../ui/Button"
+import { useState } from "react";
+import { Card } from "../../ui/Card";
+import { Button } from "../../ui/Button";
 
 const SponsorshipForm = ({ onClose }) => {
   const [formData, setFormData] = useState({
@@ -13,63 +11,66 @@ const SponsorshipForm = ({ onClose }) => {
     website: "",
     sponsorshipLevel: "",
     message: "",
-  })
+  });
 
-  const [errors, setErrors] = useState({})
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
-    }))
+    }));
 
     // Clear error when field is edited
     if (errors[name]) {
       setErrors((prev) => ({
         ...prev,
         [name]: null,
-      }))
+      }));
     }
-  }
+  };
 
   const validate = () => {
-    const newErrors = {}
+    const newErrors = {};
 
-    if (!formData.companyName.trim()) newErrors.companyName = "Company name is required"
-    if (!formData.contactName.trim()) newErrors.contactName = "Contact name is required"
+    if (!formData.companyName.trim())
+      newErrors.companyName = "Company name is required";
+    if (!formData.contactName.trim())
+      newErrors.contactName = "Contact name is required";
 
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required"
+      newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email is invalid"
+      newErrors.email = "Email is invalid";
     }
 
-    if (!formData.phone.trim()) newErrors.phone = "Phone number is required"
-    if (!formData.sponsorshipLevel) newErrors.sponsorshipLevel = "Please select a sponsorship level"
+    if (!formData.phone.trim()) newErrors.phone = "Phone number is required";
+    if (!formData.sponsorshipLevel)
+      newErrors.sponsorshipLevel = "Please select a sponsorship level";
 
-    return newErrors
-  }
+    return newErrors;
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    const newErrors = validate()
+    const newErrors = validate();
     if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors)
-      return
+      setErrors(newErrors);
+      return;
     }
 
-    setIsSubmitting(true)
+    setIsSubmitting(true);
 
     // Simulate API call
     setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-    }, 1500)
-  }
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+    }, 1500);
+  };
 
   if (isSubmitted) {
     return (
@@ -82,26 +83,37 @@ const SponsorshipForm = ({ onClose }) => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 13l4 4L19 7"
+            />
           </svg>
         </div>
-        <h3 className="text-2xl font-bold mb-4">Thank You for Your Interest!</h3>
+        <h3 className="text-2xl font-bold mb-4">
+          Thank You for Your Interest!
+        </h3>
         <p className="text-gray-600 mb-6">
-          We've received your sponsorship application and will contact you within 2 business days to discuss the next
-          steps.
+          We've received your sponsorship application and will contact you
+          within 2 business days to discuss the next steps.
         </p>
         <Button variant="primary" onClick={onClose}>
           Return to Sponsorship Page
         </Button>
       </Card>
-    )
+    );
   }
 
   return (
     <Card className="max-w-3xl mx-auto my-16 p-8 animate-slide-up">
       <div className="flex justify-between items-center mb-6">
         <h3 className="text-2xl font-bold">Sponsorship Application</h3>
-        <button onClick={onClose} className="text-gray-500 hover:text-gray-700" aria-label="Close form">
+        <button
+          onClick={onClose}
+          className="text-gray-500 hover:text-gray-700"
+          aria-label="Close form"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -109,7 +121,12 @@ const SponsorshipForm = ({ onClose }) => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
       </div>
@@ -117,7 +134,10 @@ const SponsorshipForm = ({ onClose }) => {
       <form onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div>
-            <label htmlFor="companyName" className="block text-sm font-medium text-gray-700 mb-1">
+            <label
+              htmlFor="companyName"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Company Name *
             </label>
             <input
@@ -130,11 +150,16 @@ const SponsorshipForm = ({ onClose }) => {
                 errors.companyName ? "border-red-500" : "border-gray-300"
               }`}
             />
-            {errors.companyName && <p className="mt-1 text-sm text-red-600">{errors.companyName}</p>}
+            {errors.companyName && (
+              <p className="mt-1 text-sm text-red-600">{errors.companyName}</p>
+            )}
           </div>
 
           <div>
-            <label htmlFor="contactName" className="block text-sm font-medium text-gray-700 mb-1">
+            <label
+              htmlFor="contactName"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Contact Person *
             </label>
             <input
@@ -147,11 +172,16 @@ const SponsorshipForm = ({ onClose }) => {
                 errors.contactName ? "border-red-500" : "border-gray-300"
               }`}
             />
-            {errors.contactName && <p className="mt-1 text-sm text-red-600">{errors.contactName}</p>}
+            {errors.contactName && (
+              <p className="mt-1 text-sm text-red-600">{errors.contactName}</p>
+            )}
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Email Address *
             </label>
             <input
@@ -164,11 +194,16 @@ const SponsorshipForm = ({ onClose }) => {
                 errors.email ? "border-red-500" : "border-gray-300"
               }`}
             />
-            {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
+            {errors.email && (
+              <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+            )}
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+            <label
+              htmlFor="phone"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Phone Number *
             </label>
             <input
@@ -181,11 +216,16 @@ const SponsorshipForm = ({ onClose }) => {
                 errors.phone ? "border-red-500" : "border-gray-300"
               }`}
             />
-            {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
+            {errors.phone && (
+              <p className="mt-1 text-sm text-red-600">{errors.phone}</p>
+            )}
           </div>
 
           <div>
-            <label htmlFor="website" className="block text-sm font-medium text-gray-700 mb-1">
+            <label
+              htmlFor="website"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Company Website
             </label>
             <input
@@ -199,7 +239,10 @@ const SponsorshipForm = ({ onClose }) => {
           </div>
 
           <div>
-            <label htmlFor="sponsorshipLevel" className="block text-sm font-medium text-gray-700 mb-1">
+            <label
+              htmlFor="sponsorshipLevel"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Preferred Sponsorship Level *
             </label>
             <select
@@ -212,17 +255,30 @@ const SponsorshipForm = ({ onClose }) => {
               }`}
             >
               <option value="">Select a level</option>
-              <option value="title">Title Sponsor (NPR 500,000)</option>
-              <option value="gold">Gold Sponsor (NPR 300,000)</option>
-              <option value="silver">Silver Sponsor (NPR 150,000)</option>
-              <option value="bronze">Bronze Sponsor (NPR 75,000)</option>
+              <option value="title">Title Sponsor (NPR 10,00,000)</option>
+              <option value="association">
+                In Association With (NPR 500,000)
+              </option>
+              <option value="platinum">Platinum Sponsor (NPR 300,000)</option>
+              <option value="official">Official Partner (NPR 200,000)</option>
+              <option value="supporter">Supporter (NPR 100,000)</option>
+              <option value="spot">
+                During Event Spot Sponsor (NPR 50,000)
+              </option>
             </select>
-            {errors.sponsorshipLevel && <p className="mt-1 text-sm text-red-600">{errors.sponsorshipLevel}</p>}
+            {errors.sponsorshipLevel && (
+              <p className="mt-1 text-sm text-red-600">
+                {errors.sponsorshipLevel}
+              </p>
+            )}
           </div>
         </div>
 
         <div className="mb-6">
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+          <label
+            htmlFor="message"
+            className="block text-sm font-medium text-gray-700 mb-1"
+          >
             Additional Information
           </label>
           <textarea
@@ -249,7 +305,14 @@ const SponsorshipForm = ({ onClose }) => {
                   fill="none"
                   viewBox="0 0 24 24"
                 >
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
                   <path
                     className="opacity-75"
                     fill="currentColor"
@@ -265,8 +328,7 @@ const SponsorshipForm = ({ onClose }) => {
         </div>
       </form>
     </Card>
-  )
-}
+  );
+};
 
-export default SponsorshipForm
-
+export default SponsorshipForm;

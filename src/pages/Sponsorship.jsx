@@ -15,69 +15,80 @@ const Sponsorship = () => {
   const sponsorshipTiers = [
     {
       name: "Title Sponsor",
+      price: "NPR 10,00,000",
+      color: "from-[#F58432] to-[#E04E00]", // Vibrant orange
+      textColor: "text-white",
+      benefits: [
+        "Event titled as '[Your Brand] Tourism Project Showcase 2025'",
+        "Logo on al branding, baners & digital promotions",
+        "Prime media visibility (press, interview, coverage)",
+        "Inauguration speech slot & branded booth",
+        "Social media features & awards reconigation",
+        "VIP 5-star hotel  stay (1 night) & 5 VIP passes",
+        
+      ]
+    },
+    {
+      name: "In Association With",
       price: "NPR 500,000",
-      color: "from-amber-500 to-amber-600",
+      color: "from-[#2783BC] to-[#1A6BA3]", // Professional blue
+      textColor: "text-white",
       benefits: [
-        "Exclusive branding as 'Title Sponsor' in all event materials",
-        "Prime logo placement on event website, banners, and promotional materials",
-        "20-minute keynote presentation opportunity",
-        "VIP access to all event activities and networking sessions",
-        "Dedicated booth space (premium location)",
-        "Full-page advertisement in event program",
-        "Social media promotion (10 dedicated posts)",
-        "Access to participant database",
-        "Opportunity to include promotional items in participant welcome kits",
-        "10 complimentary event passes",
-      ],
-      available: 1,
-      remaining: 1,
+        "Co-branding as 'In Association With [Your Brand]' on all materials",
+        "Prominent logo placement(event/print)",
+        "Panel speaking slot & dedicated exhibition booth",
+        "Media recognition & 3 VIP passes",
+       
+      ]
     },
     {
-      name: "Gold Sponsor",
+      name: "Platinum Sponsor",
       price: "NPR 300,000",
-      color: "from-amber-400 to-amber-500",
+      color: "from-[#223F80] to-[#162A5E]", // Deep navy
+      textColor: "text-white",
       benefits: [
-        "Prominent logo placement on event website, banners, and promotional materials",
-        "10-minute presentation opportunity",
-        "VIP access to all event activities",
-        "Dedicated booth space",
-        "Half-page advertisement in event program",
-        "Social media promotion (5 dedicated posts)",
-        "Opportunity to include promotional items in participant welcome kits",
-        "5 complimentary event passes",
-      ],
-      available: 3,
-      remaining: 2,
+        "Premier visibility Logo placemen on event banners brochures promotional videos, and venue branding booths",
+        "Social media spotlight Featured mentions in all campaigns +2 VIP pasase for networking",
+        "On-stage recognition during the event as our top-tier partner"
+      ]
     },
     {
-      name: "Silver Sponsor",
-      price: "NPR 150,000",
-      color: "from-gray-300 to-gray-400",
+      name: "Official Partner",
+      price: "NPR 200,000",
+      color: "from-[#4CAF50] to-[#388E3C]", // Green
+      textColor: "text-white",
       benefits: [
-        "Logo placement on event website and promotional materials",
-        "Shared booth space",
-        "Quarter-page advertisement in event program",
-        "Social media promotion (3 dedicated posts)",
-        "3 complimentary event passes",
-      ],
-      available: 5,
-      remaining: 3,
+        "Co-branding shared logo space select marketing materials and event standees",
+        "Social media shoutouts +2 vip passes for exclusive access",
+        "Prime branding space at the venue to engage attendees",
+       
+      ]
     },
     {
-      name: "Bronze Sponsor",
-      price: "NPR 75,000",
-      color: "from-amber-700 to-amber-800",
+      name: "Supporter",
+      price: "NPR 100,000",
+      color: "from-[#607D8B] to-[#455A64]", // Slate gray
+      textColor: "text-white",
       benefits: [
-        "Logo placement on event website",
-        "Listing in event program",
-        "Social media mention",
-        "2 complimentary event passes",
-      ],
-      available: 10,
-      remaining: 7,
+        "Digital & print exposure Logo on event website, sociaal media, and printed collateral",
+        "Acknowledgment during event session and 1 VIP pass",
+        "Targeted visibility among industry professionals",
+       
+      ]
     },
+    {
+      name: " Event Spot Sponsor",
+      price: "NPR 50,000",
+      color: "from-[#9C27B0] to-[#7B1FA2]", // Purple
+      textColor: "text-white",
+      benefits: [
+        
+        "On-site branding Dedicated space during the event",
+        "Social media acknowledgment & logo on select materials",
+        "Affordable entry to connect wth a dynamic audience"
+      ]
+    }
   ]
-
   return (
     <div className="bg-gray-50">
       <PageHeader
@@ -178,7 +189,7 @@ const Sponsorship = () => {
         <div className="mb-20">
           <h2 className="section-title text-center mb-16">Sponsorship Packages</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {sponsorshipTiers.map((tier, index) => (
               <div key={index} className="animate-slide-right" style={{ animationDelay: `${index * 0.1}s` }}>
                 <SponsorshipTier tier={tier} onSelect={() => setShowForm(true)} />
