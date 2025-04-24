@@ -187,7 +187,7 @@ const Sponsorship = () => {
           </div>
         </div>
 
-        <SponsorshipBenefits />
+        
 
         {showForm ? (
           <div className="animate-fade-in">
@@ -214,7 +214,7 @@ const Sponsorship = () => {
             </Button>
           </div>
         )}
-
+        <SponsorshipBenefits />
         <SponsorshipTestimonials />
         <SponsorshipFAQ />
       </div>
