@@ -53,8 +53,8 @@ const ObjectiveCard = ({ title, icon, description }) => {
   }
 
   return (
-    <div className="text-center p-6 bg-[#2783BC] rounded-lg">
-      <div className="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-4">
+    <div className="text-center p-6 ">
+      <div className="w-16 h-16 bg-[#2783BC]  rounded-full flex items-center justify-center mx-auto mb-4">
         {getIcon()}
       </div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
