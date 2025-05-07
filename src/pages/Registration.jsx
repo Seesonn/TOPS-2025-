@@ -9,6 +9,7 @@ import RegistrationTimeline from "../components/registration/RegistrationTimelin
 import { Card } from "../ui/Card"
 import EligibilitySection from "../components/registration/EligibilitySection"
 import ProjectDevelopmentPhase from "../components/registration/ProjectDevelopmentPhase"
+import ApprovedTeams from "../components/registration/ApprovedTeams"
 
 const Registration = () => {
   const [registrationComplete, setRegistrationComplete] = useState(false)
@@ -71,7 +72,7 @@ const Registration = () => {
               <h3 className="text-2xl font-bold text-center mb-8">Registration Form</h3>
               <RegistrationForm onComplete={() => setRegistrationComplete(true)} />
             </div>
-
+            <ApprovedTeams/>
             <RegistrationTimeline />
             <RegistrationFAQ />
           </>
