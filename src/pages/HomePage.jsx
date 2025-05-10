@@ -8,7 +8,7 @@ import FloatingTicketButton from "../components/FloatingTicketButton"
 
 const HomePage = () => {
   // Event date: April 28, 2025
-  const eventDate = new Date("2025-04-28T00:00:00")
+  const eventDate = new Date("2025-05-23T01:00:00")
 
   return (
     <div>
