@@ -4,12 +4,24 @@ import { Logo } from "../ui/Logo"
 import { SocialIcon } from "../ui/SocialIcon"
 import FooterLink from "./FooterLink"
 import ContactInfo from "./ContactInfo"
+import mountain from "../assests/mountain.svg"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gradient-to-br from-gray-800 to-black text-white">
+    <>
+    <div className="w-full flex flex-col items-center bg-gray-100 pb-0 -mb-3">
+        
+          <img 
+            src={mountain} 
+            alt="Mountain Hiking Logo" 
+            className="h-40 w-auto"
+          />
+        
+      </div>
+      <footer className="w-full bg-gradient-to-b from-[#282560] to-[#26A7DF] text-white -mt-2">
+
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="space-y-6">
@@ -71,6 +83,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   )
 }
 
