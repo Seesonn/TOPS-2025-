@@ -7,8 +7,8 @@ export const Logo = ({ className = "", light = false }) => {
         src={logo}
           alt="Company Logo"
           className="w-full h-full object-contain"
-          width={80}
-          height={80}
+          width={40}
+          height={40}
           loading="lazy"
         />
       </div>
