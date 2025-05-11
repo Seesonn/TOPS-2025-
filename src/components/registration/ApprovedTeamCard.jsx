@@ -1,43 +1,89 @@
-import { Card } from "../../ui/Card"
+// import { Card } from "../../ui/Card"
 
-const ApprovedTeamCard = ({ team, rank }) => {
+// const ApprovedTeamCard = ({ team, rank }) => {
   
  
   
 
-  return (
-    <Card className="relative h-full flex flex-col border border-gray-200">
+//   return (
+//     <Card className="relative h-full flex flex-col border border-gray-200">
      
 
+//       <div className="p-5 flex-grow">
+//         <h3 className="font-bold text-[#223F80] text-lg mb-1">
+//           {team.name}
+//         </h3>
+
+//         <h4 className="text-[#2783BC] font-medium text-sm mb-3">{team.projectName}</h4>
+
+//         <div className={`inline-flex px-3 py-1 rounded-full text-xs font-medium text-[#F58432] border mb-4`}>
+//           {team.theme}
+//         </div>
+
+//         <p className="text-gray-600 text-sm mb-5 line-clamp-2">{team.description}</p>
+
+//         <div className="mt-auto">
+//           <h5 className="text-xs text-gray-500 uppercase tracking-wider mb-2">Team Members</h5>
+//           <ul className="text-sm text-gray-700 space-y-2">
+//             {team.members.map((member, index) => (
+//               <li key={index} className="flex items-center">
+//                 <span className="w-6 h-6 rounded-full bg-[#E8F0FA] text-[#223F80] flex items-center justify-center text-xs font-bold mr-2">
+//                   {member.charAt(0)}
+//                 </span>
+//                 {member}
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+//       </div>
+
+      
+//     </Card>
+//   )
+// }
+
+// export default ApprovedTeamCard
+import { Card } from "../../ui/Card"
+
+const ApprovedTeamCard = ({ team, rank }) => {
+  return (
+    <Card className="relative h-full flex flex-col border border-gray-200">
       <div className="p-5 flex-grow">
         <h3 className="font-bold text-[#223F80] text-lg mb-1">
           {team.name}
         </h3>
 
-        <h4 className="text-[#2783BC] font-medium text-sm mb-3">{team.projectName}</h4>
+        <h4 className="text-[#2783BC] font-medium text-sm mb-3">{team.collegeName}</h4>
+        <h4 className="text-[#2783BC] font-medium text-sm mb-3">{team.collegeAddress}</h4>
 
         <div className={`inline-flex px-3 py-1 rounded-full text-xs font-medium text-[#F58432] border mb-4`}>
-          {team.theme}
+          Mentor: {team.mentor}
         </div>
 
-        <p className="text-gray-600 text-sm mb-5 line-clamp-2">{team.description}</p>
-
-        <div className="mt-auto">
-          <h5 className="text-xs text-gray-500 uppercase tracking-wider mb-2">Team Members</h5>
-          <ul className="text-sm text-gray-700 space-y-2">
+        <div className="text-gray-600 text-sm mb-5">
+          <p className="font-medium">Team Leader:</p>
+          <p>{team.teamLeader}</p>
+          
+          <p className="font-medium mt-3">Team Members:</p>
+          <ul className="list-disc pl-5">
             {team.members.map((member, index) => (
-              <li key={index} className="flex items-center">
-                <span className="w-6 h-6 rounded-full bg-[#E8F0FA] text-[#223F80] flex items-center justify-center text-xs font-bold mr-2">
-                  {member.charAt(0)}
-                </span>
-                {member}
-              </li>
+              <li key={index}>{member}</li>
             ))}
           </ul>
+          
+          <p className="font-medium mt-3">Project Title:</p>
+          <p>{team.projectTitle}</p>
+          
+          <p className="font-medium mt-3">Project Area:</p>
+          <p>{team.projectArea}</p>
+          
+          <p className="font-medium mt-3">Visit Survey:</p>
+          <p>Duration: {team.visitDuration}</p>
+          <p>Date: {team.visitDate}</p>
         </div>
-      </div>
 
-      
+        
+      </div>
     </Card>
   )
 }
