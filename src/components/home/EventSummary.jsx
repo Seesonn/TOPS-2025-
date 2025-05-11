@@ -1,12 +1,12 @@
 
 const EventSummaryy = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 ">
       <div className="container mx-auto px-4">
         {/*Container */}
         <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-sm overflow-hidden transform perspective-1000">
           {/*Cover/Title */}
-          <div className="relative bg-[#282560] py-10 px-8 border-b-8 border-[#F58432]">
+          <div className="relative bg-[#223F80] py-10 px-8 border-b-8 border-[#F58432]">
             <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
               <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -37,7 +37,7 @@ const EventSummaryy = () => {
             <div className="py-10 px-8 md:px-16 bg-white">
              
               <div className="mb-8 text-center">
-                <h3 className="text-[#282560] text-xl font-bold inline-block relative">
+                <h3 className="text-[#223F80] text-xl font-bold inline-block relative">
                   Event Summary
                   <div className="absolute -bottom-2 left-0 right-0 h-0.5 bg-[#F58432]"></div>
                 </h3>
@@ -45,8 +45,8 @@ const EventSummaryy = () => {
 
               {/* First Paragraph with Decorative Initial */}
               <div className="mb-6 text-gray-800 leading-relaxed">
-                <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#282560] first-letter:mr-2 first-letter:float-left">
-                  <span className="font-semibold text-[#282560]">The "Tourism Project Showcase Koshi 2025"</span> is a
+                <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-[#223F80] first-letter:mr-2 first-letter:float-left">
+                  <span className="font-semibold text-[#223F80]">The "Tourism Project Showcase Koshi 2025"</span> is a
                   dynamic competition organized by
                   <span className="font-semibold"> Alison Hospitality Pvt. Ltd.</span>, aimed at fostering innovation
                   and development in the tourism sector of Nepal's Koshi Province. This event specifically targets
@@ -86,7 +86,7 @@ const EventSummaryy = () => {
 
               {/* Key Points */}
               <div className="mt-10 p-6 bg-gray-50 border border-gray-100 rounded">
-                <h4 className="text-center text-[#282560] font-semibold mb-4">Key Highlights</h4>
+                <h4 className="text-center text-[#223F80] font-semibold mb-4">Key Highlights</h4>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-start">
                     <div className="text-[#F58432] text-xl mr-2">•</div>
@@ -122,7 +122,7 @@ const EventSummaryy = () => {
           </div>
 
           {/*  Footer */}
-          <div className="bg-[#282560] py-4 px-8 text-center">
+          <div className="bg-[#223F80] py-4 px-8 text-center">
             <div className="text-white text-sm">Tourism Project Showcase Koshi 2025</div>
           </div>
         </div>
