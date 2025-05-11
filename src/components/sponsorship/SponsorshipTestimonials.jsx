@@ -1,4 +1,12 @@
 import { Card } from "../../ui/Card"
+import kafals from "../../assests/kafals.png"
+import koshitourism from "../../assests/koshitourism.png"
+import fca from "../../assests/fca.png"
+import scaef from "../../assests/scaef.png"
+import nea from "../../assests/nea.png"
+import gramayana from "../../assests/gramayana.png"
+import marketing from "../../assests/marketing.png"
+
 
 const SponsorshipTestimonials = () => {
   const sponsorCategories = [
@@ -8,7 +16,7 @@ const SponsorshipTestimonials = () => {
       sponsors: [
         {
           name: "Visit",
-          logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744967144.webp",
+          logo:koshitourism,
           website: "https://bishowchauhan.com.np",
         },
         
@@ -20,7 +28,7 @@ const SponsorshipTestimonials = () => {
       sponsors: [
         {
           name: "Kafals",
-          logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744967197.webp",
+          logo: kafals,
           website: "https://kafals.com.np",
         },
        
@@ -32,7 +40,7 @@ const SponsorshipTestimonials = () => {
       sponsors: [
         {
           name: "Hotel G Ramayana",
-          logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744968283.webp",
+          logo: gramayana,
           website: "https://bishowchauhan.com.np",
         },
        
@@ -44,17 +52,17 @@ const SponsorshipTestimonials = () => {
       sponsors: [
         {
             name: "NEA",
-            logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744968337.webp",
+            logo:  nea ,
             website: "https://member.neanepal.org.np",
           },
           {
             name: "FCAN ",
-            logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744969638.webp",
+            logo: fca,
             website: "https://fcan.org.np",
           },
           {
             name: "SCAEF",
-            logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744970103.webp",
+            logo: scaef,
             website: "https://scaef.org.np",
           },
       ],
@@ -65,7 +73,7 @@ const SponsorshipTestimonials = () => {
       sponsors: [
         {
           name: "Whiteline Media PVT.LTD",
-          logo: "https://tops.alison.com.np/uploads/sponsor_logo_1744969514.webp",
+          logo: marketing,
           website: "https://sisanbhattarai.com.np",
         },
 

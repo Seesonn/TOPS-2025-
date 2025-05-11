@@ -18,6 +18,7 @@ const Footer = () => {
             alt="Mountain Hiking Logo" 
             className="h-40 w-auto"
           />
+          
         
       </div>
       <footer className="w-full bg-gradient-to-b from-[#282560] to-[#26A7DF] text-white -mt-2">
