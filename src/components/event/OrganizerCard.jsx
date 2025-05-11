@@ -24,7 +24,7 @@ const OrganizerCard = ({ logo, name, description, website }) => {
     <Card className="bg-white overflow-hidden border border-gray-100">
       <div className="flex flex-col md:flex-row">
         {/* Left side logo Card*/}
-        <div className="p-2 bg-white  flex items-center justify-center">
+        <div className="p-2 bg-white  ">
           <div className="w-32 h-32  bg-white rounded-md flex items-center justify-center ">
             <img
               src={logo}
@@ -37,9 +37,9 @@ const OrganizerCard = ({ logo, name, description, website }) => {
 
         {/* Right side ko Card */}
         <div className="flex-1 p-6">
-          {name && (
+          {/* {name && (
             <h3 className="text-lg font-semibold text-gray-900 mb-3">{name}</h3>
-          )}
+          )} */}
           <p className="text-gray-600 text-sm mb-4 leading-relaxed">
             {description}
           </p>
