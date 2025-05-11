@@ -1,14 +1,16 @@
 import OrganizerCard from "./OrganizerCard"
+import alison from "../../assests/alison.png" 
+import kafals from "../../assests/kafals.png"
 
 const OrganizersSection = () => {
   const organizers = [
-    { logo:"https://tops.alison.com.np/uploads/logo_1742355674.png",
+    { logo:alison,
       name: "Alison Hospitality",
       description:
         "A leading hospitality management company dedicated to promoting tourism in Nepal through innovative initiatives and events.",
       website: "https://alison.com.np",
     },
-    { logo: "https://tops.alison.com.np/uploads/logo_1742355674.png",
+    { logo:kafals,
       name: "Kafals",
       description:
         "An organization focused on promoting local culture, food, and tourism through various events and initiatives across Nepal.",
