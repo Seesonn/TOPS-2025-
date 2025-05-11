@@ -281,15 +281,15 @@ const HeroSection = ({ eventDate }) => {
               alt="Tourism in Nepal"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#223F80]/70 to-[#2783BC]/60"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#282560]/60 to-[#26A7DF]/40"></div>
           </div>
         ))}
         
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-          <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
-          <div className="absolute top-1/4 -right-24 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
-          <div className="absolute -bottom-24 left-1/3 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
+          <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#26A7DF] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
+          <div className="absolute top-1/4 -right-24 w-96 h-96 bg-[#F58432] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
+          <div className="absolute -bottom-24 left-1/3 w-96 h-96 bg-[#282560] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow"></div>
         </div>
       </div>
 
@@ -297,11 +297,11 @@ const HeroSection = ({ eventDate }) => {
       <div className="relative container mx-auto px-4 py-24 md:py-36 z-10">
         <div className="max-w-3xl animate-slide-up">
           <span className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm font-medium mb-6">
-            April 28–30, 2025 • G. Ramayana Hotel, Koshi Province
+            May 23–25, 2025 • G. Ramayana Hotel, Kathmandu
           </span>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
-            Tourism Project <span className="text-gradient bg-gradient-to-r from-blue-300 to-indigo-300">Showcase</span>{" "}
+            Tourism Project <span className="text-gradient bg-gradient-to-r from-[#26A7DF] to-indigo-300">Showcase</span>{" "}
             – Koshi 2025
           </h1>
 
@@ -380,7 +380,7 @@ const HeroSection = ({ eventDate }) => {
         <div className="hidden lg:block absolute right-10 top-1/2 transform -translate-y-1/2 space-y-6">
           <div className="glass-effect rounded-xl p-4 border border-white/20 text-center w-48 animate-slide-left" style={{ animationDelay: "0.6s" }}>
             <div className="text-3xl font-bold text-white">10</div>
-            <div className="text-sm text-blue-100">Group</div>
+            <div className="text-sm text-blue-100">Team</div>
           </div>
           <div className="glass-effect rounded-xl p-4 border border-white/20 text-center w-48 animate-slide-left" style={{ animationDelay: "0.7s" }}>
             <div className="text-3xl font-bold text-white">10</div>

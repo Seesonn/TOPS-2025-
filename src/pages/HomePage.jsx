@@ -5,6 +5,8 @@ import SpeakersSection from "../components/home/SpeakersSection"
 import SponsorsSection from "../components/home/SponsorsSection"
 import CtaSection from "../components/home/CtaSection"
 import FloatingTicketButton from "../components/FloatingTicketButton"
+// import MediaCoverageSection from "../components/home/MediaCoverageSection"
+import EventSummaryy from "../components/home/EventSummary"
 
 const HomePage = () => {
   // Event date: April 28, 2025
@@ -14,8 +16,11 @@ const HomePage = () => {
     <div>
       <HeroSection eventDate={eventDate} />
       <HighlightsSection />
+      <EventSummaryy/>
       <ThemesSection />
-      <SpeakersSection />
+      {/* <SpeakersSection /> */}
+      {/* <MediaCoverageSection/> */}
+      
       <SponsorsSection />
       <CtaSection />
       <FloatingTicketButton />

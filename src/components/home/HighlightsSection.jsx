@@ -3,8 +3,8 @@ import HighlightCard from "./HighlightCard"
 const HighlightsSection = () => {
   const highlights = [
     {
-      value: "NPR 100K",
-      title: "First Prize",
+      value: "NPR 175K",
+      title: "Total Prize",
       description: "Plus certificate and exclusive hamper for the winning team",
       icon: (
         <svg
