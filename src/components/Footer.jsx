@@ -17,7 +17,7 @@ const Footer = () => {
           className="h-40 w-auto"
         />
       </div>
-      <footer className="w-full bg-gradient-to-b from-[#282560] to-[#26A7DF] text-white -mt-2">
+      <footer className="w-full bg-gradient-to-b from-[#223F80] to-[#26A7DF] text-white -mt-2">
         <div className="container mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="space-y-6">
