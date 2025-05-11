@@ -31,7 +31,7 @@ const EventSummaryy = () => {
           {/*Content */}
           <div className="relative">
            
-            <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gray-200 via-gray-300 to-gray-200"></div>
+            {/* <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#223F80] via-gray-[#223F80]to-gray-[#223F80]"></div> */}
 
             
             <div className="py-10 px-8 md:px-16 bg-white">
