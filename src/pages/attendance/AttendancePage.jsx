@@ -1,8 +1,9 @@
+
 import AttendanceCard from "../../components/attendance/AttendanceCard"
 import PageHeader from "../../components/common/PageHeader"
 
 const AttendancePage = () => {
-  // Sample attendee data
+  
   const attendees = [
     { id: 1, name: "Sagar Pokhrel", organization: "Tech Solutions", ticketType: "standard" },
     { id: 2, name: "Manish Dev", organization: "Creative Designs", ticketType: "gold" },
@@ -52,37 +53,50 @@ const AttendancePage = () => {
     { id: 46, name: "Bhuwan KC", organization: "Tech Education", ticketType: "premium" },
     { id: 47, name: "Sagar Timalsina", organization: "Software Architecture", ticketType: "gold" },
     { id: 48, name: "Rajiv Maharjan", organization: "IT Management", ticketType: "standard" },
-    { id: 49, name: "Anish Shrestha", organization: "Tech Research", ticketType: "gold" },
-    { id: 50, name: "Bibek Shrestha", organization: "Emerging Technologies", ticketType: "premium" }
   ]
+
+
+  const sortedAttendees = [...attendees].sort((a, b) => {
+    const nameA = a.name.toUpperCase(); 
+    const nameB = b.name.toUpperCase(); 
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    
+    return 0;
+  });
 
   return (
     <div className="bg-gray-50">
-          <PageHeader
-            title="Attendance"
-            description="Recognizing excellence and innovation in tourism projects"
-            backgroundImage="https://imgs.search.brave.com/Cfn9Z4fk2zUIbKFae0IKxRVemVafnAjyWCdFBVmaSD4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aG9saWRheXN0b25l/cGFsLmluL21lZGlh/L2ZpbGVzL0Jsb2dz/L05hdGlvbmFsU3lt/Ym9sc09mTmVwYWwv/bmVwYWwtbmF0aW9u/YWwtZmxvd2VyLnBu/Zw"
-          />
+        <PageHeader
+        title="Event Attendees"
+        description="Meet our distinguished participants and supporters"
+        backgroundImage="https://imgs.search.brave.com/Cfn9Z4fk2zUIbKFae0IKxRVemVafnAjyWCdFBVmaSD4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aG9saWRheXN0b25l/cGFsLmluL21lZGlh/L2ZpbGVzL0Jsb2dz/L05hdGlvbmFsU3lt/Ym9sc09mTmVwYWwv/bmVwYWwtbmF0aW9u/YWwtZmxvd2VyLnBu/Zw"
+      />
 
-<div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto mb-16 text-center animate-slide-up">
-          <h2 className="section-title">Attendance</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            
+           <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Distinguished Attendees</h2>
+          <p className="text-xl text-gray-600 mb-6">
+            Connecting innovators, leaders, and visionaries from across the industry
           </p>
-      </div>
+        </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {attendees.map((attendee) => (
-          <AttendanceCard
-            key={attendee.id}
-            name={attendee.name}
-            organization={attendee.organization}
-            ticketType={attendee.ticketType}
-          />
-        ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {sortedAttendees.map((attendee) => (
+            <AttendanceCard
+              key={attendee.id}
+              name={attendee.name}
+              organization={attendee.organization}
+              ticketType={attendee.ticketType}
+            />
+          ))}
+        </div>
+        
       </div>
-    </div>
     </div>
   )
 }
