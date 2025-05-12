@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import logo from "../assests/mainlogo.svg";
 import { SocialIcon } from "../ui/SocialIcon";
 import FooterLink from "./FooterLink";
 import ContactInfo from "./ContactInfo";
@@ -8,9 +8,31 @@ import mountain from "../assests/mountain.svg";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const handleDownloadLogo = async () => {
+    try {
+      const response = await fetch(logo);
+      const blob = await response.blob();
+
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "tops-logo.svg";
+      document.body.appendChild(a);
+      a.click();
+
+      // Clean up
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error("Error downloading logo:", error);
+
+      window.open(logo, "_blank");
+    }
+  };
+
   return (
     <>
-      <div className="w-full flex flex-col items-center  pb-0 -mb-3">
+      <div className="w-full flex flex-col items-center pb-0 -mb-3">
         <img
           src={mountain}
           alt="Mountain Hiking Logo"
@@ -21,7 +43,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="space-y-6">
-              <Link to="/ ">
+              <Link to="/">
                 <div className="w-40 h-40 rounded-lg overflow-hidden">
                   <img
                     src={
@@ -69,6 +91,14 @@ const Footer = () => {
                 <FooterLink to="/post-event">Post Event</FooterLink>
                 <FooterLink to="/sponsorship">Become a Sponsor</FooterLink>
                 <FooterLink to="/contact">Contact Us</FooterLink>
+                <li className="text-white hover:text-[#F58432] transition-colors inline-block py-1">
+                  <button
+                    onClick={handleDownloadLogo}
+                    className="text-left w-full "
+                  >
+                    Download Tops Logo
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -99,10 +129,12 @@ const Footer = () => {
               © {currentYear} Tourism Project Showcase – Koshi 2025. All rights
               reserved.
             </p>
-            <p className="mt-2">Organized by Alison Hospitality & Event Managed by Kafals</p>
-            <p className="mt-2 font-Roboto  font-medium text-white [text-shadow:_1px_1px_0_#282560,_-1px_-1px_0_#282560">
-  This Website is Made With Love By Kafals || Made in Nepal
-</p>
+            <p className="mt-2">
+              Organized by Alison Hospitality & Event Managed by Kafals
+            </p>
+            <p className="mt-2 font-Roboto font-medium text-white [text-shadow:_1px_1px_0_#282560,_-1px_-1px_0_#282560">
+              This Website is Made With Love By Kafals || Made in Nepal
+            </p>
           </div>
         </div>
       </footer>

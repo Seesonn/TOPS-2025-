@@ -166,11 +166,11 @@ const mockTeams = [
     collegeName: "Nepal Engineering College",
     collegeAddress: "Changunarayan, Bhaktapur",
     mentor: "Surya Thapaliya",
-    teamLeader: "Ganga Poudel, 9861661342",
+    teamLeader: "Ganga Poudel",
     members: [
-      "Rasmika Shrestha, +9779863441156",
-      "Saina Shrestha, 9844235275",
-      "Sumi Duwa Shrestha, +9779748285026"
+      "Rasmika Shrestha ",
+      "Saina Shrestha",
+      "Sumi Duwa Shrestha"
     ],
     projectTitle: "Kheti Aagan",
     projectArea: "Mai Pokhari, Illam",
@@ -180,6 +180,47 @@ const mockTeams = [
     status: "approved",
     submissionDate: "2023-05-15"
   },
+  {
+    id: 1,
+    name: "Agro Basti",
+    collegeName: "Nepal Engineering College",
+    collegeAddress: "Changunarayan, Bhaktapur",
+    mentor: "Surya Thapaliya",
+    teamLeader: "Ganga Poudel",
+    members: [
+      "Rasmika Shrestha ",
+      "Saina Shrestha",
+      "Sumi Duwa Shrestha"
+    ],
+    projectTitle: "Kheti Aagan",
+    projectArea: "Mai Pokhari, Illam",
+    visitDuration: "3 days",
+    visitDate: "2082-01-26 to 2082-01-28",
+   
+    status: "approved",
+    submissionDate: "2023-05-15"
+  },
+  {
+    id: 1,
+    name: "Agro Basti",
+    collegeName: "Nepal Engineering College",
+    collegeAddress: "Changunarayan, Bhaktapur",
+    mentor: "Surya Thapaliya",
+    teamLeader: "Ganga Poudel",
+    members: [
+      "Rasmika Shrestha ",
+      "Saina Shrestha",
+      "Sumi Duwa Shrestha"
+    ],
+    projectTitle: "Kheti Aagan",
+    projectArea: "Mai Pokhari, Illam",
+    visitDuration: "3 days",
+    visitDate: "2082-01-26 to 2082-01-28",
+   
+    status: "approved",
+    submissionDate: "2023-05-15"
+  },
+  
   
 ]
 
