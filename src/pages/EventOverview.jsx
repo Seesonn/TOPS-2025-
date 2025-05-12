@@ -1,7 +1,7 @@
 import PageHeader from "../components/common/PageHeader"
 import EventSummary from "../components/event/EventSummary"
 import OrganizersSection from "../components/event/OrganizersSection"
-import ThemesDetailSection from "../components/event/ThemesDetailSection"
+// import ThemesDetailSection from "../components/event/ThemesDetailSection"
 import ObjectivesSection from "../components/event/ObjectivesSection"
 import EventCta from "../components/event/EventCta"
 import EventTeam from "../components/event/EventTeam"
@@ -17,7 +17,7 @@ const EventOverview = () => {
       <EventSummary />
       <OrganizersSection />
       <EventTeam/>
-      <ThemesDetailSection />
+      {/* <ThemesDetailSection /> */}
       <ObjectivesSection />
       <EventCta />
     </div>
