@@ -112,12 +112,7 @@ const AttendanceCard = ({ name, organization, ticketType = "standard" }) => {
 
       {/* Main Content */}
       <div className="relative z-10 p-6">
-        {/* Badge  */}
-        {/* <div
-          className={`absolute top-4 right-4 px-3 py-1 rounded-full ${colors.badge} text-xs font-semibold uppercase tracking-wide`}
-        >
-          {ticketType}
-        </div> */}
+        
 
         <div className="pt-8 flex flex-col items-center text-center">
           <h3 className={`text-xl font-bold mb-2 ${colors.text}`}>{name}</h3>

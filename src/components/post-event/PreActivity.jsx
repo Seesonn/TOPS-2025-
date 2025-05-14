@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import { Card } from "../../ui/Card";
-import { source } from "framer-motion/client";
 
 export default function PreActivities() {
   const [selectedNews, setSelectedNews] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Handle body overflow when modal is open/closed
+  
   useEffect(() => {
     if (isModalOpen) {
       document.body.style.overflow = "hidden";
@@ -26,11 +25,9 @@ export default function PreActivities() {
 
   const closeNewsPopup = () => {
     setIsModalOpen(false);
-    // Delay clearing selectedNews to allow animation to complete
     setTimeout(() => setSelectedNews(null), 300);
   };
 
-  // Handle escape key press
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape" && isModalOpen) {
@@ -43,38 +40,23 @@ export default function PreActivities() {
   }, [isModalOpen]);
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      {/* News and Updates Section */}
+    <main className="min-h-screen ">
+      
+ 
+      
       <section className="py-12 px-4 md:px-6 lg:px-8" aria-labelledby="news-heading">
-        <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-            <h2 id="news-heading" className="text-3xl font-bold text-[#223F80]">
-              News & Updates
+        <div className="container mx-auto text-center">
+          
+          <div className="mb-16">
+            <h2 id="news-heading" className="text-3xl font-bold mb-4">
+              <span className="text-[#223F80]">News & </span>
+              <span className="text-[#F58432]">Updates</span>
             </h2>
-            <a
-              href="/news"
-              className="flex items-center gap-2 text-[#F58432] font-medium hover:underline mt-4 md:mt-0 transition-colors duration-200"
-              aria-label="View all news articles"
-            >
-              View all news
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-4 w-4"
-                aria-hidden="true"
-              >
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
-              </svg>
-            </a>
+            <p className="text-lg text-gray-600 max-w-2xl mb-8 mx-auto">
+              Posts, News & Updates of Tourism Project Showcase – Koshi 2025
+            </p>
           </div>
+
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {news.map((item) => (
@@ -103,7 +85,7 @@ export default function PreActivities() {
                       {item.title}
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-3 flex-grow">
-                      {item.content.split("\n")[0]} {/* Show only first paragraph */}
+                      {item.content.split("\n")[0]}
                     </p>
                     <div className="flex items-center justify-between text-sm text-gray-500">
                       <time dateTime={new Date(item.date).toISOString()}>
@@ -191,7 +173,8 @@ export default function PreActivities() {
   );
 }
 
-// Sample data for news
+
+
 const news = [
   {
     id: 1,

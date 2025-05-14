@@ -7,6 +7,7 @@ import CtaSection from "../components/home/CtaSection"
 import FloatingTicketButton from "../components/FloatingTicketButton"
 // import MediaCoverageSection from "../components/home/MediaCoverageSection"
 import EventSummaryy from "../components/home/EventSummary"
+import PreActivities from "../components/post-event/PreActivity"
 
 const HomePage = () => {
   // Event date: April 28, 2025
@@ -18,6 +19,7 @@ const HomePage = () => {
       <HighlightsSection />
       <EventSummaryy/>
       <ThemesSection />
+      <PreActivities/>
       {/* <SpeakersSection /> */}
       {/* <MediaCoverageSection/> */}
       
