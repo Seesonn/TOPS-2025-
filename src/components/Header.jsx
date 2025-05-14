@@ -58,14 +58,14 @@ const Header = () => {
               Home
             </NavLink>
             <NavLink to="/event-overview" active={location.pathname === "/event-overview"}>
-              Event
+            About
             </NavLink>
             
             <NavLink to="/timeline" active={location.pathname === "/timeline"}>
-              Timeline
+             Schedule
             </NavLink>
             <NavLink to="/jury-mentors" active={location.pathname === "/jury-mentors"}>
-             Mentors
+            Teams
             </NavLink>
             <NavLink to="/sponsorship" active={location.pathname === "/sponsorship"}>
               Sponsorship
@@ -189,14 +189,14 @@ const Header = () => {
               Home
             </MobileNavLink>
             <MobileNavLink to="/event-overview" active={location.pathname === "/event-overview"}>
-              Event
+            About
             </MobileNavLink>
             
             <MobileNavLink to="/timeline" active={location.pathname === "/timeline"}>
-              Timeline
+             Schedule
             </MobileNavLink>
             <MobileNavLink to="/jury-mentors" active={location.pathname === "/jury-mentors"}>
-              Jury & Mentors
+              Teams
             </MobileNavLink>
             <MobileNavLink to="/sponsorship" active={location.pathname === "/sponsorship"}>
               Sponsorship

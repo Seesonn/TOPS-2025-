@@ -481,6 +481,7 @@ const HeroSection = ({ eventDate }) => {
               size="large"
               as={Link}
               to="/registration"
+              
               icon={
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path
@@ -491,7 +492,13 @@ const HeroSection = ({ eventDate }) => {
                 </svg>
               }
               className="animate-slide-right"
-              style={{ animationDelay: "0.2s" }}
+               disabled
+                style={{ 
+                  pointerEvents: "none",  
+                  opacity: 0.6,           
+                  cursor: "default",      
+                }}
+              
             >
               Register Your Team
             </Button>

@@ -133,8 +133,8 @@ const Footer = () => {
             <p className="mt-2">
               Organized by Alison Hospitality & Event Managed by Kafals
             </p>
-          <p className="mt-2 font-Roboto font-medium text-white [text-shadow:_1px_1px_0_#282560,_-1px_-1px_0_#282560]">
-  Made in Nepal & Crafted with <span className="inline-block align-middle"><img src={love} alt="love" className="h-[1em] w-auto" /></span> By Kafals 
+          <p className="mt-2 font-medium text-white ">
+      Made in Nepal & Crafted with <span className="inline-block align-middle"><img src={love} alt="love" className="h-[1em] w-auto" /></span> By Kafals 
 </p>
           </div>
         </div>

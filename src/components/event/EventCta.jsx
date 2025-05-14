@@ -13,9 +13,23 @@ const EventCta = () => {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
-          <Button variant="primary" size="large" as={Link} to="/registration">
+          {/* <Button variant="primary" size="large" as={Link} to="/registration">
             Register Your Team
-          </Button>
+          </Button> */}
+          <Button 
+  variant="primary" 
+  size="large" 
+  as={Link} 
+  to="/registration"
+  disabled
+  style={{ 
+    pointerEvents: "none",  
+    opacity: 0.6,           
+    cursor: "default",      
+  }}
+>
+  Register Your Team
+</Button>
           <Button variant="outline" size="large" as={Link} to="/sponsorship">
             Become a Sponsor
           </Button>

@@ -18,8 +18,8 @@ const ContactInfo = () => {
       title: "Phone Numbers",
       content: (
         <div>
-          <p>Alina Magar (Event Director): +977 9852056497</p>
-          <p>Sesemi Limbu (Registration): +977 9865394201</p>
+          <p>Alina Magar (CEO): +977 9852056497</p>
+          <p>Santosh Dhamala (Event Manager):+977 9852054672</p>
         </div>
       ),
     },
@@ -30,23 +30,11 @@ const ContactInfo = () => {
         <div>
           <p>
             General Inquiries:{" "}
-            <a href="mailto:info@topskoshi2025.com" className="text-[#223F80] hover:underline">
+            <a href="mailto:topskoshi2025@gmail.com" className="text-[#223F80] hover:underline">
               topskoshi2025@gmail.com
             </a>
           </p>
-          <p>
-            Registration:{" "}
-            <a href="mailto:register@topskoshi2025.com" className="text-[#223F80] hover:underline">
-              registertopskoshi2025@gmail.com
-            </a>
-          </p>
-          <p>
-            Sponsorship:{" "}
-            <a href="mailto:sponsors@topskoshi2025.com" className="text-[#223F80] hover:underline">
-              sponsorstopskoshi2025@gmail.com
-            </a>
-          </p>
-        </div>
+          </div>
       ),
     },
     // {
