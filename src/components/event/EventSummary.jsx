@@ -118,7 +118,9 @@ const EventSummary = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="animate-slide-up">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">About the Event</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">
+              <span className="text-[#223F80]">About</span> <span className="text-[#F58432]">Event</span>
+            </h2>
             <p className="text-gray-700 mb-4 text-lg">
               Tourism Project Showcase – Koshi 2025 is a premier event that brings together students, industry experts,
               and investors to showcase innovative tourism projects focused on the development of Koshi Province.

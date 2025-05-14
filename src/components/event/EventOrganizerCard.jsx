@@ -73,9 +73,9 @@
 // }
 
 // export default EventOrganizerCard
-import { Card } from "../../ui/Card"
-import { Mail, Phone, } from "lucide-react"
-import { SocialIcon } from "../../ui/SocialIcon"
+import { Card } from "../../ui/Card";
+import { Mail, Phone } from "lucide-react";
+import { SocialIcon } from "../../ui/SocialIcon";
 
 const EventOrganizerCard = ({
   image,
@@ -84,7 +84,6 @@ const EventOrganizerCard = ({
   email,
   phone,
   socialLinks,
-  
 }) => {
   return (
     <Card className="group relative overflow-hidden  rounded-xl transition-all duration-500 hover:shadow-2xl border border-gray-100 bg-white">
@@ -92,9 +91,27 @@ const EventOrganizerCard = ({
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white opacity-50 z-0"></div>
 
       {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-bl-[100px] z-0"></div>
-      <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-tr-[80px] z-0"></div>
+      {/* <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-bl-[100px] z-0"></div>
+      <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-tr-[80px] z-0"></div> */}
+      <div
+        className="absolute top-0 right-0 w-32 h-32 
+    bg-gradient-to-br from-[#223F80]/30 via-[#F58432]/15 to-transparent 
+    rounded-full blur-[20px] z-0"
+      ></div>
 
+      <div
+        className="absolute bottom-0 left-0 w-24 h-24 
+    bg-gradient-to-tr from-[#F58432]/25 via-[#223F80]/15 to-transparent 
+    rounded-full blur-[15px] z-0"
+      ></div>
+
+      <div className="absolute inset-0 overflow-hidden z-0">
+        <div
+          className="absolute top-1/4 left-1/4 w-48 h-48 
+        bg-[radial-gradient(circle,#F58432/10%,transparent_70%)] 
+        animate-pulse-slow"
+        ></div>
+      </div>
       <div className="relative z-10">
         {/* Top accent bar with gradient animation */}
         <div className="h-1.5 bg-gradient-to-r from-[#223F80] via-[#F58432] to-[#2783BC] bg-[length:200%_auto] animate-gradient"></div>
@@ -117,63 +134,69 @@ const EventOrganizerCard = ({
             {name}
           </h3>
 
-            <p className="text-[#F58432] bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 font-semibold text-sm tracking-wider">
-              {position}
-            </p>
-         
+          <p className="text-[#F58432] bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 font-semibold text-sm tracking-wider">
+            {position}
+          </p>
 
-         
           {/* Contact Info  */}
-         
-            <a
-              href={`mailto:${email}`}
-              className="flex items-center justify-center text-gray-600  hover:text-black transition-all duration-300  "
-            >
-              <Mail
-                size={16}
-                className="mr-2 text-black"
-              />
-              <span className="text-sm font-medium">{email}</span>
-            </a>
 
-            {phone && (
-              <a
-                href={`tel:${phone}`}
-                className="flex items-center justify-center text-gray-600 hover:text-black transition-all duration-300   py-2 px-4 "
-              >
-                <Phone
-                  size={16}
-                  className="mr-2 text-black  "
-                />
-                <span className="text-sm font-medium">{phone}</span>
-              </a>
-            )}
-       
+          <a
+            href={`mailto:${email}`}
+            className="flex items-center justify-center text-gray-600  hover:text-black transition-all duration-300  "
+          >
+            <Mail size={16} className="mr-2 text-black" />
+            <span className="text-sm font-medium">{email}</span>
+          </a>
+
+          {phone && (
+            <a
+              href={`tel:${phone}`}
+              className="flex items-center justify-center text-gray-600 hover:text-black transition-all duration-300   py-2 px-4 "
+            >
+              <Phone size={16} className="mr-2 text-black  " />
+              <span className="text-sm font-medium">{phone}</span>
+            </a>
+          )}
 
           {/* Social Links  */}
           <div className="flex justify-center space-x-4 pt-5 border-t border-gray-100 w-full">
             {socialLinks?.linkedin && (
               <div className="transform transition-transform duration-300 hover:scale-110 hover:-translate-y-1">
-                <SocialIcon platform="linkedin" url={socialLinks.linkedin} aria-label={`${name}'s LinkedIn profile`} />
+                <SocialIcon
+                  platform="linkedin"
+                  url={socialLinks.linkedin}
+                  aria-label={`${name}'s LinkedIn profile`}
+                />
               </div>
             )}
 
             {socialLinks?.twitter && (
               <div className="transform transition-transform duration-300 hover:scale-110 hover:-translate-y-1">
-                <SocialIcon 
-                platform="twitter" url={socialLinks.twitter} aria-label={`${name}'s Twitter profile`} />
+                <SocialIcon
+                  platform="twitter"
+                  url={socialLinks.twitter}
+                  aria-label={`${name}'s Twitter profile`}
+                />
               </div>
             )}
 
             {socialLinks?.github && (
               <div className="transform transition-transform duration-300 hover:scale-110 hover:-translate-y-1">
-                <SocialIcon platform="github" url={socialLinks.github} aria-label={`${name}'s GitHub profile`} />
+                <SocialIcon
+                  platform="github"
+                  url={socialLinks.github}
+                  aria-label={`${name}'s GitHub profile`}
+                />
               </div>
             )}
 
             {socialLinks?.facebook && (
               <div className="transform transition-transform duration-300 hover:scale-110 hover:-translate-y-1">
-                <SocialIcon platform="facebook" url={socialLinks.facebook} aria-label={`${name}'s Facebook profile`} />
+                <SocialIcon
+                  platform="facebook"
+                  url={socialLinks.facebook}
+                  aria-label={`${name}'s Facebook profile`}
+                />
               </div>
             )}
 
@@ -190,7 +213,7 @@ const EventOrganizerCard = ({
         </div>
       </div>
     </Card>
-  )
-}
+  );
+};
 
-export default EventOrganizerCard
+export default EventOrganizerCard;
