@@ -162,66 +162,161 @@ import ApprovedTeamCard from "./ApprovedTeamCard"
 const mockTeams = [
   {
     id: 1,
-    name: "Agro Basti",
-    collegeName: "Nepal Engineering College",
-    collegeAddress: "Changunarayan, Bhaktapur",
-    mentor: "Surya Thapaliya",
-    teamLeader: "Ganga Poudel",
+    name: "Acme Coaster",
+    collegeName: "Acme Engineering College",
+    mentor: "Basudev Baral",
+    sector: "Adventure Tourism",
+    teamLeader: "Sagar Kandel - 9845662220",
     members: [
-      "Rasmika Shrestha ",
-      "Saina Shrestha",
-      "Sumi Duwa Shrestha"
+      "Pratik Sharma Dulal - 9861000144",
+      "Rabin Tamang - 9841251474",
+      "Rajesh Shrestha - 9860416814",
+      "Sachet Subedi - 9864276157"
     ],
-    projectTitle: "Kheti Aagan",
-    projectArea: "Mai Pokhari, Illam",
-    visitDuration: "3 days",
-    visitDate: "2082-01-26 to 2082-01-28",
-   
-    status: "approved",
-    submissionDate: "2023-05-15"
+      status: "approved",
+    projectTitle: "Koshi Mountain Coaster Adventure"
   },
   {
-    id: 1,
-    name: "Agro Basti",
+    id: 2,
+    name: "AgroBasti",
     collegeName: "Nepal Engineering College",
-    collegeAddress: "Changunarayan, Bhaktapur",
     mentor: "Surya Thapaliya",
-    teamLeader: "Ganga Poudel",
+    sector: "Agro-Tourism",
+    teamLeader: "Rashmika Shrestha - 9863441156",
     members: [
-      "Rasmika Shrestha ",
-      "Saina Shrestha",
-      "Sumi Duwa Shrestha"
+      "Saina Shrestha - 9844235275",
+      "Sumi Duwa Shrestha - 9748285026",
+      "Ganga Poudel - 9861661342"
     ],
-    projectTitle: "Kheti Aagan",
-    projectArea: "Mai Pokhari, Illam",
-    visitDuration: "3 days",
-    visitDate: "2082-01-26 to 2082-01-28",
-   
-    status: "approved",
-    submissionDate: "2023-05-15"
+      status: "approved",
+    projectTitle: "Khiti Agan"
   },
   {
-    id: 1,
-    name: "Agro Basti",
-    collegeName: "Nepal Engineering College",
-    collegeAddress: "Changunarayan, Bhaktapur",
-    mentor: "Surya Thapaliya",
-    teamLeader: "Ganga Poudel",
+    id: 3,
+    name: "Beyond the brew",
+    collegeName: "Khwopa Engineering College",
+    mentor: "Suman Ghimire",
+    sector: "Agro-Tourism",
+    teamLeader: "Shrijal Man Shrestha - 9822782043",
     members: [
-      "Rasmika Shrestha ",
-      "Saina Shrestha",
-      "Sumi Duwa Shrestha"
+      "Sachin Chaurasiya - 9766547557",
+      "Krishal Byanju - 9741808269",
+      "Ganesh Chapagain - 9847805353",
+      "Nirjala Prajapati - 9818444005"
     ],
-    projectTitle: "Kheti Aagan",
-    projectArea: "Mai Pokhari, Illam",
-    visitDuration: "3 days",
-    visitDate: "2082-01-26 to 2082-01-28",
-   
-    status: "approved",
-    submissionDate: "2023-05-15"
+      status: "approved",
+    projectTitle: "Panitar Tea Village"
   },
-  
-  
+  {
+    id: 4,
+    name: "Koshi Explorers",
+    collegeName: "IOE Pulchowk Campus",
+    mentor: "Tej Bdr. Dhakal",
+    teamLeader: "Abhinna Rimal - 9861041363",
+    members: [
+      "Amshu Bhandari - 9843738650",
+      "Ayush Aryal - 9808838347",
+      "Aayusha Bajracharya",
+      "Megana Shrestha"
+    ],
+      status: "approved",
+    projectTitle: "Arun Adventure Gateway"
+  },
+  {
+    id: 5,
+    name: "Pathfinders",
+    collegeName: "Pulchowk College",
+    mentor: "Uttam Bhattarai",
+    sector: "Adventure Tourism",
+    teamLeader: "Sandhya Thapa - 9840732769",
+    members: [
+      "Bevika Mool - 98400346820",
+      "Nisha KC - 9823090407",
+      "Samata Shrestha - 9861719454",
+      "Swechha Shrestha - 9849660415"
+    ],
+      status: "approved",
+    projectTitle: "Vertical Odyssey"
+  },
+  {
+    id: 6,
+    name: "K2PA Crew",
+    collegeName: "Pulchowk College",
+    mentor: "Animesh Bastola",
+    sector: "Cultural & Rural Tourism",
+    teamLeader: "Prashant Shrestha - 9765349622",
+    members: [
+      "Aakriti Pun - 9849882016",
+      "Kushal Pangeni - 9749780900",
+      "Kritika K.C. - 9849398907"
+    ],
+      status: "approved",
+    projectTitle: "Multicultural Village & Resort"
+  },
+  {
+    id: 7,
+    name: "Winners",
+    collegeName: "Pulchowk College",
+    mentor: "Birat Anupam",
+    sector: "Adventure Tourism",
+    teamLeader: "Sukirti Joshi - 9803362907",
+    members: [
+      "Shristi Pandey - 9861858201",
+      "Smriti Thapaliya - 9865466814",
+      "Sugam Gautam - 9869420038",
+      "Sushma Dotel - 9863211994"
+    ],
+      status: "approved",
+    projectTitle: "Beyond The Mera Peak Base Camp"
+  },
+  {
+    id: 8,
+    name: "Sketch squad",
+    collegeName: "Pulchowk Campus",
+    mentor: "Aslesha Karki",
+    sector: "Agro-Tourism",
+    teamLeader: "Subham Jung Karki - 9840464444",
+    
+    members: [
+      "Aavash Shrestha - 9840332000",
+      "Amik Shakya - 9861341782",
+      "Bibek Khanal - 9847363028"
+    ],
+    projectTitle: "Sip Savor Ilam",
+      status: "approved",
+  },
+  {
+    id: 9,
+    name: "Rural Ridge Builders",
+    collegeName: "Nepal Engineering College",
+    mentor: "Bhabish Shrestha",
+    sector: "Spiritual Tourism",
+    teamLeader: "Abhishek Gubhaju - 9851312284, 9860747474",
+    members: [
+      "Amshu K.C. - 9861398272",
+      "Ekata Nepal - +977 9813841025",
+      "Subash Adhikari - +977 9749238372",
+      "Unik Magar - +977 980‑6270609"
+    ],
+    projectTitle: "Spiritual Eco-Heaven: Journey to Scenic Heights and Sustainable Living",
+      status: "approved",
+  },
+  {
+    id: 10,
+    name: "Pulchowk Team Year V",
+    collegeName: "IOE, Pulchowk Campus",
+    mentor: "Ramesh Rai",
+    sector: "Cultural Tourism",
+    teamLeader: "Anuzsri Oli - 9841601448",
+    members: [
+      "Drishtant Dhakal - 9841176434",
+      "Manush Paudel - 9840043517",
+      "Ravi Raman K.C. - 9818206573",
+      "Vaskar Malla - 9868985349"
+    ],
+    projectTitle: "Mundam Serenity Circuit Along the Cultural Trail",
+    status: "approved",
+  }
 ]
 
 const ApprovedTeams = () => {

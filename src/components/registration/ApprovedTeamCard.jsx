@@ -105,10 +105,10 @@ const ApprovedTeamCard = ({ team }) => {
             <p className="text-gray-800 text-sm font-medium">{team.projectTitle}</p>
           </div>
           
-          <div>
+          {/* <div>
             <h4 className="text-xs text-gray-500 uppercase tracking-wider mb-1 font-semibold">Project Area</h4>
             <p className="text-gray-800 text-sm">{team.projectArea}</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </Card>
