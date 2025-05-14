@@ -18,7 +18,7 @@ const ContactInfo = () => {
       title: "Phone Numbers",
       content: (
         <div>
-          <p>Alina Magar (CEO): +977 9852056497</p>
+          <p>Alina Magar (Event Organizer): +977 9852056497</p>
           <p>Santosh Dhamala (Event Manager):+977 9852054672</p>
         </div>
       ),

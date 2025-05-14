@@ -1,12 +1,11 @@
-import { Card } from "../../ui/Card"
-import kafals from "../../assests/kafals.png"
-import koshitourism from "../../assests/koshitourism.png"
-import fca from "../../assests/fca.png"
-import scaef from "../../assests/scaef.png"
-import nea from "../../assests/nea.png"
-import gramayana from "../../assests/gramayana.png"
-import marketing from "../../assests/marketing.png"
-
+import { Card } from "../../ui/Card";
+import kafals from "../../assests/kafals.png";
+import koshitourism from "../../assests/koshitourism.png";
+import fca from "../../assests/fca.png";
+import scaef from "../../assests/scaef.png";
+import nea from "../../assests/nea.png";
+import gramayana from "../../assests/gramayana.png";
+import marketing from "../../assests/marketing.png";
 
 const SponsorshipTestimonials = () => {
   const sponsorCategories = [
@@ -16,10 +15,9 @@ const SponsorshipTestimonials = () => {
       sponsors: [
         {
           name: "Visit",
-          logo:koshitourism,
+          logo: koshitourism,
           website: "https://bishowchauhan.com.np",
         },
-        
       ],
     },
     {
@@ -31,7 +29,6 @@ const SponsorshipTestimonials = () => {
           logo: kafals,
           website: "https://kafals.com.np",
         },
-       
       ],
     },
     {
@@ -43,7 +40,6 @@ const SponsorshipTestimonials = () => {
           logo: gramayana,
           website: "https://bishowchauhan.com.np",
         },
-       
       ],
     },
     {
@@ -51,20 +47,20 @@ const SponsorshipTestimonials = () => {
       description: "Partners providing technical expertise and solutions",
       sponsors: [
         {
-            name: "NEA",
-            logo:  nea ,
-            website: "https://member.neanepal.org.np",
-          },
-          {
-            name: "FCAN ",
-            logo: fca,
-            website: "https://fcan.org.np",
-          },
-          {
-            name: "SCAEF",
-            logo: scaef,
-            website: "https://scaef.org.np",
-          },
+          name: "NEA",
+          logo: nea,
+          website: "https://member.neanepal.org.np",
+        },
+        {
+          name: "FCAN ",
+          logo: fca,
+          website: "https://fcan.org.np",
+        },
+        {
+          name: "SCAEF",
+          logo: scaef,
+          website: "https://scaef.org.np",
+        },
       ],
     },
     {
@@ -76,20 +72,23 @@ const SponsorshipTestimonials = () => {
           logo: marketing,
           website: "https://sisanbhattarai.com.np",
         },
-
       ],
     },
-  ]
+  ];
 
   return (
     <section className="py-20  ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">Our Partners</h2>
-          
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+            <span className="text-[#223F80]">Our</span>{" "}
+            <span className="text-[#F58432]">Partners</span>
+          </h2>
+
           <p className="max-w-2xl mx-auto text-lg text-gray-600 leading-relaxed">
-            We are proud to collaborate with industry leaders who share our vision and help make this event exceptional
+            We are proud to collaborate with industry leaders who share our
+            vision and help make this event exceptional
           </p>
         </div>
 
@@ -99,9 +98,13 @@ const SponsorshipTestimonials = () => {
             <div key={index} className="mb-8">
               {/* Category Header */}
               <div className="text-center mb-10">
-                <h3 className="text-2xl font-semibold text-slate-800 mb-3">{category.title}</h3>
+                <h3 className="text-2xl font-semibold text-slate-800 mb-3">
+                  {category.title}
+                </h3>
                 <div className="h-0.5 w-16 bg-gray-200 mx-auto mb-4 rounded-full"></div>
-                <p className="max-w-2xl mx-auto text-gray-600 mb-8">{category.description}</p>
+                <p className="max-w-2xl mx-auto text-gray-600 mb-8">
+                  {category.description}
+                </p>
               </div>
 
               {/* Sponsors Grid */}
@@ -132,7 +135,7 @@ const SponsorshipTestimonials = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SponsorshipTestimonials
+export default SponsorshipTestimonials;

@@ -26,7 +26,9 @@ const Contact = () => {
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto mb-16 text-center animate-slide-up">
-          <h2 className="section-title">Get In Touch</h2>
+          <h2 className="section-title">
+            <span className="text-[#223F80]">Get In</span> <span className="text-[#F58432]">Touch</span>
+          </h2>
           <p className="text-lg text-gray-700 mb-8">
             Have questions about the Tourism Project Showcase – Koshi 2025? We're here to help. Reach out to our team
             for information about registration, sponsorship opportunities, or any other inquiries.
@@ -67,7 +69,9 @@ const Contact = () => {
         </div>
 
         <div className="mb-20">
-          <h3 className="text-2xl font-bold text-center mb-12">Our Location</h3>
+          <h3 className="text-2xl font-bold text-center mb-12">
+            <span className="text-[#223F80]">Our</span> <span className="text-[#F58432]">Location</span>
+          </h3>
           <ContactMap />
         </div>
 

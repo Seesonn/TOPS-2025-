@@ -79,7 +79,9 @@ const AttendancePage = () => {
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto mb-16 text-center animate-slide-up">
-           <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Distinguished Attendees</h2>
+           <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            <span className="text-[#223F80]">Our Distinguished</span> <span className="text-[#F58432]">Attendees</span>
+           </h2>
           <p className="text-xl text-gray-600 mb-6">
             Connecting innovators, leaders, and visionaries from across the industry
           </p>

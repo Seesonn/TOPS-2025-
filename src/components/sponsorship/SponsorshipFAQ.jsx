@@ -40,7 +40,11 @@ const SponsorshipFAQ = () => {
 
   return (
     <div className="my-20 animate-slide-up">
-      <h2 className="section-title text-center mb-4">Frequently Asked Questions</h2>
+      <h2 className="section-title text-center mb-4"> 
+                <span className="text-[#223F80]">Frequently</span> <span className="text-[#F58432]">Asked Questions</span>
+
+
+      </h2>
       <p className="section-subtitle text-center mb-12">Common questions about sponsoring ToPS Koshi 2025</p>
 
       <div className="max-w-3xl mx-auto">

@@ -1,9 +1,8 @@
-
-import { useState } from "react"
-import { Card } from "../../ui/Card"
+import { useState } from "react";
+import { Card } from "../../ui/Card";
 
 const ContactFAQ = () => {
-  const [openIndex, setOpenIndex] = useState(null)
+  const [openIndex, setOpenIndex] = useState(null);
 
   const faqs = [
     {
@@ -31,15 +30,18 @@ const ContactFAQ = () => {
       answer:
         "Accommodation is not included in the registration fee. However, we have negotiated special rates with several hotels near the venue. Details will be provided to registered participants.",
     },
-  ]
+  ];
 
   const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <div className="mb-16">
-      <h3 className="text-2xl font-bold text-center mb-8">Frequently Asked Questions</h3>
+      <h3 className="text-2xl font-bold text-center mb-8">
+        <span className="text-[#223F80]">Frequently </span>{" "}
+        <span className="text-[#F58432]">Asked Questions</span>
+      </h3>
 
       <div className="max-w-3xl mx-auto">
         {faqs.map((faq, index) => (
@@ -48,7 +50,9 @@ const ContactFAQ = () => {
               className="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
               onClick={() => toggleFAQ(index)}
             >
-              <span className="font-semibold text-gray-900">{faq.question}</span>
+              <span className="font-semibold text-gray-900">
+                {faq.question}
+              </span>
               <svg
                 className={`w-5 h-5 text-gray-500 transform transition-transform ${
                   openIndex === index ? "rotate-180" : ""
@@ -57,7 +61,12 @@ const ContactFAQ = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
 
@@ -75,14 +84,16 @@ const ContactFAQ = () => {
       <div className="text-center mt-8">
         <p className="text-gray-700">
           Don't see your question here? Contact us at{" "}
-          <a href="mailto:info@topskoshi2025.com" className="text-blue-600 hover:underline">
-            info@topskoshi2025.com
+          <a
+            href="mailto:topskoshi2025@gmail.com"
+            className="text-blue-600 hover:underline"
+          >
+            topskoshi2025@gmail.com
           </a>
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContactFAQ
-
+export default ContactFAQ;

@@ -270,7 +270,9 @@ const SponsorshipBenefits = () => {
 
   return (
     <div className="my-20 animate-slide-up">
-      <h2 className="section-title text-center mb-4">Sponsorship Benefits</h2>
+      <h2 className="section-title text-center mb-4"> 
+        <span className="text-[#223F80]">Sponsorship</span> <span className="text-[#F58432]">Benefits</span>
+      </h2>
       <p className="section-subtitle text-center mb-12">Discover the advantages of partnering with ToPS Koshi 2025</p>
 
       <div className="flex flex-wrap justify-center mb-8 border-b border-gray-200">

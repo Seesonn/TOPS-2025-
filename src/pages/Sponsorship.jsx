@@ -99,7 +99,9 @@ const Sponsorship = () => {
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto mb-16 text-center animate-slide-up">
-          <h2 className="section-title">Why Sponsor ToPS Koshi 2025?</h2>
+          <h2 className="section-title">
+            <span className="text-[#223F80]">Why Sponsor </span> <span className="text-[#F58432]">ToPS Koshi 2025?</span>
+          </h2>
           <p className="text-lg text-gray-700 mb-8">
             The Tourism Project Showcase offers a unique opportunity to connect with the next generation of tourism
             innovators, industry leaders, and potential partners. Your sponsorship not only supports the development of
@@ -187,7 +189,9 @@ const Sponsorship = () => {
         </div>
 
         <div className="mb-20">
-          <h2 className="section-title text-center mb-16">Sponsorship Packages</h2>
+          <h2 className="section-title text-center mb-16">
+            <span className="text-[#223F80]">Sponsorship</span> <span className="text-[#F58432]">Packages</span>
+          </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {sponsorshipTiers.map((tier, index) => (
