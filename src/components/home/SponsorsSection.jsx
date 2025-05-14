@@ -354,7 +354,8 @@ const SponsorsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-6 sm:mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-            Our Sponsors
+          
+            <span className="text-[#223F80]"> Our </span> <span className="text-[#F58432]"> Sponsors</span>
           </h2>
           <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
             Organizations supporting innovation in tourism

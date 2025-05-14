@@ -289,7 +289,10 @@ const ThemesSection = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Tourism Themes</h2>
+          
+           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+           <span className="text-[#223F80]">Tourism</span> <span className="text-[#F58432]">Themes</span>
+           </h2>
           <p className="text-lg text-gray-600">
             Explore innovative solutions across these 11 key tourism sectors
           </p>

@@ -71,7 +71,7 @@ const HighlightsSection = () => {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="section-title">Event Highlights</h2>
+          <h2 className="section-title"><span className="text-[#223F80]">Event</span> <span className="text-[#F58432]">Highlights</span></h2>
           <p className="section-subtitle">Key features of the Tourism Project Showcase – Koshi 2025</p>
         </div>
 
