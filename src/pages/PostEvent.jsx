@@ -8,10 +8,11 @@ import PostEventStats from "../components/post-event/PostEventStats"
 import PostEventWinners from "../components/post-event/PostEventWinners"
 // import PostEventTestimonials from "../components/post-event/PostEventTestimonials"
 import PostEventGallery from "../components/post-event/PostEventGallery"
+import PreActivities from "../components/post-event/PreActivity"
 
 const PostEvent = () => {
-  const [activeYear, setActiveYear] = useState("2024")
-  const years = ["2024", "2023", "2022"]
+  // const [activeYear, setActiveYear] = useState("2024")
+  // const years = ["2024", "2023", "2022"]
 
   return (
     <div className="bg-gray-50">
@@ -28,7 +29,7 @@ const PostEvent = () => {
             Explore the highlights, winners, and impact of previous Tourism Project Showcase events.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {/* <div className="flex flex-wrap justify-center gap-4 mb-12">
             {years.map((year) => (
               <Button
                 key={year}
@@ -39,25 +40,26 @@ const PostEvent = () => {
                 ToPS {year}
               </Button>
             ))}
-          </div>
+          </div> */}
         </div>
+        <PreActivities/>
 
         {/* Event Highlights Section */}
-        <PostEventHighlights year={activeYear} />
+        {/* <PostEventHighlights year={activeYear} /> */}
 
         {/* Event Statistics Section */}
-        <PostEventStats year={activeYear} />
+        {/* <PostEventStats year={activeYear} /> */}
 
         {/* Award Winners Section */}
-        <PostEventWinners year={activeYear} />
+        {/* <PostEventWinners year={activeYear} /> */}
 
         {/* Testimonials Section */}
         {/* <PostEventTestimonials year={activeYear} /> */}
 
         {/* Gallery Section */}
-        <PostEventGallery year={activeYear} />
+        {/* <PostEventGallery year={activeYear} /> */}
 
-        <div className="mt-20 text-center">
+        {/* <div className="mt-20 text-center">
           <h3 className="text-2xl font-bold mb-6">Full Event Report</h3>
           <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
             Download the comprehensive report of Tourism Project Showcase – Koshi {activeYear} with detailed information
@@ -78,7 +80,7 @@ const PostEvent = () => {
           >
             Download Event Report
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   )
