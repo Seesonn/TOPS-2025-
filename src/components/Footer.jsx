@@ -4,6 +4,7 @@ import { SocialIcon } from "../ui/SocialIcon";
 import FooterLink from "./FooterLink";
 import ContactInfo from "./ContactInfo";
 import mountain from "../assests/mountain.svg";
+import love from "../assests/love.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -132,13 +133,13 @@ const Footer = () => {
             <p className="mt-2">
               Organized by Alison Hospitality & Event Managed by Kafals
             </p>
-            <p className="mt-2 font-Roboto font-medium text-white [text-shadow:_1px_1px_0_#282560,_-1px_-1px_0_#282560">
-              This Website is Made With Love By Kafals || Made in Nepal
-            </p>
+          <p className="mt-2 font-Roboto font-medium text-white [text-shadow:_1px_1px_0_#282560,_-1px_-1px_0_#282560]">
+  Made in Nepal & Crafted with <span className="inline-block align-middle"><img src={love} alt="love" className="h-[1em] w-auto" /></span> By Kafals 
+</p>
           </div>
         </div>
       </footer>
-    </>
+    </> 
   );
 };
 

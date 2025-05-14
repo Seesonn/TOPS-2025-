@@ -77,7 +77,9 @@ const CtaSection = () => {
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Showcase Your Tourism Innovation?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Showcase <span className="text-[#F58432]">Your Tourism</span> Innovation?
+
+        </h2>
         <p className="text-xl max-w-2xl mx-auto mb-10 text-blue-100">
           Join us at the Tourism Project Showcase – Koshi 2025 and be part of shaping the future of tourism in Nepal.
         </p>
