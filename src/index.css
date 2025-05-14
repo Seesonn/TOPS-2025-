@@ -157,7 +157,7 @@
 .animate-pulse-slow {
     animation: pulse-slow 8s ease-in-out infinite;
 }
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap');
 
 :root {
@@ -175,4 +175,4 @@ body {
 h1,h2,h3,h4,h5,h6{
   font-family: var(--heading-font);
 }
-
+ */
