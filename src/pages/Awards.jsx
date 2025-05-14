@@ -1,23 +1,21 @@
-
-
-import { useState } from "react"
-import PageHeader from "../components/common/PageHeader"
-import { Button } from "../ui/Button"
-import { Link } from "react-router-dom"
-import AwardCategory from "../components/awards/AwardCategory"
-import AwardJudgingCriteria from "../components/awards/AwardJudgingCriteria"
-import AwardPrizes from "../components/awards/AwardPrizes"
-import AwardPastWinners from "../components/awards/AwardPastWinners"
+import { useState } from "react";
+import PageHeader from "../components/common/PageHeader";
+import { Button } from "../ui/Button";
+import { Link } from "react-router-dom";
+// import AwardCategory from "../components/awards/AwardCategory"
+import AwardJudgingCriteria from "../components/awards/AwardJudgingCriteria";
+import AwardPrizes from "../components/awards/AwardPrizes";
+// import AwardPastWinners from "../components/awards/AwardPastWinners"
 
 const Awards = () => {
-  const [activeTab, setActiveTab] = useState("categories")
+  const [activeTab, setActiveTab] = useState("criteria");
 
   const tabs = [
-    { id: "categories", label: "Award Categories" },
+    // { id: "categories", label: "Award Categories" },
     { id: "criteria", label: "Judging Criteria" },
     { id: "prizes", label: "Prizes & Benefits" },
-    { id: "winners", label: "Past Winners" },
-  ]
+    // { id: "winners", label: "Past Winners" },
+  ];
 
   return (
     <div className="bg-gray-50">
@@ -29,10 +27,11 @@ const Awards = () => {
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto mb-16 text-center animate-slide-up">
-          <h2 className="section-title">Award Categories</h2>
+          <h2 className="section-title">Price & Recognization</h2>
           <p className="text-lg text-gray-700 mb-8">
-            The Tourism Project Showcase – Koshi 2025 will recognize outstanding projects across multiple categories,
-            with prizes totaling over NPR 300,000 and additional implementation support.
+            The Tourism Project Showcase – Koshi 2025 will recognize outstanding
+            projects across multiple categories, with prizes totaling over NPR
+            175,000 and additional implementation support.
           </p>
 
           <div className="flex flex-wrap justify-center border-b border-gray-200 mb-12">
@@ -52,24 +51,36 @@ const Awards = () => {
           </div>
         </div>
 
-        {activeTab === "categories" && <AwardCategory />}
+        {/* {activeTab === "categories" && <AwardCategory />} */}
         {activeTab === "criteria" && <AwardJudgingCriteria />}
         {activeTab === "prizes" && <AwardPrizes />}
-        {activeTab === "winners" && <AwardPastWinners />}
+        {/* {activeTab === "winners" && <AwardPastWinners />} */}
 
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold mb-6">Ready to Compete?</h3>
           <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-            Register your team today and showcase your innovative tourism project at ToPS Koshi 2025 for a chance to win
-            exciting prizes and implementation support.
+            Register your team today and showcase your innovative tourism
+            project at ToPS Koshi 2025 for a chance to win exciting prizes and
+            implementation support.
           </p>
           <Button
             variant="primary"
             size="large"
             as={Link}
             to="/registration"
+            disabled
+            style={{
+              pointerEvents: "none",
+              opacity: 0.6,
+              cursor: "default",
+            }}
             icon={
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
                 <path
                   fillRule="evenodd"
                   d="M10 3a1 1 0 00-1 1v5H4a1 1 0 100 2h5v5a1 1 0 102 0v-5h5a1 1 0 100-2h-5V4a1 1 0 00-1-1z"
@@ -83,8 +94,7 @@ const Awards = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Awards
-
+export default Awards;

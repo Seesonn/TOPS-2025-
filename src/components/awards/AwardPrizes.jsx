@@ -8,11 +8,9 @@ const AwardPrizes = () => {
       color: "from-amber-500 to-amber-600",
       benefits: [
         "Cash prize of NPR 100,000",
-        "Implementation support worth NPR 200,000",
-        "6-month mentorship program with industry experts",
-        "Office space at Koshi Innovation Hub for 6 months",
-        "Media coverage and promotion across national platforms",
-        "Opportunity to pitch to investors at Tourism Investment Summit",
+        "Certificate",
+        "Gift Hamper",
+        
       ],
       icon: (
         <svg
@@ -33,14 +31,12 @@ const AwardPrizes = () => {
     },
     {
       place: "Second Prize",
-      cash: "NPR 75,000",
+      cash: "NPR 50,000",
       color: "from-gray-300 to-gray-400",
       benefits: [
-        "Cash prize of NPR 75,000",
-        "Implementation support worth NPR 150,000",
-        "3-month mentorship program with industry experts",
-        "Media coverage and promotion across regional platforms",
-        "Opportunity to pitch to investors at Tourism Investment Summit",
+        "Cash prize of NPR 50,000",
+       "Certificate",
+        "Gift Hamper",
       ],
       icon: (
         <svg
@@ -61,13 +57,12 @@ const AwardPrizes = () => {
     },
     {
       place: "Third Prize",
-      cash: "NPR 50,000",
+      cash: "NPR 25,000",
       color: "from-amber-700 to-amber-800",
       benefits: [
-        "Cash prize of NPR 50,000",
-        "Implementation support worth NPR 100,000",
-        "3-month mentorship program with industry experts",
-        "Media coverage and promotion across local platforms",
+        "Cash prize of NPR 25,000",
+        "Certificate",
+        "Gift Hamper",
       ],
       icon: (
         <svg
@@ -88,93 +83,93 @@ const AwardPrizes = () => {
     },
   ]
 
-  const specialAwards = [
-    {
-      name: "Sustainability Award",
-      prize: "NPR 25,000",
-      description:
-        "Awarded to the project that best incorporates sustainable practices and environmental conservation.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8 text-green-600"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      ),
-    },
-    {
-      name: "Community Impact Award",
-      prize: "NPR 25,000",
-      description: "Awarded to the project with the greatest potential to benefit local communities.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8 text-[#223F80]"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-          />
-        </svg>
-      ),
-    },
-    {
-      name: "Digital Innovation Award",
-      prize: "NPR 25,000",
-      description: "Awarded to the project that best leverages technology to enhance the tourism experience.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8 text-purple-600"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-          />
-        </svg>
-      ),
-    },
-    {
-      name: "People's Choice Award",
-      prize: "NPR 25,000",
-      description: "Voted by event attendees and online audience for their favorite project.",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8 text-red-600"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-          />
-        </svg>
-      ),
-    },
-  ]
+  // const specialAwards = [
+  //   {
+  //     name: "Sustainability Award",
+  //     prize: "NPR 25,000",
+  //     description:
+  //       "Awarded to the project that best incorporates sustainable practices and environmental conservation.",
+  //     icon: (
+  //       <svg
+  //         xmlns="http://www.w3.org/2000/svg"
+  //         className="h-8 w-8 text-green-600"
+  //         fill="none"
+  //         viewBox="0 0 24 24"
+  //         stroke="currentColor"
+  //       >
+  //         <path
+  //           strokeLinecap="round"
+  //           strokeLinejoin="round"
+  //           strokeWidth={2}
+  //           d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+  //         />
+  //       </svg>
+  //     ),
+  //   },
+  //   {
+  //     name: "Community Impact Award",
+  //     prize: "NPR 25,000",
+  //     description: "Awarded to the project with the greatest potential to benefit local communities.",
+  //     icon: (
+  //       <svg
+  //         xmlns="http://www.w3.org/2000/svg"
+  //         className="h-8 w-8 text-[#223F80]"
+  //         fill="none"
+  //         viewBox="0 0 24 24"
+  //         stroke="currentColor"
+  //       >
+  //         <path
+  //           strokeLinecap="round"
+  //           strokeLinejoin="round"
+  //           strokeWidth={2}
+  //           d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+  //         />
+  //       </svg>
+  //     ),
+  //   },
+  //   {
+  //     name: "Digital Innovation Award",
+  //     prize: "NPR 25,000",
+  //     description: "Awarded to the project that best leverages technology to enhance the tourism experience.",
+  //     icon: (
+  //       <svg
+  //         xmlns="http://www.w3.org/2000/svg"
+  //         className="h-8 w-8 text-purple-600"
+  //         fill="none"
+  //         viewBox="0 0 24 24"
+  //         stroke="currentColor"
+  //       >
+  //         <path
+  //           strokeLinecap="round"
+  //           strokeLinejoin="round"
+  //           strokeWidth={2}
+  //           d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+  //         />
+  //       </svg>
+  //     ),
+  //   },
+  //   {
+  //     name: "People's Choice Award",
+  //     prize: "NPR 25,000",
+  //     description: "Voted by event attendees and online audience for their favorite project.",
+  //     icon: (
+  //       <svg
+  //         xmlns="http://www.w3.org/2000/svg"
+  //         className="h-8 w-8 text-red-600"
+  //         fill="none"
+  //         viewBox="0 0 24 24"
+  //         stroke="currentColor"
+  //       >
+  //         <path
+  //           strokeLinecap="round"
+  //           strokeLinejoin="round"
+  //           strokeWidth={2}
+  //           d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+  //         />
+  //       </svg>
+  //     ),
+  //   },
+  // ]
 
   return (
     <div>
@@ -215,7 +210,7 @@ const AwardPrizes = () => {
         ))}
       </div>
 
-      <h3 className="text-2xl font-bold mb-6">Special Category Awards</h3>
+      {/* <h3 className="text-2xl font-bold mb-6">Special Category Awards</h3>
       <div className="grid md:grid-cols-2 gap-6 mb-16">
         {specialAwards.map((award, index) => (
           <div key={index} className="animate-slide-right" style={{ animationDelay: `${index * 0.1}s` }}>
@@ -233,7 +228,7 @@ const AwardPrizes = () => {
             </Card>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className="bg-blue-50 p-6 rounded-xl">
         <h3 className="text-xl font-bold mb-4">Additional Benefits for All Finalists</h3>

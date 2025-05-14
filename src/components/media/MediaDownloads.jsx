@@ -115,9 +115,9 @@ const MediaDownloads = () => {
           If you need specific photos, videos, or other media assets not available for download, please contact our
           media relations team.
         </p>
-        <a href="mailto:media@topskoshi2025.com" className="text-[#223F80] hover:text-blue-800 font-medium">
+        {/* <a href="mailto:media@topskoshi2025.com" className="text-[#223F80] hover:text-blue-800 font-medium">
           media@topskoshi2025.com
-        </a>
+        </a> */}
       </div>
     </div>
   )
