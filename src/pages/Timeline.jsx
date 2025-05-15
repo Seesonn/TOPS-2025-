@@ -350,11 +350,11 @@
 
 // export default Timeline;
 
-
 import React, { useState } from 'react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import SchedulePDF from './SchedulePDF'; 
 import { Button } from '../ui/Button';
+import PageHeader from '../components/common/PageHeader';
 
 const Timeline = () => {
   const [activeDay, setActiveDay] = useState(0);
@@ -401,8 +401,7 @@ const Timeline = () => {
           title: "Public Exhibition",
           details: [
             "Open to general public",
-            "Interactive displays",
-            "Innovation showcases"
+            
           ],
           speaker: null,
           // location: "Exhibition Area"
@@ -411,8 +410,7 @@ const Timeline = () => {
           time: "3:00 PM - 4:30 PM",
           title: "Panel Discussion: Tourism Vision 2082",
           details: [
-            "Industry Experts & Offcials Discussion",
-            
+            "Industry Experts & Officials Discussion",
             "Q&A Session with Audience"
           ],
           speaker: "Bhabish Shrestha",
@@ -431,8 +429,7 @@ const Timeline = () => {
           title: "Final Project Presentations",
           details: [
             "Shortlisted project showcases",
-            "Judges evaluation",
-           
+            "Judges evaluation"
           ],
           speaker: null,
           // location: "Main Stage"
@@ -453,105 +450,125 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-5 py-12 font-sans">
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#223F80] mb-3">
-          TOPS Event Schedule
-        </h1>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 text-[#555] mb-8">
-          <p>May 23-25, 2025</p>
-          <span className="hidden sm:block">•</span>
-          <p>Hotel G Ramayana, Kathmandu</p>
-        </div>
-
-       
-        <div className="flex justify-center mb-10">
-          <div className="inline-flex rounded-md shadow-sm">
-            {events.map((event, index) => (
-              <Button
-  key={event.id}
-  onClick={() => setActiveDay(index)}
-  className={`px-6 py-3 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[#2783BC] focus:z-10 transition-colors duration-200 ${
-    activeDay === index
-      ? 'bg-[#223F80] text-white'
-      : 'bg-white text-[#223F80] hover:bg-gray-50 border border-gray-200'
-  } ${
-    index === 0 
-      ? 'rounded-r-none me-1'  
-      : index === events.length - 1 
-        ? 'rounded-l-none ms-1'  
-        : 'rounded-none mx-1'    
-  }`}
->
-  Day {index + 1}
-</Button>
-            ))}
-          </div>
-        </div>
-
+    <div className="bg-gray-50 min-h-screen">
+      {/* Header with background image */}
+      <PageHeader
+        title="Event Schedule"
+        description="Note the Schedule of the Tourism Project Showcase"
+        backgroundImage="https://t3.ftcdn.net/jpg/13/06/01/38/240_F_1306013815_W5xrWJiKD4xSlHbCEiUfAeHb08kxMBTR.jpg"
+      />
       
-        <div className="mb-12">
-          <PDFDownloadLink 
-            document={<SchedulePDF events={events} />} 
-            fileName="TOPS_Schedule_2025.pdf"
-            className="bg-[#F58432] hover:bg-[#E57329] text-white px-6 py-3 rounded-md font-medium inline-flex items-center transition-colors duration-200"
-          >
-            {({ loading }) => (
-              loading ? 'Preparing PDF...' : 'Download Full Schedule'
-            )}
-          </PDFDownloadLink>
-        </div>
-      </div>
-
-   
-      <div className="relative">
-       
-        <div className="absolute left-6 top-0 h-full w-0.5 bg-[#2783BC]"></div>
-
-        <div className="ml-12">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-[#223F80]">{events[activeDay].title}</h2>
-            <p className="text-[#2783BC]">
-              {events[activeDay].date} <span className="text-gray-500">({events[activeDay].nepaliDate})</span>
-            </p>
+      {/* Main content container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <div className="text-center mb-12">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#223F80] mb-3">
+            TOPS Event Schedule
+          </h1>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 text-[#555] mb-8">
+            <p>May 23-25, 2025</p>
+            <span className="hidden sm:block">•</span>
+            <p>Hotel G Ramayana, Kathmandu</p>
           </div>
 
-          <div className="space-y-6">
-            {events[activeDay].sessions.map((session, sessionIndex) => (
-              <div key={sessionIndex} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 relative">
-                
-                {/* <div className="absolute -left-11 top-6 h-4 w-4 rounded-full bg-[#F58432] border-4 border-white"></div> */}
-                
-                <div className="flex flex-col md:flex-row gap-6">
-                 
-                  <div className="md:w-1/4">
-                    <div className="text-[#F58432] font-medium">{session.time}</div>
-                    <div className="text-sm text-gray-500 mt-1">{session.location}</div>
-                  </div>
+          {/* Day navigation buttons */}
+          <div className="flex justify-center mb-10">
+            <div className="inline-flex rounded-md shadow-sm">
+              {events.map((event, index) => (
+                <Button
+                  key={event.id}
+                  onClick={() => setActiveDay(index)}
+                  className={`px-6 py-3 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[#2783BC] focus:z-10 transition-colors duration-200 ${
+                    activeDay === index
+                      ? 'bg-[#223F80] text-white'
+                      : 'bg-white text-[#223F80] hover:bg-gray-50 border border-gray-200'
+                  } ${
+                    index === 0 
+                      ? 'rounded-r-none me-1'  
+                      : index === events.length - 1 
+                        ? 'rounded-l-none ms-1'  
+                        : 'rounded-none mx-1'    
+                  }`}
+                >
+                  Day {index + 1}
+                </Button>
+              ))}
+            </div>
+          </div>
 
-                
-                  <div className="md:w-3/4">
-                    <h3 className="text-lg font-semibold text-[#223F80] mb-3">{session.title}</h3>
+          {/* PDF download button */}
+          <div className="mb-12">
+            <PDFDownloadLink 
+              document={<SchedulePDF events={events} />} 
+              fileName="TOPS_Schedule_2025.pdf"
+              className="bg-[#F58432] hover:bg-[#E57329] text-white px-6 py-3 rounded-md font-medium inline-flex items-center transition-colors duration-200"
+            >
+              {({ loading }) => (
+                loading ? 'Preparing PDF...' : 'Download Full Schedule'
+              )}
+            </PDFDownloadLink>
+          </div>
+        </div>
+
+        
+        <div className="flex justify-center">
+          <div className="w-full max-w-4xl bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8">
+         
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#223F80] mb-2">
+                {events[activeDay].title}
+              </h2>
+              <p className="text-lg text-[#2783BC]">
+                {events[activeDay].date} 
+                <span className="text-gray-500 ml-2">({events[activeDay].nepaliDate})</span>
+              </p>
+            </div>
+
+    
+            <div className="space-y-8">
+              {events[activeDay].sessions.map((session, sessionIndex) => (
+                <div 
+                  key={sessionIndex} 
+                  className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-200"
+                >
+                  <div className="flex flex-col md:flex-row gap-6">
+                   
+                    <div className="md:w-1/4">
+                      <div className="text-[#F58432] font-medium text-lg">{session.time}</div>
+                      {/* {session.location && (
+                        <div className="text-sm text-gray-500 mt-2">
+                          <svg className="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                          {session.location}
+                        </div>
+                      )} */}
+                    </div>
+
                     
-                    {session.details && (
-                      <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                        {session.details.map((detail, detailIndex) => (
-                          <li key={detailIndex}>{detail}</li>
-                        ))}
-                      </ul>
-                    )}
+                    <div className="md:w-3/4">
+                      <h3 className="text-xl font-semibold text-[#223F80] mb-3">{session.title}</h3>
+                      
+                      {session.details && (
+                        <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                          {session.details.map((detail, detailIndex) => (
+                            <li key={detailIndex} className="leading-relaxed">{detail}</li>
+                          ))}
+                        </ul>
+                      )}
 
-                    {session.speaker && (
-                      <div className="mt-4 pt-4 border-t border-gray-100">
-                        <p className="text-sm text-gray-500">Featured Speaker</p>
-                        <p className="font-medium text-[#F58432]">{session.speaker}</p>
-                      </div>
-                    )}
+                      {session.speaker && (
+                        <div className="mt-4 pt-4 border-t border-gray-100">
+                          <p className="text-sm text-gray-500">Featured Speaker</p>
+                          <p className="font-medium text-[#F58432] text-lg">{session.speaker}</p>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
