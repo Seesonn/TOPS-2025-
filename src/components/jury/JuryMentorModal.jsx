@@ -116,7 +116,7 @@ const JuryMentorModal = ({ expert, onClose }) => {
                 <div className="text-gray-700 leading-relaxed">{expert.bio}</div>
               </div>
 
-              <div className="mb-6">
+              {/* <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-3 flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +183,7 @@ const JuryMentorModal = ({ expert, onClose }) => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <p className="text-gray-600 text-sm italic">
