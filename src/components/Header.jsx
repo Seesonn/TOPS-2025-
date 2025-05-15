@@ -71,7 +71,7 @@ const Header = () => {
               Sponsorship
             </NavLink>
             <NavLink to="/attendance" active={location.pathname === "/attendance"}>
-              Attendance
+               Attendees
             </NavLink>
             <NavLink to="/admin/login" active={location.pathname === "/admin/login"}>
               Admin 
@@ -120,7 +120,7 @@ const Header = () => {
                         : "text-gray-700 hover:bg-gray-50 hover:text-blue-600"
                     }`}
                   >
-                    Awards & Prizes
+                       Prize & Recognization
                   </Link>
                   <Link
                     to="/post-event"
@@ -130,7 +130,7 @@ const Header = () => {
                         : "text-gray-700 hover:bg-gray-50 hover:text-blue-600"
                     }`}
                   >
-                    Post Event
+                    Pre-Activies
                   </Link>
                 </div>
               </div>
@@ -156,7 +156,7 @@ const Header = () => {
                 </svg>
               }
             >
-              Register Now
+              Register 
             </Button>
           </nav>
 
@@ -202,7 +202,7 @@ const Header = () => {
               Sponsorship
             </MobileNavLink>
             <MobileNavLink to="/attendance" active={location.pathname === "/attendace"}>
-             Attendace
+             Attendees
             </MobileNavLink>
             <MobileNavLink to="/admin/login" active={location.pathname === "/admin/login"}>
              Admin Login
@@ -241,10 +241,10 @@ const Header = () => {
                     Media Gallery
                   </MobileNavLink>
                   <MobileNavLink to="/awards" active={location.pathname === "/awards"}>
-                    Awards & Prizes
+                       Prize & Recognization
                   </MobileNavLink>
                   <MobileNavLink to="/post-event" active={location.pathname === "/post-event"}>
-                    Post Event
+                    Pre-Activies
                   </MobileNavLink>
                 </div>
               </div>
@@ -260,7 +260,7 @@ const Header = () => {
               className="w-full mt-4 transition-transform duration-300 hover:scale-[1.02]" 
               fullWidth
             >
-              Register Now
+              Register 
             </Button>
           </nav>
         )}
