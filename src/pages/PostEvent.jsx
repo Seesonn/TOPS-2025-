@@ -17,16 +17,19 @@ const PostEvent = () => {
   return (
     <div className="bg-gray-50">
       <PageHeader
-        title="Post Event"
-        description="Highlights and outcomes from the Tourism Project Showcase – Koshi"
+        title=" Pre-Activities"
+        description="Highlights and News of the Tourism Project Showcase – Koshi"
         backgroundImage="https://imgs.search.brave.com/I3Tsthq3H7asutkaCR7U2_k3DoXlc27UDsavLwCjuvg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5zYXZldGhlcmhp/bm8ub3JnL3Byb2Qv/dXBsb2Fkcy8yMDE4/LzA0L0dyZWF0ZXJf/T25lX0hvcm5lZF9S/aGlub19DcmVkaXRS/ZW5hdWRGdWxjb25p/cy5qcGc"
       />
 
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto mb-16 text-center animate-slide-up">
-          <h2 className="section-title">Event Highlights</h2>
+          <h2 id="news-heading" className="text-3xl font-bold mb-4">
+              <span className="text-[#223F80]">News & </span>
+              <span className="text-[#F58432]">Updates</span>
+            </h2>
           <p className="text-lg text-gray-700 mb-8">
-            Explore the highlights, winners, and impact of previous Tourism Project Showcase events.
+           Stay ahead with the latest announcements, behind-the-scenes insights, and exciting reveals as we count down to the Tourism Project Showcase .
           </p>
 
           {/* <div className="flex flex-wrap justify-center gap-4 mb-12">

@@ -3,7 +3,7 @@ import { Card } from "../../ui/Card";
 import { Button } from "../../ui/Button";
 import { Link } from "react-router-dom";
 
-export default function PreActivities() {
+export default function NewsUpdate() {
   const [selectedNews, setSelectedNews] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -49,7 +49,15 @@ export default function PreActivities() {
       <section className="py-12 px-4 md:px-6 lg:px-8" aria-labelledby="news-heading">
         <div className="container mx-auto text-center">
           
-          
+          <div className="mb-16">
+            <h2 id="news-heading" className="text-3xl font-bold mb-4">
+              <span className="text-[#223F80]">News & </span>
+              <span className="text-[#F58432]">Updates</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mb-8 mx-auto">
+              Posts, News & Updates of Tourism Project Showcase – Koshi 2025
+            </p>
+          </div>
 
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -165,7 +173,25 @@ export default function PreActivities() {
           
         </div>
       )}
-      
+       <div className="text-center mt-16">
+                <Button
+                  variant="secondary"
+                  as={Link}
+                  to="/post-event"
+                  icon={
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  }
+                  iconPosition="right"
+                >
+                  View All News &Updates
+                </Button>
+              </div>
     </main>
   );
 }
