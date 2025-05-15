@@ -70,7 +70,7 @@ const ContactForm = ({ onSubmit }) => {
     <Card className="p-6 md:p-8 shadow-lg h-full">
       <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
 
-      <form onSubmit={handleSubmit}>
+      <form action="https://formspree.io/f/movdyypv" method="POST" onSubmit={handleSubmit}>
         <div className="mb-6">
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
             Your Name *
