@@ -10,12 +10,7 @@ const EventTeam = () => {
       image: "https://tops.alison.com.np/uploads/organiser_1744965561.jpg",
       email: "alinamagar@gmail.com",
       phone: "9852056497",
-      socialLinks: {
-        linkedin: "https://linkedin.com/in",
-        twitter: "https://twitter.com",
-        facebook:"https://twitter.com",
-        instagram:"https://twitter.com"
-      },
+      
     },
     {
       id: 2,
@@ -24,13 +19,7 @@ const EventTeam = () => {
       image: "https://tops.alison.com.np/uploads/organiser_1744965712.jpg",
       email: "sagunthapamagar@gmail.com",
       phone: "9815365670",
-      socialLinks: {
-        linkedin: "https://linkedin.com/in",
-        twitter: "https://twitter.com",
-        facebook:"https://twitter.com",
-        instagram:"https://twitter.com"
-       
-      },
+      
     },
     {
       id: 3,
@@ -39,12 +28,7 @@ const EventTeam = () => {
       image: "https://tops.alison.com.np/uploads/organiser_1744965904.jpg",
       email: "kafalsevent@gmail.com",
       phone: "9852054672",
-      socialLinks: {
-        linkedin: "https://linkedin.com/in",
-        twitter: "https://twitter.com",
-        facebook:"https://twitter.com",
-        instagram:"https://twitter.com"
-      },
+     
     },
     {
       id: 4,
@@ -53,26 +37,21 @@ const EventTeam = () => {
       image: "https://tops.alison.com.np/uploads/organiser_1744967751.webp",
       email: "keshab@gmail.com",
       phone: "9851200747",
-      socialLinks: {
-        linkedin: "https://linkedin.com/in",
-        twitter: "https://twitter.com",
-        facebook:"https://twitter.com",
-        instagram:"https://twitter.com"
-      },
+     
     },
     {
         id: 4,
         name: "Richa Bhandari",
         position: "Marketing Representative",
         image: "https://tops.alison.com.np/uploads/organiser_1744968505.jpg",
-        email: "keshab@gmail.com",
+        email: "richabhandari@gmail.com",
         phone: "9851200747",
-        socialLinks: {
-            linkedin: "https://linkedin.com/in",
-            twitter: "https://twitter.com",
-            facebook:"https://twitter.com",
-            instagram:"https://twitter.com"
-        },
+        // socialLinks: {
+        //     linkedin: "https://linkedin.com/in",
+        //     twitter: "https://twitter.com",
+        //     facebook:"https://twitter.com",
+        //     instagram:"https://twitter.com"
+        // },
       },
   ]
 
@@ -101,7 +80,7 @@ const EventTeam = () => {
               position={member.position}
               email={member.email}
               phone={member.phone}
-              socialLinks={member.socialLinks}
+              // socialLinks={member.socialLinks}
             />
           ))}
         </div>

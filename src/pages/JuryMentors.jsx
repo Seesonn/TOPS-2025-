@@ -715,9 +715,9 @@ import { useState } from "react";
 import PageHeader from "../components/common/PageHeader";
 import JuryMentorsList from "../components/jury/JuryMentorsList";
 import JuryMentorModal from "../components/jury/JuryMentorModal";
-import { Button } from "../ui/Button";
-import Ashlesha from "../assests/AshleshaKarki.jpeg";
-import an from "../assests/an.png";
+// import { Button } from "../ui/Button";
+// import Ashlesha from "../assests/AshleshaKarki.jpeg";
+// import an from "../assests/an.png";
 import a1 from "../assests/Adviser-01.png";
 import a2 from "../assests/Adviser-02.png";
 import a3 from "../assests/Adviser-03.png";
@@ -1027,7 +1027,7 @@ const mentors = [
   return (
     <div className="bg-gray-50">
       <PageHeader
-        title="Advisory Board, Jury & Mentors"
+        title="Advisory Board & Mentors"
         description="Meet the experts who will guide and evaluate projects"
         backgroundImage="https://fis-api.luxuryholidaynepal.com/media/attachments/nepal.jpg"
       />

@@ -52,24 +52,21 @@
 
 // export default CtaSection
 
-
-import { Link } from "react-router-dom"
-import { Button } from "../../ui/Button"
+import { Link } from "react-router-dom";
+import { Button } from "../../ui/Button";
 
 const CtaSection = () => {
   return (
     <section className="py-20 text-white relative overflow-hidden">
       {/* Background image */}
-      <div 
-        className="absolute inset-0 bg-[url('https://lifehimalayatrekking.com/wp-content/uploads/2024/12/Mt-Everest-Himalayas.webp')] bg-cover bg-center"
-      ></div>
-      
+      <div className="absolute inset-0 bg-[url('https://lifehimalayatrekking.com/wp-content/uploads/2024/12/Mt-Everest-Himalayas.webp')] bg-cover bg-center"></div>
+
       {/* Dark overlay for better text contrast */}
       <div className="absolute inset-0 bg-black/30"></div>
-      
+
       {/* Gradient overlay - stronger at top */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#223F80]/90 via-[#223F80]/50 to-[#2783BC]/70"></div>
-      
+
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-500 rounded-full mix-blend-overlay filter blur-3xl opacity-30"></div>
@@ -77,11 +74,13 @@ const CtaSection = () => {
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Showcase <span className="text-[#F58432]">Your Tourism</span> Innovation?
-
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Showcase <span className="text-[#F58432]">Your Tourism</span>{" "}
+          Innovation?
         </h2>
         <p className="text-xl max-w-2xl mx-auto mb-10 text-blue-100">
-          Join us at the Tourism Project Showcase – Koshi 2025 and be part of shaping the future of tourism in Nepal.
+          Join us at the Tourism Project Showcase – Koshi 2025 and be part of
+          shaping the future of tourism in Nepal.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
@@ -89,9 +88,20 @@ const CtaSection = () => {
             variant="white"
             size="large"
             as={Link}
+            disabled
+            style={{
+              pointerEvents: "none",
+              opacity: 0.6,
+              cursor: "default",
+            }}
             to="/registration"
             icon={
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
                 <path
                   fillRule="evenodd"
                   d="M10 3a1 1 0 00-1 1v5H4a1 1 0 100 2h5v5a1 1 0 102 0v-5h5a1 1 0 100-2h-5V4a1 1 0 00-1-1z"
@@ -115,7 +125,7 @@ const CtaSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CtaSection
+export default CtaSection;

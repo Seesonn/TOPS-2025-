@@ -217,7 +217,7 @@ const MediaGallery = () => {
       <PageHeader
         title="Media Gallery"
         description="Photos and videos from Tourism Project Showcase events"
-        backgroundImage="/placeholder.svg?height=1080&width=1920"
+        backgroundImage="https://imgs.search.brave.com/i_Bkk8J1otiCQRILgjiR-80QDa_5O5S9qTJ_E0K_QdM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaW1h/bGF5YWd1aWRlbmVw/YWwuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIzLzEyL1No/cmVlLUFudHUtRGFk/YS0xMDI0eDY1Mi53/ZWJw"
       />
 
       <div className="container mx-auto px-4 py-16">

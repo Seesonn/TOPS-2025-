@@ -94,7 +94,7 @@ const Sponsorship = () => {
       <PageHeader
         title="Sponsorship Opportunities"
         description="Support innovation in tourism and gain visibility for your brand"
-        backgroundImage="https://nepaltourism.org/wp-content/uploads/2018/07/amazing-cultural.jpg"
+        backgroundImage="https://imgs.search.brave.com/miwavedpYR3Uz0_LIhpYO7GkmDCf2WTGjckCxCm3bnM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaW1h/bGF5YWd1aWRlbmVw/YWwuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIzLzEyL0th/bnlhbS1UZWEtR2Fy/ZGVuLmpwZw"
       />
 
       <div className="container mx-auto px-4 py-16">

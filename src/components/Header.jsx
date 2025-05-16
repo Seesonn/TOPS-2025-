@@ -70,9 +70,9 @@ const Header = () => {
             <NavLink to="/sponsorship" active={location.pathname === "/sponsorship"}>
               Sponsorship
             </NavLink>
-            <NavLink to="/attendance" active={location.pathname === "/attendance"}>
+            {/* <NavLink to="/attendance" active={location.pathname === "/attendance"}>
                Attendees
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/admin/login" active={location.pathname === "/admin/login"}>
               Admin 
             </NavLink>
@@ -201,9 +201,9 @@ const Header = () => {
             <MobileNavLink to="/sponsorship" active={location.pathname === "/sponsorship"}>
               Sponsorship
             </MobileNavLink>
-            <MobileNavLink to="/attendance" active={location.pathname === "/attendace"}>
+            {/* <MobileNavLink to="/attendance" active={location.pathname === "/attendace"}>
              Attendees
-            </MobileNavLink>
+            </MobileNavLink> */}
             <MobileNavLink to="/admin/login" active={location.pathname === "/admin/login"}>
              Admin Login
             </MobileNavLink>

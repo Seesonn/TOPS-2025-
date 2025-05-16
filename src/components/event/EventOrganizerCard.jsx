@@ -160,7 +160,7 @@ const EventOrganizerCard = ({
 
           {/* Social Links  */}
           <div className="flex justify-center space-x-4 pt-5 border-t border-gray-100 w-full">
-            {socialLinks?.linkedin && (
+            {/* {socialLinks?.linkedin && (
               <div className="transform transition-transform duration-300 hover:scale-110 hover:-translate-y-1">
                 <SocialIcon
                   platform="linkedin"
@@ -168,9 +168,9 @@ const EventOrganizerCard = ({
                   aria-label={`${name}'s LinkedIn profile`}
                 />
               </div>
-            )}
+            )} */}
 
-            {socialLinks?.twitter && (
+            {/* {socialLinks?.twitter && (
               <div className="transform transition-transform duration-300 hover:scale-110 hover:-translate-y-1">
                 <SocialIcon
                   platform="twitter"
@@ -208,7 +208,7 @@ const EventOrganizerCard = ({
                   aria-label={`${name}'s Instagram profile`}
                 />
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>

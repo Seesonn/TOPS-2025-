@@ -4,8 +4,9 @@ import ThemesSection from "../components/home/ThemesSection"
 import SpeakersSection from "../components/home/SpeakersSection"
 import SponsorsSection from "../components/home/SponsorsSection"
 import CtaSection from "../components/home/CtaSection"
-import FloatingTicketButton from "../components/FloatingTicketButton"
+// import FloatingTicketButton from "../components/FloatingTicketButton"
 // import MediaCoverageSection from "../components/home/MediaCoverageSection"
+import FloatingBackToTopButton from "../components/FloatingTicketButton"
 import EventSummaryy from "../components/home/EventSummary"
 import NewsUpdate from "../components/home/NewsUpdate"
 
@@ -25,7 +26,8 @@ const HomePage = () => {
       
       <SponsorsSection />
       <CtaSection />
-      <FloatingTicketButton />
+      {/* <FloatingTicketButton /> */}
+      <FloatingBackToTopButton/>
     </div>
   )
 }
